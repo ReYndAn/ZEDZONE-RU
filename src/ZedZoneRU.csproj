@@ -8,7 +8,7 @@
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <GenerateDocumentationFile>false</GenerateDocumentationFile>
     <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
-    <GameDir Condition="'$(GameDir)'==''">$(MSBuildThisFileDirectory)..\..\</GameDir>
+    <GameDir>$(MSBuildThisFileDirectory)..\..\</GameDir>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="$(GameDir)BepInEx\core\BepInEx.Core.dll" Private="false" />

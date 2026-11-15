@@ -13,7 +13,7 @@ namespace ZedZoneRU
     {
         public const string Guid = "community.zedzone.ru";
         public const string Name = "ZED ZONE Russian Fix";
-        public const string Version = "0.2.1";
+        public const string Version = "0.2.2";
 
         internal static ManualLogSource L;
         internal static string Dir;
@@ -51,6 +51,8 @@ namespace ZedZoneRU
             TryPatch(h, typeof(TextPatches));
             TryPatch(h, typeof(TrimPatch));
             TryPatch(h, typeof(TooltipPatches));
+            TryPatch(h, typeof(CloseButtonNudge));
+            TryPatch(h, typeof(BodyFigureShrink));
             L.LogMessage($"{Name} {Version} loaded. Entries: {Translator.Count}");
         }
 

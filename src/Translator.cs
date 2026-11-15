@@ -55,9 +55,32 @@ namespace ZedZoneRU
                 var src = Unescape(r[1]);
                 var tgt = Unescape(r[2]);
                 // extra.csv: id "reN" = regular expression over the whole string, e.g. ^DAY (\d+)$ -> ДЕНЬ $1
+                // id "fsN" = font scale for texts matching the regex, e.g. 0.75 (applied once per Text)
+                if (r[0].StartsWith("fs", StringComparison.Ordinal))
+                {
+                    try { FontRules.Add((new Regex(r[1], RegexOptions.Compiled | RegexOptions.Singleline),
+                                         float.Parse(r[2], System.Globalization.CultureInfo.InvariantCulture))); added++; }
+                    catch (Exception e) { Plugin.L.LogWarning($"Bad font rule {r[1]}: {e.Message}"); }
+                    continue;
+                }
+                // id "grN" = grow the save-slot frame (GameDataUI) so this text fits, value = padding in px
+                if (r[0].StartsWith("gr", StringComparison.Ordinal))
+                {
+                    try { GrowRules.Add((new Regex(r[1], RegexOptions.Compiled | RegexOptions.Singleline),
+                                         float.Parse(r[2], System.Globalization.CultureInfo.InvariantCulture))); added++; }
+                    catch (Exception e) { Plugin.L.LogWarning($"Bad grow rule {r[1]}: {e.Message}"); }
+                    continue;
+                }
+                // id "fxN" = layout fix applied to any text, Russian included (e.g. add a line break)
+                if (r[0].StartsWith("fx", StringComparison.Ordinal))
+                {
+                    try { Fixes.Add((new Regex(r[1], RegexOptions.Compiled | RegexOptions.Singleline), Unescape(r[2]))); added++; }
+                    catch (Exception e) { Plugin.L.LogWarning($"Bad regex {r[1]}: {e.Message}"); }
+                    continue;
+                }
                 if (r[0].StartsWith("re", StringComparison.Ordinal))
                 {
-                    try { Patterns.Add((new Regex(r[1], RegexOptions.Compiled), r[2])); added++; }
+                    try { Patterns.Add((new Regex(r[1], RegexOptions.Compiled), Unescape(r[2]))); added++; }
                     catch (Exception e) { Plugin.L.LogWarning($"Bad regex {r[1]}: {e.Message}"); }
                     continue;
                 }
@@ -89,6 +112,25 @@ namespace ZedZoneRU
         }
 
         static readonly List<(Regex rx, string repl)> Patterns = new();
+        static readonly List<(Regex rx, string repl)> Fixes = new();
+        static readonly List<(Regex rx, float scale)> FontRules = new();
+        static readonly List<(Regex rx, float pad)> GrowRules = new();
+
+        /// <summary>Padding for frame growth, or -1 if no rule matches.</summary>
+        internal static float GrowPadding(string s)
+        {
+            if (string.IsNullOrEmpty(s)) return -1f;
+            foreach (var (rx, pad) in GrowRules) if (rx.IsMatch(s)) return pad;
+            return -1f;
+        }
+
+        /// <summary>Font scale for this text (1 = unchanged).</summary>
+        internal static float FontScale(string s)
+        {
+            if (string.IsNullOrEmpty(s)) return 1f;
+            foreach (var (rx, scale) in FontRules) if (rx.IsMatch(s)) return scale;
+            return 1f;
+        }
 
         static string Norm(string s) => s.Replace("\r\n", "\n").Trim();
 
@@ -121,9 +163,12 @@ namespace ZedZoneRU
             if (string.IsNullOrEmpty(s) || s.Length > 6000) return s;
             if (Cache.TryGetValue(s, out var c)) return c;
             var r = TranslateCore(s);
+            foreach (var (rx, repl) in Fixes)
+                if (rx.IsMatch(r)) r = rx.Replace(r, repl);
+            try { r = StatsFormatter.Format(r); } catch { }
             if (Cache.Count > 20000) Cache.Clear();
             Cache[s] = r;
-            if (ReferenceEquals(r, s) && Plugin.CfgDumpUntranslated.Value) DumpIfEnglish(s);
+            if (r == s && Plugin.CfgDumpUntranslated.Value) DumpIfEnglish(s);
             return r;
         }
 
