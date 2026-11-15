@@ -344,6 +344,8 @@ namespace ZedZoneRU
                 if (t == null || t.resizeTextForBestFit) return;
                 var s = t.text;
                 if (string.IsNullOrEmpty(s) || s.Length > 48 || s.IndexOf('\n') >= 0 || !Cyr.IsMatch(s)) return;
+                // the interaction card sizes itself to its labels; best fit + wrap breaks lines there
+                if (t.GetComponentInParent<InteractUI>() != null) return;
                 float w = t.rectTransform.rect.width;
                 if (w < 8f) return;
                 float pw = t.preferredWidth;

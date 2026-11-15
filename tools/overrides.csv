@@ -1,4 +1,4 @@
-# Ручные правки перевода поверх Localization_en_to_ru-RU-x-community.csv
+﻿# Ручные правки перевода поверх Localization_en_to_ru-RU-x-community.csv
 # Формат: id,target   (id — из первой колонки файла игры; переносы строк — \n)
 # После правки запустите: python fix_csv.py
 id,target
