@@ -66,6 +66,46 @@ def cap_first(s):
     return s[: m.start(2)] + m.group(2).upper() + s[m.end(2):]
 
 
+CODE_SEG = re.compile(r"^[A-Za-z_][A-Za-z0-9_]*(?::[-\d.]+)?$")
+TAG_NAMES = ("color", "b", "i", "size")
+
+
+def lint(data):
+    """Проверки из Translator_Guide.md. Ничего не исправляет — только предупреждает."""
+    out = []
+
+    def warn(rid, msg):
+        out.append(f"[!] {rid}: {msg}")
+
+    for rid, src, tgt in ((r[0], r[1], r[2]) for r in data):
+        if not tgt.strip():
+            continue
+        # §4.2 плейсхолдеры
+        for rx, name in ((r"\{\d+\}", "{N}"), (r"\{text\d+\}", "{textNNN}"),
+                         (r"\{Application\.version\}", "{Application.version}"),
+                         (r"\[NPCName\]|\[STEAMUSERNAME\]", "[NPCName]/[STEAMUSERNAME]")):
+            if sorted(re.findall(rx, src)) != sorted(re.findall(rx, tgt)):
+                warn(rid, f"не совпадают плейсхолдеры {name}")
+        # §4.1 теги: парность
+        for t in TAG_NAMES:
+            if len(re.findall(r"<" + t + r"\b", tgt)) != tgt.count("</" + t + ">"):
+                if len(re.findall(r"<" + t + r"\b", src)) == src.count("</" + t + ">"):
+                    warn(rid, f"непарный тег <{t}>")
+        # §4.4 Title|Code|Body: число | и непереведённый код
+        if "|" not in src:
+            pass
+        elif src.count("|") != tgt.count("|"):
+            warn(rid, f"число | {src.count('|')} -> {tgt.count('|')}")
+        else:
+            for a, b in zip(src.split("|"), tgt.split("|")):
+                if CODE_SEG.match(a.strip()) and re.search(r"[a-z][A-Z]|_|:", a) and a.strip() != b.strip():
+                    warn(rid, f"переведён код {a.strip()!r} -> {b.strip()!r}")
+        # §4.3 переносы
+        if src.count("\\n") + src.count("\n") != tgt.count("\\n"):
+            warn(rid, "число переносов \\n отличается от источника")
+    return out
+
+
 def main():
     meta, rows = read(TARGET)
     header, data = rows[0], [r for r in rows[1:] if r]
@@ -113,6 +153,24 @@ def main():
         if l or t:
             new = l + new.strip(" ") + t
         change(rid, new, "overrides")
+
+    # Правила Translator_Guide.md (официальное руководство переводчика ZED ZONE)
+    for r in data:
+        rid, src, tgt = r[0], r[1], r[2]
+        if not tgt.strip():
+            continue
+        new = tgt
+        # §4.3: перенос строки — только два символа \n, никаких настоящих CR/LF
+        new = new.replace("\r\n", "\n").replace("\r", "").replace("\n", "\\n")
+        # невидимые символы (NBSP и т.п.)
+        new = re.sub("[ ]", " ", new)
+        new = re.sub("[​‌‍﻿]", "", new)
+        # §6.3: строка, начинающаяся с = + - @, ломается в Excel — нужен ведущий пробел
+        if new[:1] in "=+-@" and new != src:
+            new = " " + new
+        change(rid, new, "руководство")
+
+    log.extend(lint(data))
 
     left = [r[0] for r in data if r[2].strip() == "#NAME?"]
     if left:

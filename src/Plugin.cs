@@ -13,7 +13,7 @@ namespace ZedZoneRU
     {
         public const string Guid = "community.zedzone.ru";
         public const string Name = "ZED ZONE Russian Fix";
-        public const string Version = "0.2";
+        public const string Version = "0.2.1";
 
         internal static ManualLogSource L;
         internal static string Dir;

@@ -2351,7 +2351,7 @@ id,source,target
 10283,The old bed is gone so I set up a new one nearby. Lie down and leave the rest to me.,Старой койки больше нет. Рядом теперь стоит новая. Ложись. Остальное предоставь мне.
 10284,There is no room for another bed here. Just lie down where you are and leave the rest to me.,Здесь больше негде поставить койку. Ложись прямо тут. Остальное предоставь мне.
 10300,CHARACTER SELECT,ВЫБОР ПЕРСОНАЖА
-10301,+ New Character,+ Новый персонаж
+10301,+ New Character, + Новый персонаж
 10302,Random Character,Случайный персонаж
 10303,Select or create a character above,Выберите или создайте персонажа выше
 10304,(Unnamed),(Без имени)
@@ -2797,11 +2797,11 @@ id,source,target
 900495,Select Material Item,Выбрать материал
 900496,Click to select item,Нажмите чтобы выбрать
 900500,[ LOCALE EDITOR ],[ РЕДАКТОР ЛОКАЛИЗАЦИИ ]
-900501,+ Add Language,+ Добавить язык
+900501,+ Add Language, + Добавить язык
 900502,Delete Language,Удалить язык
 900503,Save Translations,Сохранить переводы
 900504,(Primary),(основной)
-900505,= Copy,= Копировать
+900505,= Copy, = Копировать
 900506,Progress:,Прогресс:
 900507,[!] Legacy EN fields detected. Click [Migrate] to convert to en_US.json,[!] Обнаружены устаревшие поля EN. Нажмите [Мигрировать] для конвертации в en_US.json
 900508,Migrate,Мигрировать
@@ -5271,7 +5271,7 @@ id,source,target
 1200365,The fortress's eastern and western concrete walls. Indestructible.,Восточная и западная бетонные стены крепости. Неразрушимо.
 1200366,A concrete corner pillar at one of the fortress's four corners. Indestructible.,Бетонный угловой столб на одном из четырёх углов крепости. Неразрушимо.
 3378,"<color=#ffcc55>Sail to the unknown far island?</color>
-The voyage cannot be interrupted; you can sail back to the main island after arriving.","<color=#ffcc55>Отплыть к неизвестному дальнему острову?</color>\nПлавание нельзя прервать; после прибытия можно вернуться на главный остров."
+The voyage cannot be interrupted; you can sail back to the main island after arriving.",<color=#ffcc55>Отплыть к неизвестному дальнему острову?</color>\nПлавание нельзя прервать; после прибытия можно вернуться на главный остров.
 3379,Set sail,Отплыть
 9397,Far Island Base,База дальнего острова
 901170,Fits all air-powered weapons (incl. air crossbows),Подходит ко всему пневматическому оружию (включая пневмоарбалеты)
@@ -5413,7 +5413,7 @@ The voyage cannot be interrupted; you can sail back to the main island after arr
 901282,Ground,Земля
 901283,8-player rooms demand more from the host's PC and upload bandwidth.,Комнаты на 8 игроков сильнее нагружают ПК хоста и его исходящий канал.
 901284,Surface,Поверх.
-901285,B{0},-{0}
+901285,B{0}, -{0}
 901300,That item was taken by another player and has been removed from your backpack.,Этот предмет забрал другой игрок и он был удалён из вашего рюкзака.
 901301,The materials were taken by another player; that craft has been cancelled.,Материалы забрал другой игрок; это изготовление отменено.
 901302,{0} is crafting,{0} изготавливает
@@ -5985,9 +5985,9 @@ The voyage cannot be interrupted; you can sail back to the main island after arr
 6643,Anti-Radiation Purge | Absorbed radiation dose is cleared ten times faster.,Вывод радиации | Накопленная доза облучения выводится в десять раз быстрее.
 8640,"Radiation Storm|RadiationStorm|You have entered a <color=#ff5500>radiation storm</color>. Staying inside keeps building up your <color=#ff5500>radiation dose</color>; the dose ring in the lower left and the ticking Geiger counter tell you how bad it is.
 A <color=#55ff00>radiation suit, radiation cloak and gas mask</color> block part of it, and you absorb less under a roof or inside a vehicle.
-You <color=#ff5500>cannot sleep or wait</color> inside the radiation.","Радиационная буря|RadiationStorm|Вы попали в <color=#ff5500>радиационную бурю</color>. Пока вы внутри, <color=#ff5500>доза облучения</color> растёт; кольцо дозы слева внизу и треск счётчика Гейгера показывают уровень опасности.\n<color=#55ff00>Противорадиационный костюм, противорадиационный плащ и противогаз</color> задерживают часть излучения, а под крышей или в машине вы получаете меньше.\nВ зоне радиации <color=#ff5500>нельзя спать или ждать</color>."
+You <color=#ff5500>cannot sleep or wait</color> inside the radiation.","Радиационная буря|RadiationStorm|Вы попали в <color=#ff5500>радиационную бурю</color>. Пока вы внутри, <color=#ff5500>доза облучения</color> растёт; кольцо дозы слева внизу и треск счётчика Гейгера показывают уровень опасности.\n<color=#55ff00>Противорадиационный костюм, противорадиационный плащ и противогаз</color> задерживают часть излучения, а под крышей или в машине вы получаете меньше.\nВ зоне радиации <color=#ff5500>нельзя спать или ждать</color>."
 8641,"Radiation Sickness|RadiationSickness|A dose above 250 causes <color=#ff5500>radiation sickness</color>: natural healing slows down. The higher the dose, the worse it gets: health drains and you move slower (it will not kill you).
-The dose drops slowly once you leave the radiation. <color=#55ff00>Iodine tablets</color> taken beforehand halve your intake, and <color=#55ff00>anti-radiation medicine</color> clears the dose ten times faster.","Лучевая болезнь|RadiationSickness|При дозе выше 250 начинается <color=#ff5500>лучевая болезнь</color>: естественное восстановление замедляется. Чем выше доза, тем хуже: здоровье падает, движения замедляются (это не смертельно).\nВне радиации доза медленно снижается. Заранее принятые <color=#55ff00>таблетки йода</color> вдвое снижают поглощение, а <color=#55ff00>противорадиационный препарат</color> выводит дозу в десять раз быстрее."
+The dose drops slowly once you leave the radiation. <color=#55ff00>Iodine tablets</color> taken beforehand halve your intake, and <color=#55ff00>anti-radiation medicine</color> clears the dose ten times faster.","Лучевая болезнь|RadiationSickness|При дозе выше 250 начинается <color=#ff5500>лучевая болезнь</color>: естественное восстановление замедляется. Чем выше доза, тем хуже: здоровье падает, движения замедляются (это не смертельно).\nВне радиации доза медленно снижается. Заранее принятые <color=#55ff00>таблетки йода</color> вдвое снижают поглощение, а <color=#55ff00>противорадиационный препарат</color> выводит дозу в десять раз быстрее."
 902450,Radiation dose,Доза облучения
 902451,Ambient radiation,Фоновая радиация
 902452,Radiation protection,Защита от радиации
@@ -6020,9 +6020,9 @@ The dose drops slowly once you leave the radiation. <color=#55ff00>Iodine tablet
 902436,FAR ISLAND REBUILT,ДАЛЬНИЙ ОСТРОВ ПЕРЕСТРОЕН
 902437,"The far island has been rebuilt with the new map: a new rail network, stations and outposts are waiting to be explored.
 Progress on the far island (bosses, security gates, rail power) has been reset. The main island and everything you carry are unaffected, and your boat and its hold are still with you.
-<color=#ffcc55>Items left on the old far island (containers, vehicles, things on the ground) are gone along with the old map.</color>","Дальний остров перестроен по новой карте: новая железнодорожная сеть, станции и опорные пункты ждут исследования.\nПрогресс на дальнем острове (боссы, защитные ворота, питание железной дороги) сброшен. Главный остров и всё, что у вас с собой, не затронуты, лодка и её трюм тоже на месте.\n<color=#ffcc55>Предметы, оставленные на старом дальнем острове (контейнеры, транспорт, вещи на земле), исчезли вместе со старой картой.</color>"
+<color=#ffcc55>Items left on the old far island (containers, vehicles, things on the ground) are gone along with the old map.</color>","Дальний остров перестроен по новой карте: новая железнодорожная сеть, станции и опорные пункты ждут исследования.\nПрогресс на дальнем острове (боссы, защитные ворота, питание железной дороги) сброшен. Главный остров и всё, что у вас с собой, не затронуты, лодка и её трюм тоже на месте.\n<color=#ffcc55>Предметы, оставленные на старом дальнем острове (контейнеры, транспорт, вещи на земле), исчезли вместе со старой картой.</color>"
 8642,"Rail Power|RailPower|The island's railway has three power sections. Each guardian you defeat at the <color=#55ff00>Port, RNA Lab and Automated Factory</color> restores power to one section. Trains only run on powered track, but you can still <color=#55ff00>walk or drive</color> anywhere.
-The substation at the first station of each section shows its state.","Питание железной дороги|RailPower|Железная дорога острова разделена на три участка питания. Каждый побеждённый страж — <color=#55ff00>Порт, Лаборатория РНК и Автоматизированный завод</color> — возвращает питание одному участку. Поезда ходят только по участкам с питанием, но <color=#55ff00>пешком или на машине</color> можно добраться куда угодно.\nПодстанция на первой станции каждого участка показывает его состояние."
+The substation at the first station of each section shows its state.","Питание железной дороги|RailPower|Железная дорога острова разделена на три участка питания. Каждый побеждённый страж — <color=#55ff00>Порт, Лаборатория РНК и Автоматизированный завод</color> — возвращает питание одному участку. Поезда ходят только по участкам с питанием, но <color=#55ff00>пешком или на машине</color> можно добраться куда угодно.\nПодстанция на первой станции каждого участка показывает его состояние."
 902410,{0}: this section has no power. Defeat the guardian at {1} to restore it.,"«{0}»: на этом участке нет питания. Победи стража на станции «{1}», чтобы его восстановить."
 902411,The line has no power beyond {0}.,За станцией «{0}» на линии нет питания.
 902412,The train is stuck at {0}: that section has no power.,Поезд застрял на станции «{0}»: на этом участке нет питания.
@@ -6132,7 +6132,7 @@ Day 6
 The crew's whereabouts are unknown. The storm is back and the sky is yellow. A few people want to go back to the plant - they say the control room has protective suits and a radio. I can't stop them.
 
 Day 9
-I'm the last crew member on this aircraft. The heavy weapons crate at the front of the hold was meant for the Army Camp garrison. If anyone can use it, take it. Don't sit and wait like we did.","<color=#661100>Транспортник 0666 – служебный журнал грузового мастера</color>\n\nДень 1, 14:20\nПятый реактор вышел из-под контроля и взорвался. Система связи не отвечает: ни штаб, ни вышка, ни пульт управления станции. Командир говорит, что ждать приказов нельзя, и мы выполняем план эвакуации: персонал АЭС и местные жители едут спецпоездами до станции «Старый аэропорт», а мы забираем их прямо со стоянки рядом с платформой.\n\nДень 1, 17:05\nПришёл второй поезд. Больше сотни человек, грузовой отсек забит. Мы уже закрывали рампу, когда небо на юго-западе вспыхнуло – так бело, что невозможно было открыть глаза.\n\nДень 1, 17:30\nЭлектромагнитное оборудование самолёта полностью выведено из строя. Авионика, рации, пусковое питание – всё пахнет гарью, и ни один из четырёх двигателей не запускается. Командир в тот момент был в кабине и не выжил. Мы сидим в стальном гробу весом семьдесят тонн.\n\nДень 3\nВторой пилот и штурман забрали две последние исправные батареи и запасную рацию и ушли в Военный лагерь искать рабочий передатчик. Сказали, что вернутся через день.\n\nДень 6\nО местонахождении экипажа ничего не известно. Буря вернулась, небо жёлтое. Несколько человек хотят вернуться на АЭС – говорят, на пульте управления есть защитные костюмы и рация. Я не могу их остановить.\n\nДень 9\nЯ последний член экипажа на борту. Ящик с тяжёлым оружием в передней части отсека предназначался гарнизону Военного лагеря. Если кому-то он пригодится – забирайте. Не ждите, как мы."
+I'm the last crew member on this aircraft. The heavy weapons crate at the front of the hold was meant for the Army Camp garrison. If anyone can use it, take it. Don't sit and wait like we did.","<color=#661100>Транспортник 0666 – служебный журнал грузового мастера</color>\n\nДень 1, 14:20\nПятый реактор вышел из-под контроля и взорвался. Система связи не отвечает: ни штаб, ни вышка, ни пульт управления станции. Командир говорит, что ждать приказов нельзя, и мы выполняем план эвакуации: персонал АЭС и местные жители едут спецпоездами до станции «Старый аэропорт», а мы забираем их прямо со стоянки рядом с платформой.\n\nДень 1, 17:05\nПришёл второй поезд. Больше сотни человек, грузовой отсек забит. Мы уже закрывали рампу, когда небо на юго-западе вспыхнуло – так бело, что невозможно было открыть глаза.\n\nДень 1, 17:30\nЭлектромагнитное оборудование самолёта полностью выведено из строя. Авионика, рации, пусковое питание – всё пахнет гарью, и ни один из четырёх двигателей не запускается. Командир в тот момент был в кабине и не выжил. Мы сидим в стальном гробу весом семьдесят тонн.\n\nДень 3\nВторой пилот и штурман забрали две последние исправные батареи и запасную рацию и ушли в Военный лагерь искать рабочий передатчик. Сказали, что вернутся через день.\n\nДень 6\nО местонахождении экипажа ничего не известно. Буря вернулась, небо жёлтое. Несколько человек хотят вернуться на АЭС – говорят, на пульте управления есть защитные костюмы и рация. Я не могу их остановить.\n\nДень 9\nЯ последний член экипажа на борту. Ящик с тяжёлым оружием в передней части отсека предназначался гарнизону Военного лагеря. Если кому-то он пригодится – забирайте. Не ждите, как мы."
 902666,"<color=#661100>Emergency Evacuation Notice (No. 2)</color>
 
 To all plant staff and their families:
@@ -6146,12 +6146,12 @@ Following a serious accident at Unit 5, the evacuation plan for the plant and th
 
 Stay calm. The evacuation will be complete within forty-eight hours.
 
-- Emergency Command","<color=#661100>Уведомление об экстренной эвакуации (№ 2)</color>\n\nВсем сотрудникам станции и членам их семей:\n\nВ связи с тяжёлой аварией на энергоблоке № 5 план эвакуации территории станции и прилегающих районов вводится немедленно.\n\n1. Соберитесь по сменам и отправляйтесь спецпоездом до станции «Старый аэропорт». Поезда ходят каждые два часа.\n2. Не более одного места ручной клади на человека. Домашних животных и крупные вещи брать запрещено.\n3. По прибытии выполняйте указания экипажа и проходите на посадку по очереди. Военный транспортный самолёт доставит эвакуируемых в безопасную зону.\n4. Своевременно принимайте выданные таблетки йода. Не получившие их могут взять таблетки в медпункте на платформе.\n\nСохраняйте спокойствие. Эвакуация будет завершена в течение сорока восьми часов.\n\n– Штаб по чрезвычайным ситуациям"
+- Emergency Command",<color=#661100>Уведомление об экстренной эвакуации (№ 2)</color>\n\nВсем сотрудникам станции и членам их семей:\n\nВ связи с тяжёлой аварией на энергоблоке № 5 план эвакуации территории станции и прилегающих районов вводится немедленно.\n\n1. Соберитесь по сменам и отправляйтесь спецпоездом до станции «Старый аэропорт». Поезда ходят каждые два часа.\n2. Не более одного места ручной клади на человека. Домашних животных и крупные вещи брать запрещено.\n3. По прибытии выполняйте указания экипажа и проходите на посадку по очереди. Военный транспортный самолёт доставит эвакуируемых в безопасную зону.\n4. Своевременно принимайте выданные таблетки йода. Не получившие их могут взять таблетки в медпункте на платформе.\n\nСохраняйте спокойствие. Эвакуация будет завершена в течение сорока восьми часов.\n\n– Штаб по чрезвычайным ситуациям
 902667,"The aircraft is still here. The captain is dead, right there in his seat.
 
 I went over the wiring from nose to tail, three times. Avionics bay, radios, generator control boxes - every piece of electronics is burnt out, and the harnesses crumble when you touch them.
 
-It can't be fixed.","Самолёт всё ещё здесь. Командир мёртв, прямо в своём кресле.\n\nЯ проверил проводку от носа до хвоста, трижды. Отсек авионики, рации, блоки управления генераторами – вся электроника выгорела, жгуты рассыпаются в руках.\n\nПочинить нельзя."
+It can't be fixed.","Самолёт всё ещё здесь. Командир мёртв, прямо в своём кресле.\n\nЯ проверил проводку от носа до хвоста, трижды. Отсек авионики, рации, блоки управления генераторами – вся электроника выгорела, жгуты рассыпаются в руках.\n\nПочинить нельзя."
 902668,"<color=#661100>Cargo handover slip  No. 0666-17</color>
 
 Carrier: Transport 0666
@@ -6164,7 +6164,7 @@ Field rations ........... 20 cases (handed out to evacuees)
 
 Note: the heavy weapons crate travels with the aircraft. Not to be opened without the escort officer's signature.
 
-Escort officer: ________","<color=#661100>Накладная на передачу груза  № 0666-17</color>\n\nПеревозчик: транспортник 0666\nОтправление: Старый аэропорт\nПолучатель: гарнизон Военного лагеря, рота снабжения\n\nБезоткатное орудие ........ 1 шт.\nСнаряды к орудию .......... 12 шт.\nСухие пайки ............... 20 ящиков (розданы эвакуируемым)\n\nПримечание: ящик с тяжёлым оружием следует вместе с самолётом. Не вскрывать без подписи офицера сопровождения.\n\nОфицер сопровождения: ________"
+Escort officer: ________","<color=#661100>Накладная на передачу груза  № 0666-17</color>\n\nПеревозчик: транспортник 0666\nОтправление: Старый аэропорт\nПолучатель: гарнизон Военного лагеря, рота снабжения\n\nБезоткатное орудие ........ 1 шт.\nСнаряды к орудию .......... 12 шт.\nСухие пайки ............... 20 ящиков (розданы эвакуируемым)\n\nПримечание: ящик с тяжёлым оружием следует вместе с самолётом. Не вскрывать без подписи офицера сопровождения.\n\nОфицер сопровождения: ________"
 902669,"Four days since the crew left, and they're still not back.
 
 There's nothing but static on the radio. Two more died last night. That storm - breathe it in and your throat feels like it's on fire.
@@ -6175,7 +6175,7 @@ Whoever finds this note: follow the railway north-west and you'll reach the Army
 
 Whatever you do, don't go near the Nuclear Plant.
 
-- Escort private Chen","Четыре дня, как экипаж ушёл, а их всё нет.\n\nВ рации одно шипение. Прошлой ночью умерли ещё двое. Эта буря – вдохнёшь, и горло горит.\n\nМне приказали сопроводить этот ящик с тяжёлым оружием до Военного лагеря. Теперь думаю: если бы в лагере кто-то ещё был жив, за нами давно бы пришли.\n\nТому, кто найдёт записку: иди вдоль путей на северо-запад – выйдешь к Военному лагерю. Забери то, что в ящике. Всё равно его прислали сюда воевать.\n\nЧто бы ни случилось, не подходи к АЭС.\n\n– Рядовой сопровождения Чэнь"
+- Escort private Chen","Четыре дня, как экипаж ушёл, а их всё нет.\n\nВ рации одно шипение. Прошлой ночью умерли ещё двое. Эта буря – вдохнёшь, и горло горит.\n\nМне приказали сопроводить этот ящик с тяжёлым оружием до Военного лагеря. Теперь думаю: если бы в лагере кто-то ещё был жив, за нами давно бы пришли.\n\nТому, кто найдёт записку: иди вдоль путей на северо-запад – выйдешь к Военному лагерю. Забери то, что в ящике. Всё равно его прислали сюда воевать.\n\nЧто бы ни случилось, не подходи к АЭС.\n\n– Рядовой сопровождения Чэнь"
 902670,The transport's hold is a mess. This evacuation never left the ground.,Грузовой отсек транспортника разгромлен. Эта эвакуация так и не оторвалась от земли.
 902721,Port Station · Line Start,Станция «Порт» · начало линии
 902722,Start,Старт
@@ -6234,7 +6234,7 @@ Split one rod into two charges, pack each into a canister with explosive and a d
 
 Made at a Simple Workbench or a Workbench, two bombs per spent fuel rod.
 
-Throw it and get away at once. No suit protects you at ground zero, and do not step into the cloud.","<color=#661100>Аварийная группа активной зоны – для служебного пользования – не выносить</color>\n\nКак только оболочка отработанного топливного стержня вскрыта, то, что внутри, грязнее любой взрывчатки.\n\nРаздели один стержень на два заряда, упакуй каждый в контейнер со взрывчаткой и детонатором – получишь две радиационные бомбы. После взрыва остаётся радиоактивное облако, в котором не прекращаются разряды; почти ничто, что туда попадёт, не выходит живым.\n\nИзготавливается на простом верстаке или верстаке, две бомбы из одного отработанного стержня.\n\nБросай и сразу уходи. В эпицентре не спасёт никакой костюм, и не заходи в облако."
+Throw it and get away at once. No suit protects you at ground zero, and do not step into the cloud.","<color=#661100>Аварийная группа активной зоны – для служебного пользования – не выносить</color>\n\nКак только оболочка отработанного топливного стержня вскрыта, то, что внутри, грязнее любой взрывчатки.\n\nРаздели один стержень на два заряда, упакуй каждый в контейнер со взрывчаткой и детонатором – получишь две радиационные бомбы. После взрыва остаётся радиоактивное облако, в котором не прекращаются разряды; почти ничто, что туда попадёт, не выходит живым.\n\nИзготавливается на простом верстаке или верстаке, две бомбы из одного отработанного стержня.\n\nБросай и сразу уходи. В эпицентре не спасёт никакой костюм, и не заходи в облако."
 902870,Host is on another floor; the train passes through track obstacles,Хост на другом уровне; поезд проходит сквозь препятствия на путях
 902871,The ride was interrupted; you were set down at the nearest platform,Поездка прервана; тебя высадили на ближайшей платформе
 902872,{0} could not ride along and is at a platform,{0} не смог(ла) уехать и находится на платформе
@@ -6276,11 +6276,11 @@ Throw it and get away at once. No suit protects you at ground zero, and do not s
 903001,Skip tutorial,Пропустить
 903002,"Skip the tutorial?
 
-You can turn it back on in Settings → Game Settings. It applies to the next new world.","Пропустить обучение?\n\nЕго можно снова включить в Настройки → Настройки игры. Оно сработает в следующем новом мире."
+You can turn it back on in Settings → Game Settings. It applies to the next new world.",Пропустить обучение?\n\nЕго можно снова включить в Настройки → Настройки игры. Оно сработает в следующем новом мире.
 903003,SKIP TUTORIAL,ПРОПУСК ОБУЧЕНИЯ
 903004,"Play the tutorial?
 
-It walks you through the basics at the crash site, one step at a time. You can skip it at any moment.","Пройти обучение?\n\nНа месте крушения оно шаг за шагом покажет основы. Его можно пропустить в любой момент."
+It walks you through the basics at the crash site, one step at a time. You can skip it at any moment.",Пройти обучение?\n\nНа месте крушения оно шаг за шагом покажет основы. Его можно пропустить в любой момент.
 903006,Start,Начать
 903007,Skip,Пропустить
 903008,Tutorial complete,Обучение пройдено
@@ -6317,22 +6317,22 @@ It walks you through the basics at the crash site, one step at a time. You can s
 903039,[{0}] Aim,[{0}] Прицелиться
 903040,"You crawled out of the crashed helicopter.
 The tutorial bar on the left tells you what to do next, and the pulsing markers show where.
-If you already know a step, just do it – or skip the tutorial at any time.","Вы выбрались из разбившегося вертолёта.\nПанель обучения слева подскажет, что делать дальше, а мигающие метки покажут где.\nЕсли шаг уже знаком, просто выполните его – или пропустите обучение в любой момент."
+If you already know a step, just do it – or skip the tutorial at any time.","Вы выбрались из разбившегося вертолёта.\nПанель обучения слева подскажет, что делать дальше, а мигающие метки покажут где.\nЕсли шаг уже знаком, просто выполните его – или пропустите обучение в любой момент."
 903042,"Press [{0}] near a container or body to search it.\nShift + left-click moves items quickly, Ctrl + right-click moves half a stack, Alt + right-click moves one.\nYour backpack has limited space – take what you need most.","Нажмите [{0}] рядом с контейнером или телом, чтобы обыскать его.\nShift + левый клик быстро переносит, Ctrl + правый клик переносит половину стопки, Alt + правый клик – одну штуку.\nМеста в рюкзаке мало – берите самое нужное."
 903043,"The character panel shows your gear on the left and your backpack on the right.
 Drag a weapon into a weapon slot to equip it, switch with the number keys, and press [{0}] to holster.
-Clothes have pockets too – wearing them gives you more space.","В окне персонажа слева снаряжение, справа рюкзак.\nПеретащите оружие в слот, чтобы взять его; переключайтесь цифровыми клавишами, [{0}] – убрать оружие.\nУ одежды тоже есть карманы – надетая, она даёт больше места."
+Clothes have pockets too – wearing them gives you more space.","В окне персонажа слева снаряжение, справа рюкзак.\nПеретащите оружие в слот, чтобы взять его; переключайтесь цифровыми клавишами, [{0}] – убрать оружие.\nУ одежды тоже есть карманы – надетая, она даёт больше места."
 903044,"Press [{0}] to open crafting. Recipes you have materials for light up.
-More recipes need stations such as a workbench, or are unlocked through skills and letters.","Нажмите [{0}], чтобы открыть создание. Рецепты, для которых хватает материалов, подсвечиваются.\nДругим рецептам нужны станции вроде верстака, либо они открываются навыками и письмами."
+More recipes need stations such as a workbench, or are unlocked through skills and letters.","Нажмите [{0}], чтобы открыть создание. Рецепты, для которых хватает материалов, подсвечиваются.\nДругим рецептам нужны станции вроде верстака, либо они открываются навыками и письмами."
 903045,"The body diagram in the character panel shows each body part's injuries.
-Bleeding keeps draining your blood – a bandage or a piece of cloth stops it.","Схема тела в окне персонажа показывает ранения каждой части.\nКровотечение постоянно отнимает кровь – бинт или кусок ткани его остановят."
+Bleeding keeps draining your blood – a bandage or a piece of cloth stops it.",Схема тела в окне персонажа показывает ранения каждой части.\nКровотечение постоянно отнимает кровь – бинт или кусок ткани его остановят.
 903046,"A campfire keeps you warm, gives light and cooks food.
 You need matches or another fire starter to light it, and wood to keep it burning.
-Nights are cold and dangerous – stay near firelight and shelter.","Костёр греет, светит и позволяет готовить еду.\nЧтобы разжечь его, нужны спички или другое огниво, а чтобы горел – дрова.\nНочи холодные и опасные – держитесь ближе к огню и укрытию."
+Nights are cold and dangerous – stay near firelight and shelter.","Костёр греет, светит и позволяет готовить еду.\nЧтобы разжечь его, нужны спички или другое огниво, а чтобы горел – дрова.\nНочи холодные и опасные – держитесь ближе к огню и укрытию."
 903047,"Press [{0}] to attack. Swinging costs stamina, and you slow down when it runs out.
-These two infected are penned in by tire piles and can't get out – practise freely.","Нажмите [{0}], чтобы атаковать. Удары тратят выносливость, а когда она кончается, вы замедляетесь.\nЭти двое заражённых заперты за грудами шин и не выберутся – тренируйтесь спокойно."
+These two infected are penned in by tire piles and can't get out – practise freely.","Нажмите [{0}], чтобы атаковать. Удары тратят выносливость, а когда она кончается, вы замедляетесь.\nЭти двое заражённых заперты за грудами шин и не выберутся – тренируйтесь спокойно."
 903048,"Hold [{0}] to aim, press [{1}] to fire and [{2}] to reload.
-Gunshots normally draw zombies from far away; melee and bows are much quieter. Ammo is precious.","Удерживайте [{0}], чтобы целиться, [{1}] – выстрел, [{2}] – перезарядка.\nОбычно выстрелы привлекают зомби издалека; ближний бой и луки куда тише. Патроны ценны."
+Gunshots normally draw zombies from far away; melee and bows are much quieter. Ammo is precious.","Удерживайте [{0}], чтобы целиться, [{1}] – выстрел, [{2}] – перезарядка.\nОбычно выстрелы привлекают зомби издалека; ближний бой и луки куда тише. Патроны ценны."
 903049,"You've got the basics.\nHead east to the town and the laboratory for supplies, and find somewhere safe before dark. You can reread every tip in the Guide.\nGood luck – stay alive.","Основы освоены.\nОтправляйтесь на восток, в город и лабораторию, за припасами и до темноты найдите безопасное место. Все подсказки можно перечитать в Справочнике.\nУдачи – выживите."
 903050,[{0}] Fire,[{0}] Выстрел
 903051,[{0}] Reload,[{0}] Перезарядка
@@ -6389,7 +6389,7 @@ Gunshots normally draw zombies from far away; melee and bows are much quieter. A
 903059,[{0}] Toggle the light,[{0}] Включить/выключить свет
 903066,"At night you can barely see; a flashlight lights the way ahead.
 Equip it in the light slot of the character panel and load batteries of the matching type (left-click the flashlight → ""Install Battery""). They drain as you use it.
-Press [{0}] to switch it on and off.","Ночью почти ничего не видно — фонарик освещает путь.\nНадень его в слот освещения в окне персонажа и вставь батарейки подходящего типа (ЛКМ по фонарику → «Установить аккумулятор»). Они садятся по мере работы.\nНажми [{0}], чтобы включить или выключить."
+Press [{0}] to switch it on and off.","Ночью почти ничего не видно — фонарик освещает путь.\nНадень его в слот освещения в окне персонажа и вставь батарейки подходящего типа (ЛКМ по фонарику → «Установить аккумулятор»). Они садятся по мере работы.\nНажми [{0}], чтобы включить или выключить."
 903067,Tutorial supplies: the items you need were added to your backpack (or dropped at your feet if it's full).,"Снабжение обучения: нужные предметы добавлены в рюкзак (или лежат у ног, если он полон)."
 900248,Sprite region {0} is not set; the {1} region is used when the item is worn.,Область спрайта {0} не задана; при ношении используется область {1}.
 900979,"mod.json is missing modGuid, so this MOD cannot be identified.","В mod.json отсутствует modGuid, поэтому этот МОД не удаётся опознать."
@@ -6706,7 +6706,7 @@ Press [{0}] to switch it on and off.","Ночью почти ничего не �
 904071,Electric furnace is underpowered: smelting at {0}% speed. Add generators or switch off other devices to restore it,Электропечи не хватает энергии: плавка идёт на {0}% скорости. Добавьте генераторы или отключите другие устройства
 904072,Electric furnace has no power and cannot smelt. Check your generators and wiring,У электропечи нет питания и она не может плавить. Проверьте генераторы и проводку
 904101,SECURITY NOTICE,ВНИМАНИЕ
-904102,<color=#ffcc66>MODs with executable files detected:</color>\n{0}\n\nOfficially supported MODs for this game contain data files only (stats / sprites / audio) and never need an executable. MODs that ship .exe / .dll / script files are third-party code mods. <color=#ffcc66>They are outside official support and are not reviewed by the developer</color>.\n\nWe do not encourage installing them. If you still want to use them we suggest:\n· Only install work from authors you trust and check the comments first\n· Back up your saves beforehand and do not run installers as administrator\n· If the game crashes or saves / multiplayer misbehave try disabling these MODs first\nThird-party code is beyond our control so we can rarely help troubleshoot problems it causes. Thank you for understanding.,<color=#ffcc66>Обнаружены МОДы с исполняемыми файлами:</color>\n{0}\n\nОфициально поддерживаемые МОДы для этой игры состоят только из файлов данных (параметры / спрайты / звук) и не требуют исполняемых файлов. МОДы с файлами .exe / .dll / скриптами — это сторонние кодовые моды. <color=#ffcc66>Они не поддерживаются официально и не проверялись разработчиком</color>.\n\nМы не рекомендуем их устанавливать. Если вы всё же хотите их использовать советуем:\n· Устанавливайте только работы авторов которым доверяете и сначала читайте комментарии\n· Заранее сделайте резервную копию сохранений и не запускайте установщики от имени администратора\n· При вылетах или проблемах с сохранениями / сетевой игрой сначала отключите эти МОДы\nСторонний код находится вне нашего контроля и мы редко можем помочь с вызванными им проблемами. Спасибо за понимание.
+904102,<color=#ffcc66>MODs with executable files detected:</color>\n{0}\n\nOfficially supported MODs for this game contain data files only (stats / sprites / audio) and never need an executable. MODs that ship .exe / .dll / script files are third-party code mods. <color=#ffcc66>They are outside official support and are not reviewed by the developer</color>.\n\nWe do not encourage installing them. If you still want to use them we suggest:\n· Only install work from authors you trust and check the comments first\n· Back up your saves beforehand and do not run installers as administrator\n· If the game crashes or saves / multiplayer misbehave try disabling these MODs first\nThird-party code is beyond our control so we can rarely help troubleshoot problems it causes. Thank you for understanding.,<color=#ffcc66>Обнаружены МОДы с исполняемыми файлами:</color>\n{0}\n\nОфициально поддерживаемые МОДы для этой игры состоят только из файлов данных (параметры / спрайты / звук) и не требуют исполняемых файлов. МОДы с файлами .exe / .dll / скриптами — это сторонние кодовые моды. <color=#ffcc66>Они не поддерживаются официально и не проверялись разработчиком</color>.\n\nМы не рекомендуем их устанавливать. Если вы всё же хотите их использовать советуем:\n· Устанавливайте только работы авторов которым доверяете и сначала читайте комментарии\n· Заранее сделайте резервную копию сохранений и не запускайте установщики от имени администратора\n· При вылетах или проблемах с сохранениями / сетевой игрой сначала отключите эти МОДы\nСторонний код находится вне нашего контроля и мы редко можем помочь с вызванными им проблемами. Спасибо за понимание.
 904103,I UNDERSTAND,ПОНЯТНО
 904104,REMIND ME LATER,НАПОМНИТЬ ПОЗЖЕ
 904105,Workshop item {0},Предмет Мастерской {0}
