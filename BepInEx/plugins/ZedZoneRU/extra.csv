@@ -1,0 +1,27 @@
+id,source,target
+x1,CLEAR CACHE,ОЧИСТИТЬ КЭШ
+x2,FEEDBACK,ОБРАТНАЯ СВЯЗЬ
+x3,JOIN OUR DISCORD,НАШ DISCORD
+x4,MOD CENTER,ЦЕНТР МОДОВ
+x5,SAVE FILES,ФАЙЛЫ СОХРАНЕНИЙ
+x6,TWITTER\nDEVLOG,TWITTER\nДНЕВНИК РАЗРАБОТКИ
+x7,YOUTUBE\nDEVLOG,YOUTUBE\nДНЕВНИК РАЗРАБОТКИ
+x8,[LOADING   ],[ЗАГРУЗКА   ]
+x9,[LOADING.  ],[ЗАГРУЗКА.  ]
+x10,[LOADING.. ],[ЗАГРУЗКА.. ]
+x11,[LOADING...],[ЗАГРУЗКА...]
+re1,^DAY (\d+)$,ДЕНЬ $1
+re2,^WEIGHT:\s*(\d+(?:\.\d+)?)$,ВЕС: $1
+x12,RELOADING...,ПЕРЕЗАРЯДКА...
+x13,CLEAR GROUND,ОЧИСТИТЬ ЗЕМЛЮ
+x14,BUG REPORT,СООБЩИТЬ ОБ ОШИБКЕ
+x15,CLEAR INVALID DATA,ОЧИСТИТЬ НЕВЕРНЫЕ ДАННЫЕ
+x16,KEY MAPPING,НАЗНАЧЕНИЕ КЛАВИШ
+x17,NEW GAME SETTING,НАСТРОЙКИ НОВОЙ ИГРЫ
+x18,CANNEL,ОТМЕНА
+x19,NOTES,ЗАМЕТКИ
+x20,LETTER,ПИСЬМО
+x21,TECHNOLOGY,ТЕХНОЛОГИИ
+x22,PHYSICAL,ФИЗИЧЕСКИЙ
+x23,GAMEDATA,ДАННЫЕ ИГРЫ
+x24,Shotgun,Дробовик
