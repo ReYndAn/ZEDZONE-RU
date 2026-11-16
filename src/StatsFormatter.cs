@@ -15,7 +15,7 @@ namespace ZedZoneRU
     {
         const string LabelColor = "#a8a8a8";
 
-        static readonly Regex Marker = new(@"СНИЖЕНИЕ УРОНА|ПОТЕРЯ ТЕПЛА|ВЕС СНАРЯЖЕНИЯ|ОБЪ[ЕЁ]М КРОВИ|\bLv\.\s*\d", RegexOptions.Compiled);
+        static readonly Regex Marker = new(@"СНИЖЕНИЕ УРОНА|ПОТЕРЯ ТЕПЛА|ВЕС СНАРЯЖЕНИЯ|ОБЪ[ЕЁ]М КРОВИ|\bLv\.\s*\d|\bур\.\d+\s|(?i:восст(?:ановление|\.) (?:здоровья|выносливости)):\s*\+[\d.]+/[sс]", RegexOptions.Compiled);
 
         // "<tags>ГОЛОВА СНИЖЕНИЕ УРОНА : 17%"
         static readonly Regex Armor = new(@"^(\s*(?:<[^>]+>)*)\s*(ГОЛОВА|ТОРС|БЕДРО|БЁДРА|БЕДРА|СТУПНИ|РУКА|РУКИ|НОГИ)\s+СНИЖЕНИЕ\s+УРОНА\s*:\s*(.*)$", RegexOptions.Compiled);
@@ -26,11 +26,15 @@ namespace ZedZoneRU
         };
 
         // "<tags>LABEL : value"
-        static readonly Regex LabelValue = new(@"^(\s*(?:<[^>]+>)*)\s*([А-ЯЁ][А-ЯЁ ]*[А-ЯЁ])\s*:\s*(.*)$", RegexOptions.Compiled);
+        static readonly Regex LabelValue = new(@"^(\s*(?:<[^>]+>)*)\s*([А-ЯЁа-яё][А-ЯЁа-яё. ]*[А-ЯЁа-яё])\s*:\s*(.*)$", RegexOptions.Compiled);
         static readonly Dictionary<string, string> Labels = new()
         {
             ["СКОРОСТЬ ПЕРЕДВИЖЕНИЯ"] = "Скорость хода",
             ["ТОЧНОСТЬ ПРИЦЕЛИВАНИЯ"] = "Точность стрельбы",
+            ["ТОЧНОСТЬ СТРЕЛЬБЫ"] = "Точность стрельбы",
+            // the "+1/с" value already says it is a rate; full "Восст. выносливости" + value is wider than the panel
+            ["ВОССТ. ЗДОРОВЬЯ"] = "Восст. здоровья",
+            ["ВОССТ. ВЫНОСЛИВОСТИ"] = "Восст. выносл.",
             ["СИЛА БЛИЖНЕГО БОЯ"] = "Сила удара",
             ["СКОРОСТЬ АТАКИ"] = "Скорость атаки",
             ["ПОТЕРЯ ТЕПЛА"] = "Потеря тепла",
@@ -38,6 +42,8 @@ namespace ZedZoneRU
             ["ОБЪЁМ КРОВИ"] = "Кровь",
             ["ОБЪЕМ КРОВИ"] = "Кровь",
             ["ТЕМПЕРАТУРА ТЕЛА"] = "Температура тела",
+            ["ВОССТАНОВЛЕНИЕ ЗДОРОВЬЯ"] = "Восст. здоровья",
+            ["ВОССТАНОВЛЕНИЕ ВЫНОСЛИВОСТИ"] = "Восст. выносл.",
         };
 
         static readonly Regex Lv = new(@"\bLv\.\s*(\d+)", RegexOptions.Compiled);
@@ -64,12 +70,12 @@ namespace ZedZoneRU
                 return m.Groups[1].Value + Lbl("Защита " + ArmorPart[m.Groups[2].Value]) + " " + m.Groups[3].Value.Trim();
 
             m = LabelValue.Match(l);
-            if (m.Success && Labels.TryGetValue(m.Groups[2].Value.Trim(), out var nice))
+            if (m.Success && Labels.TryGetValue(m.Groups[2].Value.Trim().ToUpperInvariant(), out var nice))
             {
                 var v = m.Groups[3].Value.Trim();
                 v = Ml.Replace(v, "$1 мл");
                 v = Celsius.Replace(v, "$1 °C");
-                v = Regex.Replace(v, @"(\d)\s*℃", "$1 °C");
+                v = Regex.Replace(v, @"/s\b", "/с");
                 // the weight is already shown in the inventory
                 if (nice == "Вес снаряжения") return null;
                 return m.Groups[1].Value + Lbl(nice) + " " + v;

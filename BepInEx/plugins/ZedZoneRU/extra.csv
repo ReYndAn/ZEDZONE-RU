@@ -1,4 +1,4 @@
-id,source,target
+﻿id,source,target
 x1,CLEAR CACHE,ОЧИСТИТЬ КЭШ
 x2,FEEDBACK,ОБРАТНАЯ СВЯЗЬ
 x3,JOIN OUR DISCORD,НАШ DISCORD
@@ -27,3 +27,53 @@ x23,GAMEDATA,ДАННЫЕ ИГРЫ
 x24,Shotgun,Дробовик
 fx1,"(КАРТА\s*:[^\n]*?)[ \t]{2,}((?:<[^>]+>)*СЛОЖНОСТЬ)",$1\n$2
 gr1,КАРТА\s*:.*\n\s*(?:<[^>]+>)*СЛОЖНОСТЬ\s*:,8
+x25,NEARBY ITEMS,РЯДОМ
+x26,EQUIPMENT,СНАРЯЖЕНИЕ
+x27,CRAFT,КРАФТ
+x28,BUILD,СТРОЙКА
+x29,SKILL TREE,ДЕРЕВО НАВЫКОВ
+x30,GUIDE,РУКОВОДСТВО
+x31,SECTION,РАЗДЕЛ
+x33,AMBIENT OCCLUSION,ЗАТЕНЕНИЕ ОКРУЖЕНИЯ
+x34,60 FPS,60 КАДРОВ/С
+x35,doctor's medicine cabinet,Аптечка врача
+x36,spider robot wreckage,Обломки робота-паука
+x37,sand bag,Мешок с песком
+# --- v0.3: названия клавиш в «Назначении клавиш» ---
+k1,UpArrow,Стрелка вверх
+k2,DownArrow,Стрелка вниз
+k3,LeftArrow,Стрелка влево
+k4,RightArrow,Стрелка вправо
+k5,LeftShift,Левый Shift
+k6,RightShift,Правый Shift
+k7,LeftControl,Левый Ctrl
+k8,RightControl,Правый Ctrl
+k9,LeftAlt,Левый Alt
+k10,RightAlt,Правый Alt
+k11,Mouse0,ЛКМ
+k12,Mouse1,ПКМ
+k13,Mouse2,СКМ
+k14,Mouse3,Кнопка мыши 4
+k15,Mouse4,Кнопка мыши 5
+k16,Escape,Esc
+k17,Return,Enter
+k18,Backspace,Backspace
+k19,Delete,Del
+k20,CapsLock,Caps Lock
+k21,BackQuote,Ё / `
+# --- v0.3: HUD (строки без трёх латинских букв подряд — только через fx) ---
+fx2,^EV$,СР
+fx3,^0*(\d+) D$,ДЕНЬ $1
+fx4,(\d)\s?m$,$1 м
+fx5,(\d)\s?km$,$1 км
+# панель характеристик: английские единицы
+fx6,(\d)/s\b,$1/с
+fx7,(\d)\s?ml\b,$1 мл
+fx8,\bLv\.\s?(\d),ур.$1
+# --- ux: только для версии с переработкой интерфейса ([Interface] Rework = true) ---
+# без пробела перед двоеточием: «КАРТА : 2026» -> «КАРТА: 2026»
+ux1,"(?<=[А-Яа-яЁё)\]]|</color>)[ \t]+:(?=\s|$|<)",:
+# пробел внутри цветного тега: «Требуется предмет </color>:» -> «Требуется предмет</color>:»
+ux3,"(?<=[А-Яа-яЁё])[ \t]+((?:</color>)+)[ \t]*:",$1:
+# навыки: «Красная доза X 1;» -> «Красная доза ×1»
+ux2,"(\S) X (\d+);",$1 ×$2

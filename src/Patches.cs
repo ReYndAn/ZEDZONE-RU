@@ -41,10 +41,11 @@ namespace ZedZoneRU
     {
         [HarmonyPatch(typeof(Text), nameof(Text.text), MethodType.Setter)]
         [HarmonyPrefix]
-        static void SetText(ref string value)
+        static void SetText(Text __instance, ref string value)
         {
             if (!Plugin.CfgTranslate.Value || string.IsNullOrEmpty(value) || !Lang.Active) return;
             try { value = Translator.Translate(value); } catch { }
+            if (Plugin.CfgRework.Value) try { value = UiPolish.BeforeSet(__instance, value); } catch { }
         }
 
         [HarmonyPatch(typeof(Text), nameof(Text.text), MethodType.Setter)]
@@ -54,6 +55,7 @@ namespace ZedZoneRU
             if (!Lang.Active) return;
             FontScaler.Apply(__instance);
             SlotGrow.Apply(__instance);
+            if (Plugin.CfgRework.Value) UiPolish.AfterSet(__instance);
             if (Plugin.CfgAutoFit.Value) AutoFit.Check(__instance);
         }
 
@@ -68,6 +70,7 @@ namespace ZedZoneRU
                 var cur = __instance.text;
                 if (string.IsNullOrEmpty(cur)) return;
                 var t = Translator.Translate(cur);
+                if (Plugin.CfgRework.Value) t = UiPolish.BeforeSet(__instance, t);
                 if (!ReferenceEquals(t, cur) && t != cur) __instance.text = t;
                 else if (Plugin.CfgAutoFit.Value) AutoFit.Check(__instance);
             }
@@ -253,7 +256,7 @@ namespace ZedZoneRU
         {
             try
             {
-                if (p == null) return;
+                if (p == null || !Plugin.CfgRework.Value) return;
                 // only the main-menu list; in-game load/save windows have a different frame
                 if (p.TryCast<GameDataPanel_IngameLoad>() != null || p.TryCast<GameDataPanel_IngameSave>() != null) return;
                 var buttons = p.GetComponentsInChildren<Button>(true);
@@ -285,7 +288,8 @@ namespace ZedZoneRU
     [HarmonyPatch]
     internal static class BodyFigureShrink
     {
-        const float Scale = 0.8f;
+        // interface rework: a bit smaller still, so the bigger stats font above gets room
+        static float Scale => Plugin.CfgRework.Value ? 0.7f : 0.8f;
         static readonly System.Collections.Generic.HashSet<int> Done = new();
 
         [HarmonyPatch(typeof(CharacterBodyPartsPanel), nameof(CharacterBodyPartsPanel.Init))]
@@ -330,6 +334,111 @@ namespace ZedZoneRU
                 Plugin.L.LogInfo($"Body figure: {rts.Count} parts under '{parent.name}' scaled to {Scale}");
             }
             catch (Exception e) { Plugin.L.LogWarning("BodyFigureShrink: " + e.Message); }
+        }
+    }
+
+    /// <summary>
+    /// Item action menu (ButtonsPanel): labels used best fit 7–12, so short ones («РЕМОНТ») were huge and long
+    /// ones tiny, in an oversized frame. Interface rework: one font size, compact rows, frame as wide as the labels.
+    /// </summary>
+    [HarmonyPatch]
+    internal static class ButtonsPanelCompact
+    {
+        const int Font = 8;          // the inventory's regular label size
+        const float RowH = 14f, MinW = 96f, MaxW = 153f, PadX = 14f;
+
+        // original best-fit range of each pooled label (we lower the max, so remember the prefab's value)
+        static readonly System.Collections.Generic.Dictionary<int, (int min, int max)> Orig = new();
+
+        /// <summary>
+        /// Translation-only version: keep the game's window, but the labels use best fit with a large
+        /// maximum, so short Russian words come out huge and long ones tiny. Give every row the size
+        /// of the longest one.
+        /// </summary>
+        static void SameSize(ButtonsPanel panel)
+        {
+            try
+            {
+                var gridTr = panel.transform.Find("Grid");
+                if (gridTr == null) return;
+                var texts = new System.Collections.Generic.List<Text>();
+                int min = 0, max = 0;
+                for (int i = 0; i < gridTr.childCount; i++)
+                {
+                    var c = gridTr.GetChild(i);
+                    if (!c.gameObject.activeSelf) continue;
+                    var t = c.GetComponentInChildren<Text>(true);
+                    if (t == null || string.IsNullOrEmpty(t.text)) continue;
+                    int id = t.GetInstanceID();
+                    if (!Orig.ContainsKey(id) && t.resizeTextForBestFit)
+                        Orig[id] = (t.resizeTextMinSize, t.resizeTextMaxSize);
+                    if (Orig.TryGetValue(id, out var o)) { min = min == 0 ? o.min : Math.Min(min, o.min); max = Math.Max(max, o.max); }
+                    texts.Add(t);
+                }
+                if (texts.Count < 2 || max == 0) return;
+                foreach (var t in texts)
+                {
+                    t.resizeTextForBestFit = true;
+                    t.resizeTextMinSize = min;
+                    t.resizeTextMaxSize = max;
+                }
+                Canvas.ForceUpdateCanvases();
+                int common = max;
+                foreach (var t in texts)
+                {
+                    // the generator works in screen pixels (font size × canvas scale)
+                    float ppu = t.pixelsPerUnit > 0.01f ? t.pixelsPerUnit : 1f;
+                    int used = (int)Math.Floor(t.cachedTextGenerator.fontSizeUsedForBestFit / ppu + 0.01f);
+                    if (used > 0) common = Math.Min(common, used);
+                }
+                common = Math.Max(common, min);
+                foreach (var t in texts) t.resizeTextMaxSize = common;
+            }
+            catch (Exception e) { Plugin.L.LogWarning("ButtonsPanel same size: " + e.Message); }
+        }
+
+        [HarmonyPatch(typeof(ButtonsPanel), nameof(ButtonsPanel.ShowButtons))]
+        [HarmonyPostfix]
+        static void AfterShow(ButtonsPanel __instance)
+        {
+            if (!Lang.Active || __instance == null) return;
+            if (!Plugin.CfgRework.Value) { SameSize(__instance); return; }
+            try
+            {
+                var root = __instance.transform;
+                var gridTr = root.Find("Grid");
+                var frameTr = root.Find("Frame");
+                if (gridTr == null || frameTr == null) return;
+                var grid = gridTr.GetComponent<GridLayoutGroup>();
+                var frame = frameTr.GetComponent<RectTransform>();
+                if (grid == null || frame == null) return;
+
+                int rows = 0; float maxW = 0f;
+                var texts = new System.Collections.Generic.List<Text>();
+                for (int i = 0; i < gridTr.childCount; i++)
+                {
+                    var c = gridTr.GetChild(i);
+                    if (!c.gameObject.activeSelf) continue;
+                    rows++;
+                    var t = c.GetComponentInChildren<Text>(true);
+                    if (t == null) continue;
+                    t.resizeTextForBestFit = false;
+                    t.fontSize = Font;
+                    texts.Add(t);
+                    if (!string.IsNullOrEmpty(t.text)) maxW = Mathf.Max(maxW, t.preferredWidth);
+                }
+                if (rows == 0) return;
+                float w = Mathf.Clamp(Mathf.Ceil(maxW + PadX), MinW, MaxW);
+                // a label that still does not fit shrinks a little instead of being cut
+                foreach (var t in texts)
+                    if (t.preferredWidth > w - 4f) { t.resizeTextForBestFit = true; t.resizeTextMinSize = 6; t.resizeTextMaxSize = Font; }
+
+                grid.cellSize = new Vector2(w, RowH);
+                float h = rows * RowH + 4f;
+                frame.sizeDelta = new Vector2(w + 4f, h);
+                frame.anchoredPosition = new Vector2(frame.anchoredPosition.x, 2f - h / 2f);
+            }
+            catch (Exception e) { Plugin.L.LogWarning("ButtonsPanelCompact: " + e.Message); }
         }
     }
 
@@ -389,7 +498,7 @@ namespace ZedZoneRU
         [HarmonyPrefix]
         static void Show(ref string descriptionStr)
         {
-            if (!Plugin.CfgTooltip.Value || !Lang.Active) return;
+            if (!Plugin.CfgTooltip.Value || !Plugin.CfgRework.Value || !Lang.Active) return;
             try { descriptionStr = TooltipFormatter.Format(descriptionStr); }
             catch (Exception e) { Plugin.L.LogWarning("Tooltip format: " + e.Message); }
         }
@@ -398,7 +507,7 @@ namespace ZedZoneRU
         [HarmonyPrefix]
         static void Refresh(ref string descriptionStr)
         {
-            if (!Plugin.CfgTooltip.Value || !Lang.Active) return;
+            if (!Plugin.CfgTooltip.Value || !Plugin.CfgRework.Value || !Lang.Active) return;
             try { descriptionStr = TooltipFormatter.Format(descriptionStr); }
             catch { }
         }

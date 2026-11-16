@@ -13,7 +13,7 @@ namespace ZedZoneRU
     {
         public const string Guid = "community.zedzone.ru";
         public const string Name = "ZED ZONE Russian Fix";
-        public const string Version = "0.2.3";
+        public const string Version = "0.3.0";
 
         internal static ManualLogSource L;
         internal static string Dir;
@@ -24,6 +24,8 @@ namespace ZedZoneRU
         internal static ConfigEntry<bool> CfgAutoFit;
         internal static ConfigEntry<bool> CfgDumpUntranslated;
         internal static ConfigEntry<bool> CfgDumpTooltips;
+        internal static ConfigEntry<bool> CfgUiAudit;
+        internal static ConfigEntry<bool> CfgRework;
 
         public override void Load()
         {
@@ -43,6 +45,10 @@ namespace ZedZoneRU
                 "Записывать непереведённые строки в BepInEx/plugins/ZedZoneRU/untranslated.txt (для доработки перевода).");
             CfgDumpTooltips = Config.Bind("Debug", "DumpRawTooltips", true,
                 "Записывать исходный текст подсказок в BepInEx/plugins/ZedZoneRU/tooltips_raw.txt.");
+            CfgRework = Config.Bind("Interface", "Rework", true,
+                "Переработка интерфейса: подсказка предмета, панель характеристик, цвета справки на пергаменте, интервалы в настройках, окно загрузки, двоеточия. false — только перевод (русский текст по-прежнему подгоняется под рамки).");
+            CfgUiAudit = Config.Bind("Diagnostics", "UiAudit", false,
+                "Отладка: записывать надписи, которые не помещаются в рамку, и размеры шрифтов (ui_audit.txt, ui_fonts.tsv).");
 
             try { Translator.Init(); }
             catch (Exception e) { L.LogError("Translator init failed: " + e); }
@@ -53,6 +59,9 @@ namespace ZedZoneRU
             TryPatch(h, typeof(TooltipPatches));
             TryPatch(h, typeof(CloseButtonNudge));
             TryPatch(h, typeof(BodyFigureShrink));
+            TryPatch(h, typeof(ButtonsPanelCompact));
+            TryPatch(h, typeof(InventoryLayout));
+            try { AddComponent<UiAuditBehaviour>(); } catch (Exception e) { L.LogWarning("UiAudit: " + e.Message); }
             L.LogMessage($"{Name} {Version} loaded. Entries: {Translator.Count}");
         }
 

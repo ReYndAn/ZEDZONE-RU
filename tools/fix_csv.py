@@ -9,7 +9,7 @@ ZED ZONE — исправление community-перевода (Localization_en_
   1. Восстанавливает ведущие/хвостовые пробелы из английского источника
      (без них в игре слипается текст: «1Ч.», «ЁмкостьВМЕСТИМОСТЬ», «ПРОЧНОСТЬ100»).
   2. Чинит ячейки, испорченные Excel (#NAME?).
-  3. Названия предметов и построек — с заглавной буквы.
+  3. Названия и описания предметов, постройки и навыки — с заглавной буквы.
   4. Применяет ручные правки из overrides.csv (id,target) — это и есть «наш» перевод
      поверх community-файла; после обновления игры просто запустите скрипт ещё раз.
 """
@@ -121,6 +121,21 @@ def main():
 
     log = []
 
+    # 0. Новые строки из обновлений игры: их нет в community-файле, но есть в официальном ru.
+    #    Добавляем строку с английским источником; перевод берётся из overrides.csv,
+    #    а если его там нет — временно из официального файла (с предупреждением).
+    official = os.path.join(LOC, "Localization_en_to_ru.csv")
+    if os.path.exists(official):
+        _, orows = read(official)
+        for r in orows[1:]:
+            if len(r) < 3 or r[0] in by_id or not r[0].isdigit():
+                continue
+            row = [r[0], r[1], overrides.get(r[0], r[2])]
+            data.append(row)
+            by_id[r[0]] = row
+            src = "overrides.csv" if r[0] in overrides else "официального файла (проверить!)"
+            log.append(f"[новая строка] {r[0]}: {r[1]!r}\n    перевод из {src}: {row[2]!r}")
+
     def change(rid, new, why):
         r = by_id[rid]
         if r[2] != new:
@@ -133,8 +148,13 @@ def main():
         if tgt.strip() == "#NAME?":
             continue  # must come from overrides.csv
         # 3. capitalised item (10xxxxx) and building (13xxxxx) names
-        if len(rid) == 7 and rid[:2] in ("10", "13"):
+        # названия предметов (10xxxxx), их описания (11xxxxx), постройки (13xxxxx), навыки (8900–9999)
+        if (len(rid) == 7 and rid[:2] in ("10", "11", "13")) or (rid.isdigit() and 8900 <= int(rid) <= 9999):
             change(rid, cap_first(tgt), "заглавная")
+            tgt = r[2]
+        # навыки: в английском уровень IV местами записан как «IIII»
+        if rid.isdigit() and 8900 <= int(rid) <= 9999 and re.search(r"\bIIII\b", tgt):
+            change(rid, re.sub(r"\bIIII\b", "IV", tgt), "уровень IV")
             tgt = r[2]
         # 1. whitespace from source
         if tgt.strip():

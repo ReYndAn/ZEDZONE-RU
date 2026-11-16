@@ -32,7 +32,7 @@ id,source,target
 26,RELOADING,ПЕРЕЗАРЯДКА
 27,CRAFT,СОЗДАТЬ
 28,PAUSE,ПАУЗА
-29,SORT,СОРТИРОВКА
+29,SORT,СОРТ.
 30,PICK,СОБРАТЬ
 31,BUILD ,ПОСТРОИТЬ 
 32,UNEQUIP,СНЯТЬ
@@ -154,7 +154,7 @@ id,source,target
 158,FIRE RANGE,ДАЛЬНОСТЬ СТРЕЛЬБЫ
 159,SHELL COLLECTOR,СБОРНИК ГИЛЬЗ
 160,CONSTRUCTION TIME,ВРЕМЯ ПОСТРОЙКИ
-161,MATERIAL LIST,СПИСОК МАТЕРИАЛОВ
+161,MATERIAL LIST,МАТЕРИАЛЫ
 162,REQUIRED TIME,ТРЕБУЕМОЕ ВРЕМЯ
 165,<color=#55ff22> Edible </color>,<color=#55ff22> Съедобно </color>
 166,<color=#ff5522> Inedible </color>,<color=#ff5522> Несъедобно </color>
@@ -233,13 +233,13 @@ id,source,target
 276,Blood Volume Recovery,Восстановление крови
 280,<color=#ff3300> BLEEDING </color>,<color=#ff3300> КРОВОТЕЧЕНИЕ </color>
 300,MAP,КАРТА
-301,CHARACTER ATTR,АТРИБУТЫ ПЕРСОНАЖА
-302,CHARACTER STATUS,СОСТОЯНИЕ ПЕРСОНАЖА
+301,CHARACTER ATTR,АТРИБУТЫ
+302,CHARACTER STATUS,СОСТОЯНИЕ
 350,HEAT LOSS,ПОТЕРЯ ТЕПЛА
 351,EQUIPMENT WEIGHT,ВЕС СНАРЯЖЕНИЯ
 352,MELEE ATTACK STRENGTH,СИЛА БЛИЖНЕГО БОЯ
 353,MELEE ATTACK SPEED,СКОРОСТЬ АТАКИ
-354,AIMING ACCURACY,ТОЧНОСТЬ ПРИЦЕЛИВАНИЯ
+354,AIMING ACCURACY,ТОЧНОСТЬ СТРЕЛЬБЫ
 390,VEHICLE NAME,НАЗВАНИЕ ТРАНСПОРТА
 391,VEHICLE WEIGHT,ВЕС ТРАНСПОРТА
 392,ENGINE POWER,МОЩНОСТЬ ДВИГАТЕЛЯ
@@ -284,10 +284,10 @@ id,source,target
 501,NAME,НАЗВАНИЕ
 502,DESCRIPTION,ОПИСАНИЕ
 503,WEIGHT,ВЕС
-504,PRODUCTION TIME,ВРЕМЯ ИЗГОТОВЛЕНИЯ
+504,PRODUCTION TIME,ВРЕМЯ СОЗДАНИЯ
 505,RESEARCH POINT,ОЧКИ ИССЛЕДОВАНИЙ
 506,ITEM CATEGORY,КАТЕГОРИЯ ПРЕДМЕТА
-507,CRAFT METHOD,СПОСОБ ИЗГОТОВЛЕНИЯ
+507,CRAFT METHOD,СПОСОБ СОЗДАНИЯ
 508,DURABILITY,ПРОЧНОСТЬ
 509,<color=#88ff22>CAPACITY</color>,<color=#88ff22>ВМЕСТИМОСТЬ</color>
 510,<color=#aaaaaa>EMPTY</color>,<color=#aaaaaa>ПУСТО</color>
@@ -306,7 +306,7 @@ id,source,target
 536,Remaining,ОСТАЛОСЬ
 537,Overweight,ПЕРЕГРУЗ
 538,Your backpack,ВАШ РЮКЗАК
-539,Nearby Items,ПРЕДМЕТЫ ПОБЛИЗОСТИ
+539,Nearby Items,РЯДОМ
 540,Inventory,ИНВЕНТАРЬ
 541,Equipment,СНАРЯЖЕНИЕ
 542,Crafting,СОЗДАНИЕ
@@ -368,11 +368,11 @@ id,source,target
 826,<color=#88bb55>Decoder</color>,<color=#88bb55>Декодер</color>
 827,<color=#88bb55>Walkie-Talkie</color>,<color=#88bb55>Рация</color>
 830,<color=#aaaaaa>Battery Size</color>,<color=#aaaaaa>Тип батареи</color>
-831,<color=#aaaaaa>AAA CELL</color>,<color=#aaaaaa>ЭЛЕМЕНТ AAA</color>
-832,<color=#aaaaaa>AA CELL</color>,<color=#aaaaaa>ЭЛЕМЕНТ AA</color>
-833,<color=#aaaaaa>C CELL</color>,<color=#aaaaaa>ЭЛЕМЕНТ C</color>
-834,<color=#aaaaaa>9V CELL</color>,<color=#aaaaaa>КРОНА 9V</color>
-835,<color=#aaaaaa>INTEGRATED CELL</color>,<color=#aaaaaa>ВСТРОЕННАЯ БАТАРЕЯ</color>
+831,<color=#aaaaaa>AAA CELL</color>,<color=#aaaaaa>AAA</color>
+832,<color=#aaaaaa>AA CELL</color>,<color=#aaaaaa>AA</color>
+833,<color=#aaaaaa>C CELL</color>,<color=#aaaaaa>C</color>
+834,<color=#aaaaaa>9V CELL</color>,<color=#aaaaaa>9V</color>
+835,<color=#aaaaaa>INTEGRATED CELL</color>,<color=#aaaaaa>ВСТРОЕННАЯ</color>
 836,<color=#aaaaaa>LARGE BATTERY</color>,<color=#aaaaaa>БОЛЬШАЯ БАТАРЕЯ</color>
 840,<color=#aaaaaa>Battery Capacity</color>,<color=#aaaaaa>Ёмкость батареи</color>
 841,<color=#aaaaaa>Power</color>,<color=#aaaaaa>Заряд</color>
@@ -466,43 +466,43 @@ id,source,target
 947,Station wagon,Универсал
 948,Minicar,Мини-авто
 949,Van,Фургон
-950,Inspect Vehicle,Осмотреть транспорт
+950,Inspect Vehicle,ОСМОТРЕТЬ ТРАНСПОРТ
 951,Collect All,Собрать всё
 952,Deposit All,Поместить всё
 953,Kill,УБИТЬ
-954,Release,Освободить
+954,Release,ОТПУСТИТЬ
 955,Feed,НАКОРМИТЬ
 956,Paint Board,Холст
-960,Install Battery,Установить аккумулятор
-961,Remove Battery,Извлечь аккумулятор
-962,Install Headlight,Установить фару
-963,Remove Headlight,Снять фару
-964,Install Tire,Установить колесо
-965,Remove Tire,Снять колесо
+960,Install Battery,УСТАНОВИТЬ АККУМУЛЯТОР
+961,Remove Battery,СНЯТЬ АККУМУЛЯТОР
+962,Install Headlight,УСТАНОВИТЬ ФАРУ
+963,Remove Headlight,СНЯТЬ ФАРУ
+964,Install Tire,УСТАНОВИТЬ КОЛЕСО
+965,Remove Tire,СНЯТЬ КОЛЕСО
 966,Repair With Weapon Parts,ПОЧИНИТЬ ДЕТАЛЯМИ ОРУЖИЯ
 967,Add Fuel,ЗАПРАВИТЬ ТОПЛИВО
 968,Extract 5 Fuel,СЛИТЬ 5 ЕД. ТОПЛИВА
 969,Extract All Fuel,СЛИТЬ ВСЁ ТОПЛИВО
-970,Read,Прочитать
+970,Read,ПРОЧИТАТЬ
 971,Equip Skill ,ЭКИПИРОВАТЬ НАВЫК 
-972,Unlock Skill ,РАЗБЛОКИРОВАТЬ НАВЫК 
-973,Open Window ,Открыть окно 
-974,Close Window ,Закрыть окно 
-975,Destroy Window,Разбить окно
-976,Block Window,Заколотить окно
-977,Remove Block,Снять заслон
-978,Climb,Перелезть
-979,Add Component,Установить деталь
-980,Remove Component,Снять деталь
-981,Draw Paint Texture,Нарисовать текстуру
-982,Spray Paint,Распылить краску
-983,Delete Texture,Удалить текстуру
-984,Modify Texture,Изменить текстуру
+972,Unlock Skill ,ОТКРЫТЬ НАВЫК 
+973,Open Window ,ОТКРЫТЬ ОКНО 
+974,Close Window ,ЗАКРЫТЬ ОКНО 
+975,Destroy Window,РАЗБИТЬ ОКНО
+976,Block Window,ЗАКОЛОТИТЬ ОКНО
+977,Remove Block,СНЯТЬ ДОСКИ
+978,Climb,ПЕРЕЛЕЗТЬ
+979,Add Component,УСТАНОВИТЬ ДЕТАЛЬ
+980,Remove Component,СНЯТЬ ДЕТАЛЬ
+981,Draw Paint Texture,НАРИСОВАТЬ УЗОР
+982,Spray Paint,ПОКРАСИТЬ
+983,Delete Texture,УДАЛИТЬ УЗОР
+984,Modify Texture,ИЗМЕНИТЬ УЗОР
 985,Enable Skill,ВКЛЮЧИТЬ НАВЫК
 986,Disable Skill,ОТКЛЮЧИТЬ НАВЫК
-987,Enter Password,Ввести пароль
-988,Use Decoder,Использовать декодер
-989,Access Comms,Подключиться к связи
+987,Enter Password,ВВЕСТИ ПАРОЛЬ
+988,Use Decoder,ИСПОЛЬЗОВАТЬ ДЕКОДЕР
+989,Access Comms,ПОДКЛЮЧИТЬСЯ К СВЯЗИ
 1000,Raiders,Рейдеры
 1001,New Order Legion,Легион Нового Порядка
 1002,Iron Order,Железный Орден
@@ -593,7 +593,7 @@ id,source,target
 1528,Fire / Attack,Огонь / атака
 1529,Aim,Прицел
 1530,Next Page,Следующая страница
-1531,Previous Page / Controller Quick Action,Предыдущая страница / быстрое действие
+1531,Previous Page / Controller Quick Action,Пред. страница / быстрое действие
 1532,Interaction 2,Взаимодействие 2
 1533,Butcher,Разделать
 1534,Execute,Добить
@@ -828,9 +828,9 @@ id,source,target
 2527,Hotkey 7,Горячая клавиша 7
 2528,Hotkey 8,Горячая клавиша 8
 2529,Hotkey 9,Горячая клавиша 9
-2530,PRIMARY 1,ОСНОВНОЕ 1
-2531,PRIMARY 2,ОСНОВНОЕ 2
-2532,SECONDARY,ВТОРОЕ
+2530,PRIMARY 1,ОСН. 1
+2531,PRIMARY 2,ОСН. 2
+2532,SECONDARY,ДОП.
 2533,KNIFE,НОЖ
 2534,SKILL,НАВЫК
 2535,THROWABLE,БРОСОК
@@ -1003,20 +1003,20 @@ id,source,target
 3811,MAIN MENU,ГЛАВНОЕ МЕНЮ
 3812,SAVE GAME,СОХРАНИТЬ ИГРУ
 3813,LOAD GAME,ЗАГРУЗИТЬ ИГРУ
-3814,CLEAR ALL ITEMS AND CORPSES,УБРАТЬ ВЕЩИ И ТРУПЫ
+3814,CLEAR ALL ITEMS AND CORPSES,ОЧИСТИТЬ ЗЕМЛЮ
 3815,QUICK SAVE (F5),БЫСТРОЕ СОХРАНЕНИЕ (F5)
 3816,EMPTY SAVE SLOT,ПУСТОЙ СЛОТ СОХРАНЕНИЯ
 3817,GAMEPLAY SETTINGS,НАСТРОЙКИ ГЕЙМПЛЕЯ
 3818,FEEDBACK CENTER,ОБРАТНАЯ СВЯЗЬ
-3819,CLEAR TEXTURE CACHE,ОЧИСТИТЬ КЭШ ТЕКСТУР
+3819,CLEAR TEXTURE CACHE,ОЧИСТИТЬ КЭШ
 3820,DEFEATED,ПОРАЖЕНИЕ
 3821, Permanent Death, Перманентная смерть
 3822,AUTOSAVE SLOT,СЛОТ АВТОСОХРАНЕНИЯ
 3823,<color=#66ff33>[AUTOSAVE]</color>,<color=#66ff33>[АВТОСОХРАНЕНИЕ]</color>
 3824,<color=#66ff33>[LOADING AUTOSAVE]</color> ,<color=#66ff33>[ЗАГРУЗКА АВТОСОХРАНЕНИЯ]</color> 
-3825,<color=#66ff33>[LATEST SAVE] </color>,<color=#66ff33>[ПОСЛЕДНЕЕ СОХРАНЕНИЕ] </color>
+3825,<color=#66ff33>[LATEST SAVE] </color>,<color=#66ff33>[ПОСЛЕДНЕЕ] </color>
 3830,Loading... The first load may take a while.,"загрузка, это может занять время"
-3831,SYNC TO STEAM CLOUD,СИНХР. С ОБЛАКОМ STEAM
+3831,SYNC TO STEAM CLOUD,ОБЛАКО STEAM
 3840,Select imported image,Выбрать загружаемое изображение
 3841,Select image file,Выбрать файл изображения
 3850,Press 'F' To Cancel,Нажмите 'F' для отмены
@@ -1051,7 +1051,7 @@ id,source,target
 3931,CRAFT ,КРАФТ 
 3932,BUILD ,СТРОЙКА 
 3933,TECHNOLOGY TREE,ДЕРЕВО ТЕХНОЛОГИЙ
-3934,SKILL TREE,ДЕРЕВО НАВЫКОВ
+3934,SKILL TREE,НАВЫКИ
 3935,GUIDE,СПРАВКА
 3940,TECH DESCRIPTION,ОПИСАНИЕ ТЕХНОЛОГИИ
 3941,TECH CATEGORY,КАТЕГОРИЯ ТЕХНОЛОГИИ
@@ -1224,7 +1224,7 @@ id,source,target
 4508,casual shoes,повседневная обувь
 4509,casual shoes,повседневная обувь
 4600,CREATE CHARACTER,СОЗДАТЬ ПЕРСОНАЖА
-4630,Mouse Aim Assist,Помощь мыши при прицеливании
+4630,Mouse Aim Assist,Помощь прицеливания (мышь)
 4631,Mouse aim assist. Not necessary in most cases.,Помощь мыши при прицеливании. В большинстве случаев не нужна.
 4632,Off,Выкл.
 4633,No aim assist at all.,Никакой помощи прицеливания.
@@ -1234,7 +1234,7 @@ id,source,target
 4637,Provides strong aim assistance for the mouse.,Сильная помощь прицеливания для мыши.
 4638,High,Высоко
 4639,Applies strong aim correction. Usually not necessary.,Сильная коррекция прицеливания. Обычно не нужна.
-4640,Gamepad Aim Assist,Помощь геймпада при прицеливании
+4640,Gamepad Aim Assist,Помощь прицеливания (геймпад)
 4641,Provides aim assistance when using a Gamepad. Recommended to keep on.,Помогает прицеливаться при игре с геймпадом. Рекомендуется оставить включённой.
 4642,Off,Выкл.
 4643,No aim assist at all. This will make aiming very difficult.,Никакой помощи. Целиться будет очень сложно.
@@ -1470,7 +1470,7 @@ id,source,target
 4993,Enable the kill cam.,Включить камеру убийства.
 4994,Disable,Выключить
 4995,Disable the kill cam.,Выключить камеру убийства.
-4996,Clear Invalid Map Data,Очистить недействительные данные карты
+4996,Clear Invalid Map Data,УДАЛИТЬ БИТЫЕ ДАННЫЕ КАРТ
 4997,Invalid Map Data Cleaned,Недействительные данные карты очищены
 4998,No map data to clean,Нет данных карты для очистки
 4999,Cannot save while switching areas,Невозможно сохранить во время переключения областей
@@ -1488,7 +1488,7 @@ id,source,target
 5022,BOW STAMINA COST,ВЫНОСЛИВОСТЬ ПРИ НАТЯГЕ
 5023,ARROW RECYCLE,ВОЗВРАТ СТРЕЛ
 5030,LRON LUNG,СТАЛЬНЫЕ ЛЁГКИЕ
-5031,STAMINA REGAIN,ВОССТАНОВЛЕНИЕ ВЫНОСЛИВОСТИ
+5031,STAMINA REGAIN,ВОССТ. ВЫНОСЛИВОСТИ
 5040,MAX HP,МАКС. HP
 5041,HP REGAIN,ВОССТАНОВЛЕНИЕ HP
 5050,STRONG,СИЛАЧ
@@ -1875,7 +1875,7 @@ id,source,target
 8405,"Send signal flares with a signal gun,\n\nand the company will airdrop supplies to the designated location.\nHowever, this may attract the attention of monsters.\nCaution is advised.\n\nIf you run out of signal flares,\nyou can also reload them using gunpowder and sulfur.","Запускайте сигнальные ракеты из ракетницы,\n\nи компания сбросит припасы в указанное место.\nОднако это может привлечь внимание монстров.\nСоветуем проявить осторожность.\n\nЕсли у вас закончились сигнальные ракеты,\nих также можно зарядить, используя порох и серу."
 8406,Password Decoder,Декодер паролей
 8407,"The password Decoder,\nallows for rapid decryption of password locks.\nThe Decoder utilizes various sensors to gather information,\ndetermining the current state of the lock mechanism.\nEach use consumes battery power.\nIt can be manufactured and repaired by disassembling phones.","Дешифратор паролей\nпозволяет быстро взломать замки с паролем.\nДешифратор использует различные датчики для сбора информации,\nопределяя текущее состояние механизма замка.\nКаждое использование расходует заряд батареи.\nЕго можно изготовить и отремонтировать, разобрав телефоны."
-8449,Basic Control Information|BasicControlInformation|\n{text2302},Базовое управление|BasicControlInformation|\n{text2302}
+8449,Basic Control Information|BasicControlInformation|\n{text2302},Основы управления|BasicControlInformation|\n{text2302}
 8450,"Target - Ship Location|Target_ShipLocation|There is a ship <color=#ff8800>docked on the East coast</color>.\nIts specific location is already marked on your <color=#ff8800>PDA map</color>\n<color=#55ff00>Press the \""M\"" key to open the map</color>\nYou can visit the location at any time\nAnd <color=#ff8800>use the ship to travel to a new location</color>","Цель — местонахождение корабля|Target_ShipLocation|На <color=#ff8800>восточном побережье пришвартован корабль</color>.\nЕго точное местоположение уже отмечено на <color=#ff8800>карте КПК</color>\n<color=#55ff00>Нажмите клавишу «M», чтобы открыть карту</color>\nВы можете посетить это место в любое время\nИ <color=#ff8800>использовать корабль, чтобы добраться до нового места</color>"
 8451,Target - Ship Generator|Target_ShipGenerator|There is a ship docked on the East coast.\nIts specific location is already marked on your PDA map\nYou can visit the location at any time\nAnd evacuate using the ship,Цель — генератор корабля|Target_ShipGenerator|На восточном побережье пришвартован корабль.\nЕго точное местоположение уже отмечено на карте КПК\nВы можете посетить это место в любое время\nИ эвакуироваться на корабле
 8452,Target - Ship Engine|Target_ShipEngine|There is a ship docked on the East coast.\nIts specific location is already marked on your PDA map\nYou can visit the location at any time\nAnd evacuate using the ship,Цель — двигатель корабля|Target_ShipEngine|На восточном побережье пришвартован корабль.\nЕго точное местоположение уже отмечено на карте КПК\nВы можете посетить это место в любое время\nИ эвакуироваться на корабле
@@ -1891,22 +1891,22 @@ id,source,target
 8509,"Overweight|Buff_Overweight|<color=#ff5500>The things on your body are too heavy</color>.\nBeing overweight slows down your movement speed,\nand increases endurance consumption. You are more susceptible to hunger.",Перегруз|Buff_Overweight|<color=#ff5500>Вещи на вас слишком тяжёлые</color>.\nПерегруз замедляет скорость вашего движения\nи увеличивает расход выносливости. Вы быстрее становитесь голодны.
 8580,Backpack Full|BackPackFull|<color=#ff5500>Your backpack is full</color>.\nThe capacity of the backpack is limited.\nNo more items can be picked up once the backpack is filled.\nYou can <color=#55ff00>sort your backpack</color>.\nOr <color=#55ff00>create a backpack with a larger capacity</color>.,"Рюкзак полон|BackPackFull|<color=#ff5500>Ваш рюкзак полон</color>.\nЁмкость рюкзака ограничена.\nКогда рюкзак заполнен, поднять больше предметов нельзя.\nВы можете <color=#55ff00>отсортировать рюкзак</color>.\nИли <color=#55ff00>создать рюкзак большей вместимости</color>."
 8581,"Rain|Rain|The weather in the game changes over time.<color=#ff5500>Temperature drops and clothing becomes wet during rain</color>.\nEntering a <color=#55ff00>room can protect from rain, a fire can quickly restore body temperature</color>.\nRainwater can be collected in containers such as water bottles, but please do not drink it directly.","Дождь|Rain|Погода в игре меняется со временем.<color=#ff5500>Во время дождя падает температура, а одежда промокает</color>.\nВход <color=#55ff00>в помещение защищает от дождя, костёр быстро восстанавливает температуру тела</color>.\nДождевую воду можно собирать в такие ёмкости, как бутылки, но не пейте её напрямую."
-8590,"Crafting|Craft|You can craft various items with raw materials.\nPut the <color=#55ff00>raw materials in the raw material slot</color>,\nwhen the materials are complete, <color=#55ff00>click the \""Craft\"" button</color>\nto add to the <color=#55ff00>manufacturing queue</color>","Крафт|Craft|Вы можете создавать различные предметы из материалов.\nПоместите <color=#55ff00>сырьё в слот сырья</color>,\nкогда материалы собраны, <color=#55ff00>нажмите кнопку «Создать»</color>,\nчтобы добавить в <color=#55ff00>очередь производства</color>"
+8590,"Crafting|Craft|You can craft various items with raw materials.\nPut the <color=#55ff00>raw materials in the raw material slot</color>,\nwhen the materials are complete, <color=#55ff00>click the \""Craft\"" button</color>\nto add to the <color=#55ff00>manufacturing queue</color>","Создание предметов|Craft|Вы можете создавать различные предметы из материалов.\nПоместите <color=#55ff00>сырьё в слот сырья</color>,\nзатем нажмите <color=#55ff00>кнопку «Создать»</color>,\nчтобы добавить предмет в <color=#55ff00>очередь производства</color>."
 8591,"Building|BuildPieces|Block building has three rules:\n① <color=#55ff00>You build on the floor you stand on</color> — walk up the stairs to build the second floor\n② Pick a piece: <color=#55ff00>Wall / Floor / Roof / Stairs</color>, drag with the left button to place. Drag a box = four walls; Floor lays under your feet; Roof goes on top of this floor's walls\n③ Stairs: click the start and drag in a direction, a flight up to the next floor is generated\n<color=#55ff00>Right-click</color> removes blocks on your floor, Ctrl+Z undoes. To keep rain out: just put a roof over your head (no door needed)\n<color=#55ff00>[Advanced]</color> on the top bar switches to the full block mode (you control thickness and layers), <color=#55ff00>?</color> opens the guide","Строительство|BuildPieces|У строительства из блоков три правила:\n① <color=#55ff00>Вы строите на том этаже, где стоите</color> — поднимитесь по лестнице, чтобы строить второй этаж\n② Выберите элемент: <color=#55ff00>Стена / Пол / Крыша / Лестница</color> и тяните левой кнопкой. Рамка = четыре стены; Пол ложится под ноги; Крыша — поверх стен этого этажа\n③ Лестница: щёлкните по старту и протяните в одну сторону, появится марш на следующий этаж\n<color=#55ff00>ПКМ</color> убирает блоки вашего этажа, Ctrl+Z отменяет. Чтобы не мокнуть: достаточно крыши над головой (дверь не нужна)\n<color=#55ff00>[Расшир.]</color> на верхней панели включает полный режим блоков (толщина и слои под вашим контролем), <color=#55ff00>?</color> открывает справку"
 8592,Workbench|Workbench|Making a workbench and more advanced workbenches\ncan <color=#55ff00>unlock more items that can be crafted</color>.,Верстак|Workbench|Изготовление верстака и более продвинутых верстаков\nпозволяет <color=#55ff00>открыть больше доступных для крафта предметов</color>.
 8593,"Furnace|Furnace|The furnace can be used to <color=#ff8800>smelt items with</color>{text811} attributes.\nPut the <color=#55ff00>raw materials</color> in the raw material slot.\nPut <color=#55ff00>firewood, etc., as fuel</color> in the fuel slot.\nThe furnace will automatically start smelting.",Печь|Furnace|Печь можно использовать для <color=#ff8800>плавки предметов со свойством</color> {text811}.\nПоместите <color=#55ff00>сырьё</color> в слот сырья.\nПоместите <color=#55ff00>дрова и т. п. в качестве топлива</color> в слот топлива.\nПечь автоматически начнёт плавку.
 8600,"Starting a Fire|StartFire|Use an item with the '{text806}' property to start a fire.\nIf you don't have one, you can <color=#55ff00>make a 'Fire Drill' using sticks and bark</color>.","Разведение огня|StartFire|Используйте предмет со свойством «{text806}», чтобы развести огонь.\nЕсли его нет, можно <color=#55ff00>сделать «Простое огниво» из палок и коры</color>."
-8601,"Sprint|Sprint|Press the 'Shift' key to sprint\nSprinting will <color=#ff6600>quickly consume stamina</color>\nWhen sprinting, <color=#ff6600>body temperature will gradually rise</color>",Спринт|Sprint|Нажмите клавишу «Shift» для спринта.\nСпринт <color=#ff6600>быстро расходует выносливость</color>\nВо время спринта <color=#ff6600>температура тела постепенно растёт</color>
-8602,"Health|HP|<color=#ff6600>When the HP value is zero, the character will die</color>\nUse <color=#55ff00>bandages, medical kits, etc., to restore HP</color>","Очки здоровья|HP|<color=#ff6600>Когда ОЗ становятся равны нулю, персонаж умирает</color>\nИспользуйте <color=#55ff00>бинты, аптечки и т. п. для восстановления ОЗ</color>"
-8603,Make a Bandage|Bandage|Press the 'C' key to open the crafting panel\nYou can use cloth to make a bandage\nBandages can restore a small amount of HP value,"Сделать бинт|Bandage|Нажмите клавишу «C», чтобы открыть панель крафта.\nИз ткани можно сделать бинт.\nБинты восстанавливают небольшое количество ОЗ."
-8604,Injury|Injury|Different parts of the body <color=#ff6600>being injured will bring different negative effects</color>\nUsing <color=#55ff00>bandages</color> will speed up the recovery of body parts,Травма|Injury|Различные части тела при <color=#ff6600>ранении дают разные негативные эффекты</color>.\nИспользование <color=#55ff00>бинтов</color> ускоряет восстановление частей тела.
+8601,"Sprint|Sprint|Press the 'Shift' key to sprint\nSprinting will <color=#ff6600>quickly consume stamina</color>\nWhen sprinting, <color=#ff6600>body temperature will gradually rise</color>","Спринт|Sprint|Нажмите клавишу «Shift», чтобы перейти на бег.\nБег <color=#ff6600>быстро расходует выносливость</color>.\nВо время бега <color=#ff6600>температура тела постепенно повышается</color>."
+8602,"Health|HP|<color=#ff6600>When the HP value is zero, the character will die</color>\nUse <color=#55ff00>bandages, medical kits, etc., to restore HP</color>","Здоровье|HP|<color=#ff6600>При нулевом уровне здоровья персонаж погибает</color>.\nИспользуйте <color=#55ff00>бинты, аптечки и другие средства, чтобы восстановить здоровье</color>."
+8603,Make a Bandage|Bandage|Press the 'C' key to open the crafting panel\nYou can use cloth to make a bandage\nBandages can restore a small amount of HP value,"Создание бинта|Bandage|Нажмите клавишу «C», чтобы открыть панель создания.\nИз ткани можно сделать бинт.\nБинт восстанавливает немного здоровья."
+8604,Injury|Injury|Different parts of the body <color=#ff6600>being injured will bring different negative effects</color>\nUsing <color=#55ff00>bandages</color> will speed up the recovery of body parts,Травмы|Injury|<color=#ff6600>Травмы разных частей тела дают разные негативные эффекты</color>.\n<color=#55ff00>Бинты</color> ускоряют восстановление травм.
 8605,"Stamina|Stamina|Running, attacking, rolling, etc. will <color=#ff6600>consume stamina</color>.\n<color=#ff6600>Once stamina is exhausted, you will not be able to run, attack, roll, climb through windows, etc.</color>.\nStamina recovers slowly.\nSome <color=#55ff00>foods and drinks can quickly restore stamina</color>","Выносливость|Stamina|Бег, атаки, перекаты и т. п. <color=#ff6600>расходуют выносливость</color>.\n<color=#ff6600>Когда выносливость исчерпана, вы не сможете бегать, атаковать, перекатываться, перелезать через окна и т. п.</color>.\nВыносливость восстанавливается медленно.\nНекоторые <color=#55ff00>продукты и напитки могут быстро восстанавливать выносливость</color>."
-8606,Night|Night|<color=#0088ff>The night environment will become dark and the temperature will drop</color>.\nYou can use <color=#55ff00>fire torches or flashlights</color>.,Ночь|Night|<color=#0088ff>Ночью становится темно и падает температура</color>.\nВы можете использовать <color=#55ff00>факелы или фонарики</color>.
+8606,Night|Night|<color=#0088ff>The night environment will become dark and the temperature will drop</color>.\nYou can use <color=#55ff00>fire torches or flashlights</color>.,Ночь|Night|<color=#0088ff>Ночью темнеет и падает температура</color>.\nИспользуйте <color=#55ff00>факелы или фонари</color>.
 8607,"Torch|FireTorch|Press the 'C' key to open the crafting panel\nUse <color=#55ff00>wood, cloth, and fat to make fire torches</color>\nFire torches can be equipped as weapons and provide lighting effects when equipped\n<color=#55ff00>Wood</color> can be obtained by <color=#55ff00>chopping trees</color>\n<color=#55ff00>Cloth</color> can be obtained by <color=#55ff00>dismantling clothes</color>\n<color=#55ff00>Fat</color> can be obtained by <color=#55ff00>butchering corpses</color>","Факел|FireTorch|Нажмите клавишу «C», чтобы открыть панель крафта.\nИспользуйте <color=#55ff00>дерево, ткань и жир, чтобы сделать факел</color>.\nФакел можно использовать как оружие, и он освещает окружение при экипировке.\n<color=#55ff00>Древесину</color> можно получить, <color=#55ff00>рубя деревья</color>.\n<color=#55ff00>Ткань</color> можно получить, <color=#55ff00>разобрав одежду</color>.\n<color=#55ff00>Жир</color> можно получить, <color=#55ff00>разделывая трупы</color>."
-8608,"Handheld Devices|LightingTool|You can equip any item with the {text209} attribute: flashlights, night vision goggles, hand warmers, fans and more\nOnce equipped, press 'L' key to turn on/off the lighting tool; other devices are switched from their menu","Ручные устройства|LightingTool|Можно экипировать любой предмет с атрибутом {text209}: фонари, приборы ночного видения, грелки, вентиляторы и другое\nПосле экипировки клавиша 'L' включает/выключает свет; остальные устройства включаются из их меню"
+8608,"Handheld Devices|LightingTool|You can equip any item with the {text209} attribute: flashlights, night vision goggles, hand warmers, fans and more\nOnce equipped, press 'L' key to turn on/off the lighting tool; other devices are switched from their menu","Ручные устройства|LightingTool|Можно экипировать любой предмет с атрибутом {text209}: фонари, приборы ночного видения, грелки, вентиляторы и другое.\nПосле экипировки клавиша «L» включает и выключает свет; остальные устройства включаются через их меню."
 8609,"Melee Weapons|MeleeWeapon|Equipping {text202} can increase <color=#55ff00>attack distance and damage</color>\n<color=#ff8800>Different {text202} have different object destruction effects</color>\nFor example, <color=#55ff00>chopping trees with an ax is more efficient</color>.","Оружие ближнего боя|MeleeWeapon|Экипировка {text202} увеличивает <color=#55ff00>дистанцию атаки и урон</color>.\n<color=#ff8800>Разные {text202} по-разному разрушают объекты</color>.\nНапример, <color=#55ff00>рубить деревья топором эффективнее</color>."
-8610,Ranged Weapons|RangedWeapon|{text203} can <color=#55ff00>fire ammunition or arrows</color> to damage enemies\n{text203} are divided into primary weapons and secondary weapons\nThey are equipped in the primary weapon slot (backpack) or the secondary weapon slot (waistband),"Дальнобойное оружие|RangedWeapon|{text203} могут <color=#55ff00>вести огонь патронами или стрелами</color>, чтобы наносить урон врагам.\n{text203} делятся на основное и дополнительное оружие.\nОни экипируются в слот основного оружия (рюкзак) или в слот дополнительного оружия (пояс)."
-8611,"Executions|ExecutionTool|When the target is in a <color=#ff5500>stunned state and low on health</color>, the target enemy can be <color=#55ff00>executed with a dagger</color>\nThe dagger can also be used as a butchering tool","Орудие казни|ExecutionTool|Когда цель <color=#ff5500>оглушена и её ОЗ ниже определённого значения</color>, врага можно <color=#55ff00>казнить кинжалом</color>.\nКинжал также можно использовать как инструмент разделки."
+8610,Ranged Weapons|RangedWeapon|{text203} can <color=#55ff00>fire ammunition or arrows</color> to damage enemies\n{text203} are divided into primary weapons and secondary weapons\nThey are equipped in the primary weapon slot (backpack) or the secondary weapon slot (waistband),"Дальнобойное оружие|RangedWeapon|{text203} позволяет <color=#55ff00>стрелять патронами или стрелами</color> и наносить урон врагам.\n{text203} делится на основное и дополнительное.\nОсновное носят в слоте основного оружия (рюкзак), дополнительное — в слоте дополнительного оружия (пояс)."
+8611,"Executions|ExecutionTool|When the target is in a <color=#ff5500>stunned state and low on health</color>, the target enemy can be <color=#55ff00>executed with a dagger</color>\nThe dagger can also be used as a butchering tool","Добивание|ExecutionTool|Когда цель <color=#ff5500>оглушена и её здоровье ниже определённого значения</color>, врага можно <color=#55ff00>добить кинжалом</color>.\nКинжал также служит инструментом для разделки."
 8612,"Slaughter|Slaughter|After the target dies, you can <color=#55ff00>use tools to slaughter the corpse</color>\nSlaughter requires the use of a tool with the '{text820}' attribute\nSuch as dagger, knife, ax, etc.\nSlaughter can <color=#55ff00>obtain corresponding materials</color>","Разделка|Slaughter|После смерти цели вы можете <color=#55ff00>использовать инструменты для разделки трупа</color>.\nРазделка требует инструмента со свойством «{text820}».\nНапример, кинжал, нож, топор и т. п.\nРазделка позволяет <color=#55ff00>получить соответствующие материалы</color>."
 8613,"Throwable Item|Throwable Item|An item that can be quickly thrown\nIncludes <color=#55ff00>grenades, Molotov cocktails, etc.</color>\nYou need to <color=#55ff00>equip</color> a throwable item first\nPress the <color=#55ff00>'G' key</color> to quickly throw","Метательный предмет|Throwable Item|Предмет, который можно быстро бросать.\nВключает <color=#55ff00>гранаты, зажигательные бутылки и т. п.</color>\nСначала нужно <color=#55ff00>экипировать</color> метательный предмет.\nНажмите <color=#55ff00>клавишу «G»</color>, чтобы быстро бросить его."
 8614,Clothing|Clothing|Clothing equipment can provide <color=#55ff00>protection and warmth</color>\nEquipment will also affect your movement speed and field of view\n<color=#55ff00>Disassemble clothing to get cloth</color>,Одежда|Clothing|Одежда обеспечивает <color=#55ff00>защиту и тепло</color>.\nСнаряжение также влияет на вашу скорость движения и поле зрения.\n<color=#55ff00>Разборка одежды даёт ткань</color>.
@@ -1922,7 +1922,7 @@ id,source,target
 8631,Cloak|Cloak|A cloak can be used to block the rain.,"Плащ|Cloak|Плащ можно использовать, чтобы укрыться от дождя."
 8632,"Food|Food|Food can <color=#55ff00>replenish hunger/thirst/stamina/health values, etc.</color>\n<color=#ff5500>Expired or inedible</color> food will cause <color=#ff5500>food poisoning</color>.",Еда|Food|Еда может <color=#55ff00>восполнять голод/жажду/выносливость/здоровье и т. п.</color>\n<color=#ff5500>Просроченная или несъедобная</color> еда вызывает <color=#ff5500>пищевое отравление</color>.
 8633,"Face Mask|Face Mask|A face mask can <color=#55ff00>protect you from spore contamination</color>.When entering a spore area, if you do not wear a face mask, you will get spore poisoning.\n<color=#ff8800>The durability of the face mask will decrease until it is damaged after wearing it.</color>\nLoses protective ability when damaged.","Маска для лица|Face Mask|Маска для лица может <color=#55ff00>защитить вас от заражения спорами</color>. Если зайти в зону спор без маски, вы получите отравление спорами.\n<color=#ff8800>Прочность маски снижается по мере ношения и в конце концов она ломается.</color>\nПри поломке теряет защитные свойства."
-8634,Deployable item|Deployable item|Deployable items will have a '<color=#55ff00>{text39}</color>' option after clicking.\nCan be <color=#55ff00>placed on the ground</color>.\nThe deployment effect varies depending on the item.,Развёртываемый предмет|Deployable item|У развёртываемых предметов после клика появится опция «<color=#55ff00>{text39}</color>».\nИх можно <color=#55ff00>разместить на земле</color>.\nЭффект развёртывания зависит от предмета.
+8634,Deployable item|Deployable item|Deployable items will have a '<color=#55ff00>{text39}</color>' option after clicking.\nCan be <color=#55ff00>placed on the ground</color>.\nThe deployment effect varies depending on the item.,Развёртываемый предмет|Deployable item|После выбора такого предмета появится опция «<color=#55ff00>{text39}</color>».\nПредмет можно <color=#55ff00>разместить на земле</color>.\nЭффект зависит от предмета.
 8635,Battery Compartment|BatteryBox|You can <color=#55ff00>add batteries</color> to items with the '{text813}' property.\n<color=#55ff00>Drag the battery into the flashlight</color> to install it.,"Батарейный отсек|BatteryBox|Вы можете <color=#55ff00>устанавливать батарейки</color> в предметы со свойством «{text813}».\n<color=#55ff00>Перетащите батарейку в фонарик</color>, чтобы установить её."
 8636,"Experimental Dose|ExperimentalDose|<color=#ff5500>Please do not ingest the experimental dose</color>.\nThe experimental dose is a drug developed based on mutated strains, modifying DNA to cause directed mutations in the host.\nExperimental doses can be used to upgrade character skills in the <color=#55ff00>skill panel</color>.","Экспериментальный препарат|ExperimentalDose|<color=#ff5500>Не употребляйте экспериментальный препарат внутрь</color>.\nЭкспериментальный препарат — это лекарство, разработанное на основе мутировавших штаммов, изменяющее ДНК для направленных мутаций носителя.\nЭкспериментальные препараты можно использовать для прокачки навыков персонажа на <color=#55ff00>панели навыков</color>."
 8637,"Repair CAS System|CASRepair|<color=#55ff00>The CAS system</color> is an experimental device,\nwhich provides aiming assistance to the user and increases hit rate and damage.\nThis CAS system has experienced a <color=#ff6600>software error</color>,\ngo to the <color=#55ff00>experimental laboratory located to the east</color>,\nrun the <color=#55ff00>CAS system repair program</color> on the <color=#55ff00>computer</color>,\nto repair the CAS system.","Ремонт системы CAS|CASRepair|<color=#55ff00>Система CAS</color> — это экспериментальное устройство,\nкоторое обеспечивает помощь в прицеливании и повышает точность и урон.\nЭта система CAS пережила <color=#ff6600>программный сбой</color>,\nперейдите в <color=#55ff00>экспериментальную лабораторию, расположенную к востоку</color>,\nи запустите <color=#55ff00>программу ремонта системы CAS</color> на <color=#55ff00>компьютере</color>,\nчтобы починить систему CAS."
@@ -1995,14 +1995,14 @@ id,source,target
 8907,Equipped with skill ,Назначен навык 
 8908,This skill has been upgraded to the max level,Этот навык уже улучшен до максимального уровня
 8909,Please <color=#ff8833>learn the prerequisite skills</color> first,Сначала <color=#ff8833>изучите предыдущие навыки</color>
-8910,skill category,категория навыка
+8910,skill category,Категория навыка
 8911,<color=#ff8822>Melee</color>,<color=#ff8822>Ближний бой</color>
 8912,<color=#ff8822>Firearm</color>,<color=#ff8822>Огнестрел</color>
 8913,<color=#ff8822>Physical</color>,<color=#ff8822>Физика</color>
 8914,<color=#ff8822>Technology</color>,<color=#ff8822>Технологии</color>
 8920,<color=#55ff00>Unlock Required</color>,<color=#55ff00>Требуется разблокировка</color>
 8921,<color=#ff8800>Unlocking this skill will cost</color>,<color=#ff8800>Разблокировка этого навыка стоит</color>
-8922,<color=#ff3300>lack of items</color>,<color=#ff3300>не хватает предметов</color>
+8922,<color=#ff3300>lack of items</color>,<color=#ff3300>Не хватает предметов</color>
 8923,<color=#ff3300>Failed to unlock skill</color>,<color=#ff3300>Не удалось разблокировать навык</color>
 8924,<color=#88ff00>Acquired new skills</color>,<color=#88ff00>Получены новые навыки</color>
 8925,<color=#ff8844>Not equiped with </color>,<color=#ff8844>Не экипировано </color>
@@ -2019,213 +2019,213 @@ id,source,target
 8936,<color=#ff5500>This skill is not available in this version.</color>,<color=#ff5500>Этот навык недоступен в данной версии.</color>
 8940,<color=#55ffaa>Unlock Build </color>,<color=#55ffaa>Открыть постройку </color>
 8950,<color=#ffaa55>Unlock Craft </color>,<color=#ffaa55>Открыть рецепт </color>
-9000,muscle strengthening I | Increases the melee attack damage by 10% | MeleeDamage:0.1,усиление мышц I | Урон в ближнем бою +10% | MeleeDamage:0.1
-9001,muscle strengthening II | Increases the melee attack damage by 15%  | MeleeDamage:0.15,усиление мышц II | Урон в ближнем бою +15% | MeleeDamage:0.15
-9002,muscle strengthening III | Increases the melee attack damage by 20%  | MeleeDamage:0.2,усиление мышц III | Урон в ближнем бою +20% | MeleeDamage:0.2
-9003,muscle strengthening IV | Increases the melee attack damage by 25%  | MeleeDamage:0.25,усиление мышц IV | Урон в ближнем бою +25% | MeleeDamage:0.25
-9004,muscle strengthening V | Increases the melee attack damage by 30% | MeleeDamage:0.3,усиление мышц V | Урон в ближнем бою +30% | MeleeDamage:0.3
-9010,speed increase I | Increases the attack rate of melee weapons by 10% | MeleeAttackSpeed:0.1,ускорение I | Скорость атаки холодным оружием +10% | MeleeAttackSpeed:0.1
-9011,speed increase II | Increases the attack rate of melee weapons by 15% | MeleeAttackSpeed:0.15,ускорение II | Скорость атаки холодным оружием +15% | MeleeAttackSpeed:0.15
-9012,speed increase III | Increases the attack rate of melee weapons by 20% | MeleeAttackSpeed:0.2,ускорение III | Скорость атаки холодным оружием +20% | MeleeAttackSpeed:0.2
-9013,speed increase IV | Increases the attack rate of melee weapons by 25% | MeleeAttackSpeed:0.25,ускорение IV | Скорость атаки холодным оружием +25% | MeleeAttackSpeed:0.25
-9014,speed increase V | Increases the attack rate of melee weapons by 30% | MeleeAttackSpeed:0.3,ускорение V | Скорость атаки холодным оружием +30% | MeleeAttackSpeed:0.3
-9020,stamina consumption I | Reduces stamina cost of melee attacks by 10% | MeleeAttackCost:0.1,расход выносливости I | Расход выносливости на ближний бой -10% | MeleeAttackCost:0.1
-9021,stamina consumption II | Reduces stamina cost of melee attacks by 20% | MeleeAttackCost:0.2,расход выносливости II | Расход выносливости на ближний бой -20% | MeleeAttackCost:0.2
-9022,stamina consumption III | Reduces stamina cost of melee attacks by 25% | MeleeAttackCost:0.25,расход выносливости III | Расход выносливости на ближний бой -25% | MeleeAttackCost:0.25
-9023,stamina consumption IV | Reduces stamina cost of melee attacks by 30% | MeleeAttackCost:0.3,расход выносливости IV | Расход выносливости на ближний бой -30% | MeleeAttackCost:0.3
-9024,stamina consumption V | Reduces stamina cost of melee attacks by 50% | MeleeAttackCost:0.5,расход выносливости V | Расход выносливости на ближний бой -50% | MeleeAttackCost:0.5
+9000,muscle strengthening I | Increases the melee attack damage by 10% | MeleeDamage:0.1,Усиление мышц I | Урон в ближнем бою +10% | MeleeDamage:0.1
+9001,muscle strengthening II | Increases the melee attack damage by 15%  | MeleeDamage:0.15,Усиление мышц II | Урон в ближнем бою +15% | MeleeDamage:0.15
+9002,muscle strengthening III | Increases the melee attack damage by 20%  | MeleeDamage:0.2,Усиление мышц III | Урон в ближнем бою +20% | MeleeDamage:0.2
+9003,muscle strengthening IV | Increases the melee attack damage by 25%  | MeleeDamage:0.25,Усиление мышц IV | Урон в ближнем бою +25% | MeleeDamage:0.25
+9004,muscle strengthening V | Increases the melee attack damage by 30% | MeleeDamage:0.3,Усиление мышц V | Урон в ближнем бою +30% | MeleeDamage:0.3
+9010,speed increase I | Increases the attack rate of melee weapons by 10% | MeleeAttackSpeed:0.1,Ускорение I | Скорость атаки холодным оружием +10% | MeleeAttackSpeed:0.1
+9011,speed increase II | Increases the attack rate of melee weapons by 15% | MeleeAttackSpeed:0.15,Ускорение II | Скорость атаки холодным оружием +15% | MeleeAttackSpeed:0.15
+9012,speed increase III | Increases the attack rate of melee weapons by 20% | MeleeAttackSpeed:0.2,Ускорение III | Скорость атаки холодным оружием +20% | MeleeAttackSpeed:0.2
+9013,speed increase IV | Increases the attack rate of melee weapons by 25% | MeleeAttackSpeed:0.25,Ускорение IV | Скорость атаки холодным оружием +25% | MeleeAttackSpeed:0.25
+9014,speed increase V | Increases the attack rate of melee weapons by 30% | MeleeAttackSpeed:0.3,Ускорение V | Скорость атаки холодным оружием +30% | MeleeAttackSpeed:0.3
+9020,stamina consumption I | Reduces stamina cost of melee attacks by 10% | MeleeAttackCost:0.1,Расход выносливости I | Расход выносливости на ближний бой -10% | MeleeAttackCost:0.1
+9021,stamina consumption II | Reduces stamina cost of melee attacks by 20% | MeleeAttackCost:0.2,Расход выносливости II | Расход выносливости на ближний бой -20% | MeleeAttackCost:0.2
+9022,stamina consumption III | Reduces stamina cost of melee attacks by 25% | MeleeAttackCost:0.25,Расход выносливости III | Расход выносливости на ближний бой -25% | MeleeAttackCost:0.25
+9023,stamina consumption IV | Reduces stamina cost of melee attacks by 30% | MeleeAttackCost:0.3,Расход выносливости IV | Расход выносливости на ближний бой -30% | MeleeAttackCost:0.3
+9024,stamina consumption V | Reduces stamina cost of melee attacks by 50% | MeleeAttackCost:0.5,Расход выносливости V | Расход выносливости на ближний бой -50% | MeleeAttackCost:0.5
 9030,Weapon Maintenance | Reduce durability cost of melee weapons by 30% | MeleeWeaponDurabilityCost:0.3,Уход за оружием | Расход прочности холодного оружия -30% | MeleeWeaponDurabilityCost:0.3
-9040,"Heavy Strike I | With a melee weapon, hold the attack button for 0.6s+ and release to deliver a heavy strike: damage +60%, knockback +50%, stamina cost +50%. Stamina does not regenerate while the weapon is raised.","тяжёлый удар I | С оружием ближнего боя удерживайте кнопку атаки не менее 0,6 с и отпустите, чтобы нанести тяжёлый удар: урон +60%, отбрасывание +50%, расход выносливости +50%. Пока оружие поднято, выносливость не восстанавливается."
+9040,"Heavy Strike I | With a melee weapon, hold the attack button for 0.6s+ and release to deliver a heavy strike: damage +60%, knockback +50%, stamina cost +50%. Stamina does not regenerate while the weapon is raised.","Тяжёлый удар I | С оружием ближнего боя удерживайте кнопку атаки не менее 0,6 с и отпустите, чтобы нанести тяжёлый удар: урон +60%, отбрасывание +50%, расход выносливости +50%. Пока оружие поднято, выносливость не восстанавливается."
 19040,charge attack stage I | Charge attack with a melee weapon,заряженная атака I | Заряженная атака холодным оружием
-9050,"Heavy Strike II | Hold the attack button for 1.5s+ and release to deliver a stage II heavy strike: damage +140%, knockback doubled, stamina cost doubled. Zombies hit suffer broken bones and are stunned for 1s.","тяжёлый удар II | Удерживайте кнопку атаки не менее 1,5 с и отпустите, чтобы нанести тяжёлый удар II уровня: урон +140%, отбрасывание удвоено, расход выносливости удвоен. Поражённые зомби получают переломы и оглушаются на 1 с."
+9050,"Heavy Strike II | Hold the attack button for 1.5s+ and release to deliver a stage II heavy strike: damage +140%, knockback doubled, stamina cost doubled. Zombies hit suffer broken bones and are stunned for 1s.","Тяжёлый удар II | Удерживайте кнопку атаки не менее 1,5 с и отпустите, чтобы нанести тяжёлый удар II уровня: урон +140%, отбрасывание удвоено, расход выносливости удвоен. Поражённые зомби получают переломы и оглушаются на 1 с."
 19050,charge attack stage II | Stage II charge attack with a melee weapon,заряженная атака II | Заряженная атака II уровня холодным оружием
-9060,Deadly Strike I | 5% chance for melee attacks to cause critical damage | MeleeCrit:0.05,смертельный удар I | 5% шанс нанести критический урон в ближнем бою | MeleeCrit:0.05
-9061,Deadly Strike II | 8% chance for melee attacks to cause critical damage | MeleeCrit:0.08,смертельный удар II | 8% шанс нанести критический урон в ближнем бою | MeleeCrit:0.08
-9062,Deadly Strike III | 12% chance for melee attacks to cause critical damage | MeleeCrit:0.12,смертельный удар III | 12% шанс нанести критический урон в ближнем бою | MeleeCrit:0.12
-9063,Deadly Strike IIII | 16% chance for melee attacks to cause critical damage | MeleeCrit:0.16,смертельный удар IIII | 16% шанс нанести критический урон в ближнем бою | MeleeCrit:0.16
-9064,Deadly Strike V | 25% chance for melee attacks to cause critical damage | MeleeCrit:0.25,смертельный удар V | 25% шанс нанести критический урон в ближнем бою | MeleeCrit:0.25
+9060,Deadly Strike I | 5% chance for melee attacks to cause critical damage | MeleeCrit:0.05,Смертельный удар I | 5% шанс нанести критический урон в ближнем бою | MeleeCrit:0.05
+9061,Deadly Strike II | 8% chance for melee attacks to cause critical damage | MeleeCrit:0.08,Смертельный удар II | 8% шанс нанести критический урон в ближнем бою | MeleeCrit:0.08
+9062,Deadly Strike III | 12% chance for melee attacks to cause critical damage | MeleeCrit:0.12,Смертельный удар III | 12% шанс нанести критический урон в ближнем бою | MeleeCrit:0.12
+9063,Deadly Strike IIII | 16% chance for melee attacks to cause critical damage | MeleeCrit:0.16,Смертельный удар IV | 16% шанс нанести критический урон в ближнем бою | MeleeCrit:0.16
+9064,Deadly Strike V | 25% chance for melee attacks to cause critical damage | MeleeCrit:0.25,Смертельный удар V | 25% шанс нанести критический урон в ближнем бою | MeleeCrit:0.25
 9070,grapple | Use the grapple for quick maneuvers or to grab enemies. \nNeed to <color=#99bb55>equip a grappling hook</color>.,Крюк | Используйте крюк для быстрого маневрирования или захвата врагов.\nНеобходимо <color=#99bb55>экипировать абордажный крюк</color>.
-9080,grapple-range increase I | Increased range of grappling hook | GrappleHookRange : 2,дальность крюка I | Увеличена дальность кошки | GrappleHookRange : 2
-9081,grapple-range increase II | Increased range of grappling hook | GrappleHookRange : 3,дальность крюка II | Увеличена дальность кошки | GrappleHookRange : 3
-9082,grapple-range increase III | Increased range of grappling hook | GrappleHookRange : 4,дальность крюка III | Увеличена дальность кошки | GrappleHookRange : 4
-9090,grapple-lightweight I | 25% reduced stamina consumption when using a grapple | GrappleHookCost : 0.25,лёгкая кошка I | Расход выносливости при использовании кошки -25% | GrappleHookCost : 0.25
-9091,grapple-lightweight II | 40% reduced stamina consumption when using a grapple | GrappleHookCost : 0.4,лёгкая кошка II | Расход выносливости при использовании кошки -40% | GrappleHookCost : 0.4
-9092,grapple-lightweight III | 65% reduced stamina consumption when using a grapple| GrappleHookCost : 0.65,лёгкая кошка III | Расход выносливости при использовании кошки -65% | GrappleHookCost : 0.65
-9100,javelin | you can throw javelins,дротик | вы можете метать дротики
+9080,grapple-range increase I | Increased range of grappling hook | GrappleHookRange : 2,Дальность крюка I | Увеличена дальность кошки | GrappleHookRange : 2
+9081,grapple-range increase II | Increased range of grappling hook | GrappleHookRange : 3,Дальность крюка II | Увеличена дальность кошки | GrappleHookRange : 3
+9082,grapple-range increase III | Increased range of grappling hook | GrappleHookRange : 4,Дальность крюка III | Увеличена дальность кошки | GrappleHookRange : 4
+9090,grapple-lightweight I | 25% reduced stamina consumption when using a grapple | GrappleHookCost : 0.25,Лёгкая кошка I | Расход выносливости при использовании кошки -25% | GrappleHookCost : 0.25
+9091,grapple-lightweight II | 40% reduced stamina consumption when using a grapple | GrappleHookCost : 0.4,Лёгкая кошка II | Расход выносливости при использовании кошки -40% | GrappleHookCost : 0.4
+9092,grapple-lightweight III | 65% reduced stamina consumption when using a grapple| GrappleHookCost : 0.65,Лёгкая кошка III | Расход выносливости при использовании кошки -65% | GrappleHookCost : 0.65
+9100,javelin | you can throw javelins,Дротик | вы можете метать дротики
 9110,Weapon Repair Bench I | Repair any melee weapon up to 50% durability,Верстак ремонта I | Ремонт любого холодного оружия до 50% прочности
 9111,Weapon Repair Bench II | Repair any melee weapon up to 75% durability,Верстак ремонта II | Ремонт любого холодного оружия до 75% прочности
 9112,Weapon Repair Bench III | Repair any melee weapon up to 90% durability,Верстак ремонта III | Ремонт любого холодного оружия до 90% прочности
-9120,Ground Slam I | Increases the knockback force of melee attacks by 20% | MeleeKnockback:0.2,сокрушительный удар I | Сила отбрасывания в ближнем бою +20% | MeleeKnockback:0.2
-9121,Ground Slam II | Increases the knockback force of melee attacks by 40% | MeleeKnockback:0.4,сокрушительный удар II | Сила отбрасывания в ближнем бою +40% | MeleeKnockback:0.4
-9122,Ground Slam III | Increases the knockback force of melee attacks by 60% | MeleeKnockback:0.6,сокрушительный удар III | Сила отбрасывания в ближнем бою +60% | MeleeKnockback:0.6
-9130,Polearm Mastery | Skilled with spears. Increases melee attack range by 15%. | SpearRange:0.15,мастерство древкового оружия | Вы умело обращаетесь с копьём. Дальность ближнего боя +15%. | SpearRange:0.15
-9140,Blade Mastery | Skilled with bladed weapons. Increases melee attack rate by 12%. | SlashAttackSpeed:0.12,мастерство клинкового оружия | Вы умело обращаетесь с клинками. Скорость ближнего боя +12%. | SlashAttackSpeed:0.12
-9150,Stagger I | Monsters hit by a melee critical are stunned for 0.8s. Stunned low-health monsters can be executed. | StaggerOnCrit:0.8,"потрясение I | Монстры, получившие критический удар в ближнем бою, оглушаются на 0,8 с. Оглушённых монстров с низким здоровьем можно казнить. | StaggerOnCrit:0.8"
-9151,Stagger II | Monsters hit by a melee critical are stunned for 1.2s. Stunned low-health monsters can be executed. | StaggerOnCrit:1.2,"потрясение II | Монстры, получившие критический удар в ближнем бою, оглушаются на 1,2 с. Оглушённых монстров с низким здоровьем можно казнить. | StaggerOnCrit:1.2"
-9155,Executioner I | Raises the health threshold for executions by 50%. | ExecutionHP:0.5,палач I | Порог здоровья для казни +50%. | ExecutionHP:0.5
-9156,Executioner II | Raises the health threshold for executions by 100% and reduces execution stamina cost by 50%. | ExecutionHP:1.0&ExecutionCost:0.5,"палач II | Порог здоровья для казни +100%, расход выносливости на казнь -50%. | ExecutionHP:1.0&ExecutionCost:0.5"
-9160,Combo Strike I | Swing again within 1.5x your attack interval to chain. The 3rd hit is a finisher with 35% more damage. | ComboDamage:0.35,"серия ударов I | Ударьте снова в течение 1,5× интервала атаки, чтобы продолжить серию. 3-й удар — завершающий, урон +35%. | ComboDamage:0.35"
-9161,Combo Strike II | Finisher damage increased by 60% and its knockback is doubled. | ComboDamage:0.6&ComboKnockback:1,"серия ударов II | Урон завершающего удара +60%, его отбрасывание удвоено. | ComboDamage:0.6&ComboKnockback:1"
-9165,Roll Counter | Your first melee attack within 1.5s after a roll is a guaranteed critical and costs no stamina. | RollCounterWindow:1.5,"контратака из кувырка | Первая атака ближнего боя в течение 1,5 с после кувырка гарантированно критическая и не тратит выносливость. | RollCounterWindow:1.5"
-9170,"Ambush I | Melee damage +100% against monsters that have not noticed you, and the hit does not alert others. | SneakAttack:1","засада I | Урон в ближнем бою +100% по монстрам, которые вас не заметили; удар не тревожит остальных. | SneakAttack:1"
-9171,"Ambush II | Melee damage +200% against monsters that have not noticed you, and the hit does not alert others. | SneakAttack:2","засада II | Урон в ближнем бою +200% по монстрам, которые вас не заметили; удар не тревожит остальных. | SneakAttack:2"
-9175,Second Wind I | Restores 10 stamina on each melee kill. | KillStamina:10,второе дыхание I | Каждое убийство в ближнем бою восстанавливает 10 выносливости. | KillStamina:10
-9176,Second Wind II | Restores 20 stamina on each melee kill. | KillStamina:20,второе дыхание II | Каждое убийство в ближнем бою восстанавливает 20 выносливости. | KillStamina:20
-9177,Second Wind III | Restores 30 stamina on each melee kill and keeps regenerating stamina for 10s. | KillStamina:30&KillStaminaRegen:10,второе дыхание III | Каждое убийство в ближнем бою восстанавливает 30 выносливости и ещё 10 с продолжает её восстанавливать. | KillStamina:30&KillStaminaRegen:10
-9180,"Bloodlust I | Melee kills grant Bloodlust for 6s: melee damage +15%, move speed +8%. Further kills refresh the duration. | BloodlustLevel:1","жажда крови I | Убийства в ближнем бою дают Жажду крови на 6 с: урон в ближнем бою +15%, скорость +8%. Новые убийства обновляют длительность. | BloodlustLevel:1"
-9181,"Bloodlust II | Bloodlust lasts 8s: melee damage +30%, move speed +12%. | BloodlustLevel:2","жажда крови II | Жажда крови длится 8 с: урон в ближнем бою +30%, скорость +12%. | BloodlustLevel:2"
+9120,Ground Slam I | Increases the knockback force of melee attacks by 20% | MeleeKnockback:0.2,Сокрушительный удар I | Сила отбрасывания в ближнем бою +20% | MeleeKnockback:0.2
+9121,Ground Slam II | Increases the knockback force of melee attacks by 40% | MeleeKnockback:0.4,Сокрушительный удар II | Сила отбрасывания в ближнем бою +40% | MeleeKnockback:0.4
+9122,Ground Slam III | Increases the knockback force of melee attacks by 60% | MeleeKnockback:0.6,Сокрушительный удар III | Сила отбрасывания в ближнем бою +60% | MeleeKnockback:0.6
+9130,Polearm Mastery | Skilled with spears. Increases melee attack range by 15%. | SpearRange:0.15,Мастерство древкового оружия | Вы умело обращаетесь с копьём. Дальность ближнего боя +15%. | SpearRange:0.15
+9140,Blade Mastery | Skilled with bladed weapons. Increases melee attack rate by 12%. | SlashAttackSpeed:0.12,Мастерство клинкового оружия | Вы умело обращаетесь с клинками. Скорость ближнего боя +12%. | SlashAttackSpeed:0.12
+9150,Stagger I | Monsters hit by a melee critical are stunned for 0.8s. Stunned low-health monsters can be executed. | StaggerOnCrit:0.8,"Потрясение I | Монстры, получившие критический удар в ближнем бою, оглушаются на 0,8 с. Оглушённых монстров с низким здоровьем можно казнить. | StaggerOnCrit:0.8"
+9151,Stagger II | Monsters hit by a melee critical are stunned for 1.2s. Stunned low-health monsters can be executed. | StaggerOnCrit:1.2,"Потрясение II | Монстры, получившие критический удар в ближнем бою, оглушаются на 1,2 с. Оглушённых монстров с низким здоровьем можно казнить. | StaggerOnCrit:1.2"
+9155,Executioner I | Raises the health threshold for executions by 50%. | ExecutionHP:0.5,Палач I | Порог здоровья для казни +50%. | ExecutionHP:0.5
+9156,Executioner II | Raises the health threshold for executions by 100% and reduces execution stamina cost by 50%. | ExecutionHP:1.0&ExecutionCost:0.5,"Палач II | Порог здоровья для казни +100%, расход выносливости на казнь -50%. | ExecutionHP:1.0&ExecutionCost:0.5"
+9160,Combo Strike I | Swing again within 1.5x your attack interval to chain. The 3rd hit is a finisher with 35% more damage. | ComboDamage:0.35,"Серия ударов I | Ударьте снова в течение 1,5× интервала атаки, чтобы продолжить серию. 3-й удар — завершающий, урон +35%. | ComboDamage:0.35"
+9161,Combo Strike II | Finisher damage increased by 60% and its knockback is doubled. | ComboDamage:0.6&ComboKnockback:1,"Серия ударов II | Урон завершающего удара +60%, его отбрасывание удвоено. | ComboDamage:0.6&ComboKnockback:1"
+9165,Roll Counter | Your first melee attack within 1.5s after a roll is a guaranteed critical and costs no stamina. | RollCounterWindow:1.5,"Контратака из кувырка | Первая атака ближнего боя в течение 1,5 с после кувырка гарантированно критическая и не тратит выносливость. | RollCounterWindow:1.5"
+9170,"Ambush I | Melee damage +100% against monsters that have not noticed you, and the hit does not alert others. | SneakAttack:1","Засада I | Урон в ближнем бою +100% по монстрам, которые вас не заметили; удар не тревожит остальных. | SneakAttack:1"
+9171,"Ambush II | Melee damage +200% against monsters that have not noticed you, and the hit does not alert others. | SneakAttack:2","Засада II | Урон в ближнем бою +200% по монстрам, которые вас не заметили; удар не тревожит остальных. | SneakAttack:2"
+9175,Second Wind I | Restores 10 stamina on each melee kill. | KillStamina:10,Второе дыхание I | Каждое убийство в ближнем бою восстанавливает 10 выносливости. | KillStamina:10
+9176,Second Wind II | Restores 20 stamina on each melee kill. | KillStamina:20,Второе дыхание II | Каждое убийство в ближнем бою восстанавливает 20 выносливости. | KillStamina:20
+9177,Second Wind III | Restores 30 stamina on each melee kill and keeps regenerating stamina for 10s. | KillStamina:30&KillStaminaRegen:10,Второе дыхание III | Каждое убийство в ближнем бою восстанавливает 30 выносливости и ещё 10 с продолжает её восстанавливать. | KillStamina:30&KillStaminaRegen:10
+9180,"Bloodlust I | Melee kills grant Bloodlust for 6s: melee damage +15%, move speed +8%. Further kills refresh the duration. | BloodlustLevel:1","Жажда крови I | Убийства в ближнем бою дают Жажду крови на 6 с: урон в ближнем бою +15%, скорость +8%. Новые убийства обновляют длительность. | BloodlustLevel:1"
+9181,"Bloodlust II | Bloodlust lasts 8s: melee damage +30%, move speed +12%. | BloodlustLevel:2","Жажда крови II | Жажда крови длится 8 с: урон в ближнем бою +30%, скорость +12%. | BloodlustLevel:2"
 9185,"Bloodthirst I | While in Bloodlust, melee kills restore 15 HP | BloodlustKillHeal:15",Кровопийца I | В состоянии Жажды крови убийства в ближнем бою восстанавливают 15 HP | BloodlustKillHeal:15
 9186,"Bloodthirst II | While in Bloodlust, melee kills restore 25 HP | BloodlustKillHeal:25",Кровопийца II | В состоянии Жажды крови убийства в ближнем бою восстанавливают 25 HP | BloodlustKillHeal:25
 9187,"Bloodthirst III | While in Bloodlust, melee kills restore 35 HP | BloodlustKillHeal:35",Кровопийца III | В состоянии Жажды крови убийства в ближнем бою восстанавливают 35 HP | BloodlustKillHeal:35
-9200,crit hit I | 5% chance to cause critical damage | RangedWeaponCrit:0.05,критический удар I | 5% шанс крит. урона | RangedWeaponCrit:0.05
-9201,crit hit II |  8% chance to cause critical damage | RangedWeaponCrit:0.08,критический удар II |  8% шанс крит. урона | RangedWeaponCrit:0.08
-9202,crit hit III | 12% chance to cause critical damage | RangedWeaponCrit:0.12,критический удар III | 12% шанс крит. урона | RangedWeaponCrit:0.12
-9203,crit hit IV | 16% chance to cause critical damage | RangedWeaponCrit:0.16,критический удар IV | 16% шанс крит. урона | RangedWeaponCrit:0.16
-9204,crit hit V | 25% chance to cause critical damage | RangedWeaponCrit:0.25,критический удар V | 25% шанс крит. урона | RangedWeaponCrit:0.25
-9210,aiming I | Increase the shooting accuracy of firearms by 10% | RangedWeaponAccuracy:0.1,прицеливание I | Точность огнестрельного оружия +10% | RangedWeaponAccuracy:0.1
-9211,aiming II |  Increase the shooting accuracy of firearms by 15% | RangedWeaponAccuracy:0.15,прицеливание II |  Точность огнестрельного оружия +15% | RangedWeaponAccuracy:0.15
-9212,aiming III |  Increase the shooting accuracy of firearms by 20% | RangedWeaponAccuracy:0.2,прицеливание III |  Точность огнестрельного оружия +20% | RangedWeaponAccuracy:0.2
-9213,aiming IV |  Increase the shooting accuracy of firearms by 25% | RangedWeaponAccuracy:0.25,прицеливание IV |  Точность огнестрельного оружия +25% | RangedWeaponAccuracy:0.25
-9214,aiming V |  Increase the shooting accuracy of firearms by 35% | RangedWeaponAccuracy:0.35,прицеливание V |  Точность огнестрельного оружия +35% | RangedWeaponAccuracy:0.35
-9215,trigger update I | Increases fire rate of ranged weapons by 5% | RangedWeaponFireInterval:0.05,доработка УСМ I | Скорострельность +5% | RangedWeaponFireInterval:0.05
-9216,trigger update II | Increases fire rate of ranged weapons by 10% | RangedWeaponFireInterval:0.10,доработка УСМ II | Скорострельность +10% | RangedWeaponFireInterval:0.10
-9217,trigger update III | Increases fire rate of ranged weapons by 15% | RangedWeaponFireInterval:0.15,доработка УСМ III | Скорострельность +15% | RangedWeaponFireInterval:0.15
-9218,trigger update IV | Increases fire rate of ranged weapons by 20% | RangedWeaponFireInterval:0.2,доработка УСМ IV | Скорострельность +20% | RangedWeaponFireInterval:0.2
-9220,fast loader I | 10% increased ranged weapon reload speed | RangedWeaponReloadSpeed:0.1,быстрая перезарядка I | Скорость перезарядки +10% | RangedWeaponReloadSpeed:0.1
-9221,fast loader II | 15% increased ranged weapon reload speed | RangedWeaponReloadSpeed:0.15,быстрая перезарядка II | Скорость перезарядки +15% | RangedWeaponReloadSpeed:0.15
-9222,fast loader III | 20% increased ranged weapon reload speed | RangedWeaponReloadSpeed:0.2,быстрая перезарядка III | Скорость перезарядки +20% | RangedWeaponReloadSpeed:0.2
-9223,fast loader IV | 25% increased ranged weapon reload speed | RangedWeaponReloadSpeed:0.25,быстрая перезарядка IV | Скорость перезарядки +25% | RangedWeaponReloadSpeed:0.25
-9224,fast loader V | 35% increased ranged weapon reload speed | RangedWeaponReloadSpeed:0.35,быстрая перезарядка V | Скорость перезарядки +35% | RangedWeaponReloadSpeed:0.35
-9230,magazine reload I | Increases magazines reloading speed by 20% | ReloadMagazineSpeed:0.2,снаряжение магазина I | Скорость снаряжения магазина +20% | ReloadMagazineSpeed:0.2
-9231,magazine reload II | Increases magazines reloading speed by 30% | ReloadMagazineSpeed:0.3,снаряжение магазина II | Скорость снаряжения магазина +30% | ReloadMagazineSpeed:0.3
-9232,magazine reload III | Increases magazines reloading speed by 40% | ReloadMagazineSpeed:0.4,снаряжение магазина III | Скорость снаряжения магазина +40% | ReloadMagazineSpeed:0.4
-9240,"tactical reload | When using weapons with built-in magazines (such as shotguns, bolt-action rifles), you can reload two ammunition at a time, but the reload speed will be reduced by 25%. | RangedWeaponReloadSpeed:-0.25","тактическая перезарядка | При использовании оружия со встроенным магазином (дробовики, болтовые винтовки) можно заряжать по 2 патрона за раз, но скорость перезарядки снижается на 25%. | RangedWeaponReloadSpeed:-0.25"
-9250,shotgun expert | You can skillfully use a shotgun. increase the damage of the shotgun.,эксперт по дробовикам | Вы умело используете дробовик. Урон из дробовика увеличен.
-9260,rifle expert |  You can skillfully use a rifle. increase the damage of the rifle.,эксперт по винтовкам |  Вы умело используете винтовку. Урон из винтовки увеличен.
-9270,pistol expert |  You can skillfully use a pistol. increase the damage of the pistol.,эксперт по пистолетам |  Вы умело используете пистолет. Урон из пистолета увеличен.
+9200,crit hit I | 5% chance to cause critical damage | RangedWeaponCrit:0.05,Критический удар I | 5% шанс крит. урона | RangedWeaponCrit:0.05
+9201,crit hit II |  8% chance to cause critical damage | RangedWeaponCrit:0.08,Критический удар II |  8% шанс крит. урона | RangedWeaponCrit:0.08
+9202,crit hit III | 12% chance to cause critical damage | RangedWeaponCrit:0.12,Критический удар III | 12% шанс крит. урона | RangedWeaponCrit:0.12
+9203,crit hit IV | 16% chance to cause critical damage | RangedWeaponCrit:0.16,Критический удар IV | 16% шанс крит. урона | RangedWeaponCrit:0.16
+9204,crit hit V | 25% chance to cause critical damage | RangedWeaponCrit:0.25,Критический удар V | 25% шанс крит. урона | RangedWeaponCrit:0.25
+9210,aiming I | Increase the shooting accuracy of firearms by 10% | RangedWeaponAccuracy:0.1,Прицеливание I | Точность огнестрельного оружия +10% | RangedWeaponAccuracy:0.1
+9211,aiming II |  Increase the shooting accuracy of firearms by 15% | RangedWeaponAccuracy:0.15,Прицеливание II |  Точность огнестрельного оружия +15% | RangedWeaponAccuracy:0.15
+9212,aiming III |  Increase the shooting accuracy of firearms by 20% | RangedWeaponAccuracy:0.2,Прицеливание III |  Точность огнестрельного оружия +20% | RangedWeaponAccuracy:0.2
+9213,aiming IV |  Increase the shooting accuracy of firearms by 25% | RangedWeaponAccuracy:0.25,Прицеливание IV |  Точность огнестрельного оружия +25% | RangedWeaponAccuracy:0.25
+9214,aiming V |  Increase the shooting accuracy of firearms by 35% | RangedWeaponAccuracy:0.35,Прицеливание V |  Точность огнестрельного оружия +35% | RangedWeaponAccuracy:0.35
+9215,trigger update I | Increases fire rate of ranged weapons by 5% | RangedWeaponFireInterval:0.05,Доработка УСМ I | Скорострельность +5% | RangedWeaponFireInterval:0.05
+9216,trigger update II | Increases fire rate of ranged weapons by 10% | RangedWeaponFireInterval:0.10,Доработка УСМ II | Скорострельность +10% | RangedWeaponFireInterval:0.10
+9217,trigger update III | Increases fire rate of ranged weapons by 15% | RangedWeaponFireInterval:0.15,Доработка УСМ III | Скорострельность +15% | RangedWeaponFireInterval:0.15
+9218,trigger update IV | Increases fire rate of ranged weapons by 20% | RangedWeaponFireInterval:0.2,Доработка УСМ IV | Скорострельность +20% | RangedWeaponFireInterval:0.2
+9220,fast loader I | 10% increased ranged weapon reload speed | RangedWeaponReloadSpeed:0.1,Быстрая перезарядка I | Скорость перезарядки +10% | RangedWeaponReloadSpeed:0.1
+9221,fast loader II | 15% increased ranged weapon reload speed | RangedWeaponReloadSpeed:0.15,Быстрая перезарядка II | Скорость перезарядки +15% | RangedWeaponReloadSpeed:0.15
+9222,fast loader III | 20% increased ranged weapon reload speed | RangedWeaponReloadSpeed:0.2,Быстрая перезарядка III | Скорость перезарядки +20% | RangedWeaponReloadSpeed:0.2
+9223,fast loader IV | 25% increased ranged weapon reload speed | RangedWeaponReloadSpeed:0.25,Быстрая перезарядка IV | Скорость перезарядки +25% | RangedWeaponReloadSpeed:0.25
+9224,fast loader V | 35% increased ranged weapon reload speed | RangedWeaponReloadSpeed:0.35,Быстрая перезарядка V | Скорость перезарядки +35% | RangedWeaponReloadSpeed:0.35
+9230,magazine reload I | Increases magazines reloading speed by 20% | ReloadMagazineSpeed:0.2,Снаряжение магазина I | Скорость снаряжения магазина +20% | ReloadMagazineSpeed:0.2
+9231,magazine reload II | Increases magazines reloading speed by 30% | ReloadMagazineSpeed:0.3,Снаряжение магазина II | Скорость снаряжения магазина +30% | ReloadMagazineSpeed:0.3
+9232,magazine reload III | Increases magazines reloading speed by 40% | ReloadMagazineSpeed:0.4,Снаряжение магазина III | Скорость снаряжения магазина +40% | ReloadMagazineSpeed:0.4
+9240,"tactical reload | When using weapons with built-in magazines (such as shotguns, bolt-action rifles), you can reload two ammunition at a time, but the reload speed will be reduced by 25%. | RangedWeaponReloadSpeed:-0.25","Тактическая перезарядка | При использовании оружия со встроенным магазином (дробовики, болтовые винтовки) можно заряжать по 2 патрона за раз, но скорость перезарядки снижается на 25%. | RangedWeaponReloadSpeed:-0.25"
+9250,shotgun expert | You can skillfully use a shotgun. increase the damage of the shotgun.,Эксперт по дробовикам | Вы умело используете дробовик. Урон из дробовика увеличен.
+9260,rifle expert |  You can skillfully use a rifle. increase the damage of the rifle.,Эксперт по винтовкам |  Вы умело используете винтовку. Урон из винтовки увеличен.
+9270,pistol expert |  You can skillfully use a pistol. increase the damage of the pistol.,Эксперт по пистолетам |  Вы умело используете пистолет. Урон из пистолета увеличен.
 9275,"Airgun Expert I | Skilled in using airguns, charging at a relatively fast speed. | AirGunChargeSpeed:1.5","Эксперт по пневматике I | Опыт работы с пневматикой, накачка идёт быстрее. | AirGunChargeSpeed:1.5"
 9276,"Airgun Expert II | Skilled in using airguns, charging at a faster speed. | AirGunChargeSpeed:1.8","Эксперт по пневматике II | Опыт работы с пневматикой, накачка ещё быстрее. | AirGunChargeSpeed:1.8"
 9277,"Airgun Expert III | Skilled in using airguns, charging at the fastest speed. | AirGunChargeSpeed:2.2","Эксперт по пневматике III | Опыт работы с пневматикой, накачка максимально быстра. | AirGunChargeSpeed:2.2"
-9280,fast drawing | reduce draw bow time.,быстрая изготовка | Сокращает время натяга лука.
-9290,arrow recovery | There is a high probability that the arrows can be reused.,возврат стрел | С высокой вероятностью стрелы можно использовать повторно.
+9280,fast drawing | reduce draw bow time.,Быстрая изготовка | Сокращает время натяга лука.
+9290,arrow recovery | There is a high probability that the arrows can be reused.,Возврат стрел | С высокой вероятностью стрелы можно использовать повторно.
 9300,CAS combat assist system | provides users with powerful aiming assistance capabilities through ballistic calculation.. 80% increased damage on hit.\n<color=#99bb55>Need to equip the CAS computer.</color> | CASRecover : 1 & CASTotal : 100 & CASDamage : 1.8,Боевая система помощи CAS | предоставляет пользователю мощные возможности помощи в прицеливании за счёт баллистических расчётов.. +80% урона при попадании.\n<color=#99bb55>Требуется экипировка компьютера CAS.</color> | CASRecover : 1 & CASTotal : 100 & CASDamage : 1.8
 9301,CAS-battery upgrade | Improve charge speed of the CAS system by 20% and the battery life by 30%. | CASRecover : 1.2 & CASTotal : 30,"CAS — улучшение батареи | Скорость зарядки CAS +20%, время работы +30%. | CASRecover : 1.2 & CASTotal : 30"
 9302,CAS-computing upgrade | Increase the damage of the CAS system. Increase the damage to 140% | CASDamage : 1.3333,CAS — улучшение вычислений | Урон CAS увеличен до 140%. | CASDamage : 1.3333
-9310,chamber +1 | put 1 more round in chamber after reload. (if supported),патрон +1 | После перезарядки в патроннике остаётся ещё 1 патрон (если поддерживается).
+9310,chamber +1 | put 1 more round in chamber after reload. (if supported),Патрон +1 | После перезарядки в патроннике остаётся ещё 1 патрон (если поддерживается).
 9320,Focused Laser Cannon | Master the use of laser cannon.\nFocused laser can cause massive area damage.\nRequires significant cooldown time.,Сфокусированная лазерная пушка | Овладение использованием лазерной пушки.\nСфокусированный луч может наносить массивный урон по площади.\nТребует значительного времени перезарядки.
 9330,"Western Gunslinger | When using a revolver, \nit allows automatic targeting of the enemy \nand enables rapid consecutive shots.\ncooldown time : 20s",Стрелок Дикого Запада | При использовании револьвера\nпозволяет автоматически наводиться на врага\nи выполнять быстрые последовательные выстрелы.\nвремя перезарядки: 20 с
-9340,Barrel Cooling I | Increases firearm cooling speed by 30%. Overheat jams become less likely. | GunCoolingSpeed:0.3,охлаждение ствола I | Скорость охлаждения огнестрельного оружия +30%. Заклинивания от перегрева случаются реже. | GunCoolingSpeed:0.3
-9341,Barrel Cooling II | Increases firearm cooling speed by 50%. Overheat jams become less likely. | GunCoolingSpeed:0.5,охлаждение ствола II | Скорость охлаждения огнестрельного оружия +50%. Заклинивания от перегрева случаются реже. | GunCoolingSpeed:0.5
-9342,Barrel Cooling III | Increases firearm cooling speed by 100%. Overheat jams become less likely. | GunCoolingSpeed:1,охлаждение ствола III | Скорость охлаждения огнестрельного оружия +100%. Заклинивания от перегрева случаются реже. | GunCoolingSpeed:1
-9345,Ranged Weapon Maintenance I | Reduces ranged weapon durability loss by 20% | RangedWeaponDurabilityCost:0.2,уход за дальнобойным оружием I | Расход прочности дальнобойного оружия -20% | RangedWeaponDurabilityCost:0.2
-9346,Ranged Weapon Maintenance II | Reduces ranged weapon durability loss by 35% | RangedWeaponDurabilityCost:0.35,уход за дальнобойным оружием II | Расход прочности дальнобойного оружия -35% | RangedWeaponDurabilityCost:0.35
-9347,Ranged Weapon Maintenance III | Reduces ranged weapon durability loss by 50% | RangedWeaponDurabilityCost:0.5,уход за дальнобойным оружием III | Расход прочности дальнобойного оружия -50% | RangedWeaponDurabilityCost:0.5
-9350,Bow Expert I | Skilled with bows. Increases bow damage by 10%. | BowDamage:0.1,эксперт по лукам I | Вы умело используете лук. Урон из лука +10%. | BowDamage:0.1
-9351,Bow Expert II | Skilled with bows. Increases bow damage by 20%. | BowDamage:0.2,эксперт по лукам II | Вы умело используете лук. Урон из лука +20%. | BowDamage:0.2
-9352,Bow Expert III | Skilled with bows. Increases bow damage by 30%. | BowDamage:0.3,эксперт по лукам III | Вы умело используете лук. Урон из лука +30%. | BowDamage:0.3
-9353,Bow Expert IIII | Skilled with bows. Increases bow damage by 40%. | BowDamage:0.4,эксперт по лукам IIII | Вы умело используете лук. Урон из лука +40%. | BowDamage:0.4
-9354,Bow Expert V | Skilled with bows. Increases bow damage by 50%. | BowDamage:0.5,эксперт по лукам V | Вы умело используете лук. Урон из лука +50%. | BowDamage:0.5
-9355,Steady Arm I | Reduces stamina cost by 20% while drawing a bow | BowStaminaCost:0.2,твёрдая рука I | Расход выносливости при натяге лука -20% | BowStaminaCost:0.2
-9356,Steady Arm II | Reduces stamina cost by 30% while drawing a bow | BowStaminaCost:0.3,твёрдая рука II | Расход выносливости при натяге лука -30% | BowStaminaCost:0.3
-9357,Steady Arm III | Reduces stamina cost by 50% while drawing a bow | BowStaminaCost:0.5,твёрдая рука III | Расход выносливости при натяге лука -50% | BowStaminaCost:0.5
-9360,Full Draw I | No stamina is consumed once the bow is fully drawn. | BowHold:1,полный натяг I | После полного натяга лука выносливость больше не расходуется. | BowHold:1
-9361,Full Draw II | No stamina is consumed once the bow is fully drawn. Stamina also regenerates normally. | BowHold:2,полный натяг II | После полного натяга лука выносливость больше не расходуется и восстанавливается как обычно. | BowHold:2
-9365,Crossbow Expert I | Skilled with crossbows. Increases crossbow damage by 10%. | CrossbowDamage:0.1,эксперт по арбалетам I | Вы умело используете арбалет. Урон из арбалета +10%. | CrossbowDamage:0.1
-9366,Crossbow Expert II | Skilled with crossbows. Increases crossbow damage by 20%. | CrossbowDamage:0.2,эксперт по арбалетам II | Вы умело используете арбалет. Урон из арбалета +20%. | CrossbowDamage:0.2
-9367,Crossbow Expert III | Skilled with crossbows. Increases crossbow damage by 30%. | CrossbowDamage:0.3,эксперт по арбалетам III | Вы умело используете арбалет. Урон из арбалета +30%. | CrossbowDamage:0.3
-9368,Crossbow Expert IIII | Skilled with crossbows. Increases crossbow damage by 40%. | CrossbowDamage:0.4,эксперт по арбалетам IIII | Вы умело используете арбалет. Урон из арбалета +40%. | CrossbowDamage:0.4
-9369,Crossbow Expert V | Skilled with crossbows. Increases crossbow damage by 50%. | CrossbowDamage:0.5,эксперт по арбалетам V | Вы умело используете арбалет. Урон из арбалета +50%. | CrossbowDamage:0.5
-9370,Crossbow Fast Reload I | Increases crossbow reload speed by 20%. | CrossbowReloadSpeed:0.2,быстрая перезарядка арбалета I | Скорость перезарядки арбалета +20% | CrossbowReloadSpeed:0.2
-9371,Crossbow Fast Reload II | Increases crossbow reload speed by 30%. | CrossbowReloadSpeed:0.3,быстрая перезарядка арбалета II | Скорость перезарядки арбалета +30% | CrossbowReloadSpeed:0.3
-9372,Crossbow Fast Reload III | Increases crossbow reload speed by 50%. | CrossbowReloadSpeed:0.5,быстрая перезарядка арбалета III | Скорость перезарядки арбалета +50% | CrossbowReloadSpeed:0.5
-9375,Bolt Penetration I | Crossbows only: bolts pierce 1 target. Damage drops 30% with each pierce. | CrossbowPenetrate:1,пробитие болтов I | Только арбалеты: болты пробивают 1 цель. Урон снижается на 30% за каждое пробитие. | CrossbowPenetrate:1
-9376,Bolt Penetration II | Crossbows only: bolts pierce 2 targets. Damage drops 30% with each pierce. | CrossbowPenetrate:2,пробитие болтов II | Только арбалеты: болты пробивают 2 цели. Урон снижается на 30% за каждое пробитие. | CrossbowPenetrate:2
-9380,Arrow Penetration I | Bows only: arrows pierce 1 target. Damage drops 30% with each pierce. | BowPenetrate:1,пробитие стрел I | Только луки: стрелы пробивают 1 цель. Урон снижается на 30% за каждое пробитие. | BowPenetrate:1
-9381,Arrow Penetration II | Bows only: arrows pierce 2 targets. Damage drops 30% with each pierce. | BowPenetrate:2,пробитие стрел II | Только луки: стрелы пробивают 2 цели. Урон снижается на 30% за каждое пробитие. | BowPenetrate:2
+9340,Barrel Cooling I | Increases firearm cooling speed by 30%. Overheat jams become less likely. | GunCoolingSpeed:0.3,Охлаждение ствола I | Скорость охлаждения огнестрельного оружия +30%. Заклинивания от перегрева случаются реже. | GunCoolingSpeed:0.3
+9341,Barrel Cooling II | Increases firearm cooling speed by 50%. Overheat jams become less likely. | GunCoolingSpeed:0.5,Охлаждение ствола II | Скорость охлаждения огнестрельного оружия +50%. Заклинивания от перегрева случаются реже. | GunCoolingSpeed:0.5
+9342,Barrel Cooling III | Increases firearm cooling speed by 100%. Overheat jams become less likely. | GunCoolingSpeed:1,Охлаждение ствола III | Скорость охлаждения огнестрельного оружия +100%. Заклинивания от перегрева случаются реже. | GunCoolingSpeed:1
+9345,Ranged Weapon Maintenance I | Reduces ranged weapon durability loss by 20% | RangedWeaponDurabilityCost:0.2,Уход за дальнобойным оружием I | Расход прочности дальнобойного оружия -20% | RangedWeaponDurabilityCost:0.2
+9346,Ranged Weapon Maintenance II | Reduces ranged weapon durability loss by 35% | RangedWeaponDurabilityCost:0.35,Уход за дальнобойным оружием II | Расход прочности дальнобойного оружия -35% | RangedWeaponDurabilityCost:0.35
+9347,Ranged Weapon Maintenance III | Reduces ranged weapon durability loss by 50% | RangedWeaponDurabilityCost:0.5,Уход за дальнобойным оружием III | Расход прочности дальнобойного оружия -50% | RangedWeaponDurabilityCost:0.5
+9350,Bow Expert I | Skilled with bows. Increases bow damage by 10%. | BowDamage:0.1,Эксперт по лукам I | Вы умело используете лук. Урон из лука +10%. | BowDamage:0.1
+9351,Bow Expert II | Skilled with bows. Increases bow damage by 20%. | BowDamage:0.2,Эксперт по лукам II | Вы умело используете лук. Урон из лука +20%. | BowDamage:0.2
+9352,Bow Expert III | Skilled with bows. Increases bow damage by 30%. | BowDamage:0.3,Эксперт по лукам III | Вы умело используете лук. Урон из лука +30%. | BowDamage:0.3
+9353,Bow Expert IIII | Skilled with bows. Increases bow damage by 40%. | BowDamage:0.4,Эксперт по лукам IV | Вы умело используете лук. Урон из лука +40%. | BowDamage:0.4
+9354,Bow Expert V | Skilled with bows. Increases bow damage by 50%. | BowDamage:0.5,Эксперт по лукам V | Вы умело используете лук. Урон из лука +50%. | BowDamage:0.5
+9355,Steady Arm I | Reduces stamina cost by 20% while drawing a bow | BowStaminaCost:0.2,Твёрдая рука I | Расход выносливости при натяге лука -20% | BowStaminaCost:0.2
+9356,Steady Arm II | Reduces stamina cost by 30% while drawing a bow | BowStaminaCost:0.3,Твёрдая рука II | Расход выносливости при натяге лука -30% | BowStaminaCost:0.3
+9357,Steady Arm III | Reduces stamina cost by 50% while drawing a bow | BowStaminaCost:0.5,Твёрдая рука III | Расход выносливости при натяге лука -50% | BowStaminaCost:0.5
+9360,Full Draw I | No stamina is consumed once the bow is fully drawn. | BowHold:1,Полный натяг I | После полного натяга лука выносливость больше не расходуется. | BowHold:1
+9361,Full Draw II | No stamina is consumed once the bow is fully drawn. Stamina also regenerates normally. | BowHold:2,Полный натяг II | После полного натяга лука выносливость больше не расходуется и восстанавливается как обычно. | BowHold:2
+9365,Crossbow Expert I | Skilled with crossbows. Increases crossbow damage by 10%. | CrossbowDamage:0.1,Эксперт по арбалетам I | Вы умело используете арбалет. Урон из арбалета +10%. | CrossbowDamage:0.1
+9366,Crossbow Expert II | Skilled with crossbows. Increases crossbow damage by 20%. | CrossbowDamage:0.2,Эксперт по арбалетам II | Вы умело используете арбалет. Урон из арбалета +20%. | CrossbowDamage:0.2
+9367,Crossbow Expert III | Skilled with crossbows. Increases crossbow damage by 30%. | CrossbowDamage:0.3,Эксперт по арбалетам III | Вы умело используете арбалет. Урон из арбалета +30%. | CrossbowDamage:0.3
+9368,Crossbow Expert IIII | Skilled with crossbows. Increases crossbow damage by 40%. | CrossbowDamage:0.4,Эксперт по арбалетам IV | Вы умело используете арбалет. Урон из арбалета +40%. | CrossbowDamage:0.4
+9369,Crossbow Expert V | Skilled with crossbows. Increases crossbow damage by 50%. | CrossbowDamage:0.5,Эксперт по арбалетам V | Вы умело используете арбалет. Урон из арбалета +50%. | CrossbowDamage:0.5
+9370,Crossbow Fast Reload I | Increases crossbow reload speed by 20%. | CrossbowReloadSpeed:0.2,Быстрая перезарядка арбалета I | Скорость перезарядки арбалета +20% | CrossbowReloadSpeed:0.2
+9371,Crossbow Fast Reload II | Increases crossbow reload speed by 30%. | CrossbowReloadSpeed:0.3,Быстрая перезарядка арбалета II | Скорость перезарядки арбалета +30% | CrossbowReloadSpeed:0.3
+9372,Crossbow Fast Reload III | Increases crossbow reload speed by 50%. | CrossbowReloadSpeed:0.5,Быстрая перезарядка арбалета III | Скорость перезарядки арбалета +50% | CrossbowReloadSpeed:0.5
+9375,Bolt Penetration I | Crossbows only: bolts pierce 1 target. Damage drops 30% with each pierce. | CrossbowPenetrate:1,Пробитие болтов I | Только арбалеты: болты пробивают 1 цель. Урон снижается на 30% за каждое пробитие. | CrossbowPenetrate:1
+9376,Bolt Penetration II | Crossbows only: bolts pierce 2 targets. Damage drops 30% with each pierce. | CrossbowPenetrate:2,Пробитие болтов II | Только арбалеты: болты пробивают 2 цели. Урон снижается на 30% за каждое пробитие. | CrossbowPenetrate:2
+9380,Arrow Penetration I | Bows only: arrows pierce 1 target. Damage drops 30% with each pierce. | BowPenetrate:1,Пробитие стрел I | Только луки: стрелы пробивают 1 цель. Урон снижается на 30% за каждое пробитие. | BowPenetrate:1
+9381,Arrow Penetration II | Bows only: arrows pierce 2 targets. Damage drops 30% with each pierce. | BowPenetrate:2,Пробитие стрел II | Только луки: стрелы пробивают 2 цели. Урон снижается на 30% за каждое пробитие. | BowPenetrate:2
 9390,Cargoship Mid,Середина грузового судна
 9391,Cargoship Stern,Корма грузового судна
-9400,max stamina I | Increases stamina by 10 points | Stamina:10,макс. выносливость I | Максимум выносливости +10 | Stamina:10
-9401,max stamina II | Increases stamina by 20 points | Stamina:20,макс. выносливость II | Максимум выносливости +20 | Stamina:20
-9402,max stamina III | Increases stamina by 30 points | Stamina:30,макс. выносливость III | Максимум выносливости +30 | Stamina:30
-9403,max stamina IIII | Increases stamina by 40 points | Stamina:40,макс. выносливость IV | Максимум выносливости +40 | Stamina:40
-9404,max stamina V | Increases stamina by 50 points | Stamina:50,макс. выносливость V | Максимум выносливости +50 | Stamina:50
-9410,stamina recovery I | 20% increased stamina recovery rate | StaminaRecovery:0.2,восстановление выносливости I | Скорость восстановления выносливости +20% | StaminaRecovery:0.2
-9411,stamina recovery II | 40% increased stamina recovery rate | StaminaRecovery:0.4,восстановление выносливости II | Скорость восстановления выносливости +40% | StaminaRecovery:0.4
-9412,stamina recovery III | 60% increased stamina recovery rate | StaminaRecovery:0.6,восстановление выносливости III | Скорость восстановления выносливости +60% | StaminaRecovery:0.6
-9413,stamina recovery IIII | 80% increased stamina recovery rate | StaminaRecovery:0.8,восстановление выносливости IV | Скорость восстановления выносливости +80% | StaminaRecovery:0.8
-9414,stamina recovery V | 100% increased stamina recovery rate | StaminaRecovery:1,восстановление выносливости V | Скорость восстановления выносливости +100% | StaminaRecovery:1
-9420,marathon runner I | Reduce stamina cost by 10% while running | SprintCost:0.1,марафонец I | Расход выносливости при беге -10% | SprintCost:0.1
-9421,marathon runner II | Reduce stamina cost by 20% while running | SprintCost:0.2,марафонец II | Расход выносливости при беге -20% | SprintCost:0.2
-9422,marathon runner III | Reduce stamina cost by 30% while running | SprintCost:0.3,марафонец III | Расход выносливости при беге -30% | SprintCost:0.3
-9423,marathon runner IIII | Reduce stamina cost by 40% while running | SprintCost:0.4,марафонец IV | Расход выносливости при беге -40% | SprintCost:0.4
-9424,marathon runner V | Reduce stamina cost by 50% while running | SprintCost:0.5,марафонец V | Расход выносливости при беге -50% | SprintCost:0.5
-9430,sprint speed I | 3% increased sprint speed | SprintSpeed:0.03,скорость бега I | Скорость бега +3% | SprintSpeed:0.03
-9431,sprint speed II | 6% increased sprint speed | SprintSpeed:0.06,скорость бега II | Скорость бега +6% | SprintSpeed:0.06
-9432,sprint speed III | 9% increased sprint speed | SprintSpeed:0.09,скорость бега III | Скорость бега +9% | SprintSpeed:0.09
-9433,sprint speed IIII | 12% increased sprint speed | SprintSpeed:0.12,скорость бега IV | Скорость бега +12% | SprintSpeed:0.12
-9440,rolling distance I | increase rolling distance by 35% | RollDistance:0.35&ExoBoost:0.15,дистанция переката I | Дистанция переката +35% | RollDistance:0.35&ExoBoost:0.15
-9441,rolling distance II | increase rolling distance by 65% | RollDistance:0.65&ExoBoost:0.25,дистанция переката II | Дистанция переката +65% | RollDistance:0.65&ExoBoost:0.25
-9442,rolling distance III | increase rolling distance by 100% | RollDistance:1&ExoBoost:0.4,дистанция переката III | Дистанция переката +100% | RollDistance:1&ExoBoost:0.4
-9445,bullet time I | Enter a short bullet time (0.5 seconds) after rolling | RollingBulletTime:0.5,"замедление времени I | После переката включается короткое замедление времени (0,5 с) | RollingBulletTime:0.5"
-9446,bullet time II | Enter a short bullet time (0.75 seconds) after rolling | RollingBulletTime:0.75,"замедление времени II | После переката включается короткое замедление времени (0,75 с) | RollingBulletTime:0.75"
-9447,bullet time III | Enter a short bullet time (1 seconds) after rolling | RollingBulletTime:1,замедление времени III | После переката включается короткое замедление времени (1 с) | RollingBulletTime:1
-9450,hp recovery I | Increase HP recovery speed by 20% | HPRecovery:0.2,восстановление HP I | Скорость восстановления HP +20% | HPRecovery:0.2
-9451,hp recovery II | Increase HP recovery speed by 35% | HPRecovery:0.35,восстановление HP II | Скорость восстановления HP +35% | HPRecovery:0.35
-9452,hp recovery III | Increase HP recovery speed by 50% | HPRecovery:0.5,восстановление HP III | Скорость восстановления HP +50% | HPRecovery:0.5
-9453,hp recovery IIII | Increase HP recovery speed by 60% | HPRecovery:0.6,восстановление HP IV | Скорость восстановления HP +60% | HPRecovery:0.6
-9454,hp recovery V | Increase HP recovery speed by 70% | HPRecovery:0.7,восстановление HP V | Скорость восстановления HP +70% | HPRecovery:0.7
+9400,max stamina I | Increases stamina by 10 points | Stamina:10,Макс. выносливость I | Максимум выносливости +10 | Stamina:10
+9401,max stamina II | Increases stamina by 20 points | Stamina:20,Макс. выносливость II | Максимум выносливости +20 | Stamina:20
+9402,max stamina III | Increases stamina by 30 points | Stamina:30,Макс. выносливость III | Максимум выносливости +30 | Stamina:30
+9403,max stamina IIII | Increases stamina by 40 points | Stamina:40,Макс. выносливость IV | Максимум выносливости +40 | Stamina:40
+9404,max stamina V | Increases stamina by 50 points | Stamina:50,Макс. выносливость V | Максимум выносливости +50 | Stamina:50
+9410,stamina recovery I | 20% increased stamina recovery rate | StaminaRecovery:0.2,Восстановление выносливости I | Скорость восстановления выносливости +20% | StaminaRecovery:0.2
+9411,stamina recovery II | 40% increased stamina recovery rate | StaminaRecovery:0.4,Восстановление выносливости II | Скорость восстановления выносливости +40% | StaminaRecovery:0.4
+9412,stamina recovery III | 60% increased stamina recovery rate | StaminaRecovery:0.6,Восстановление выносливости III | Скорость восстановления выносливости +60% | StaminaRecovery:0.6
+9413,stamina recovery IIII | 80% increased stamina recovery rate | StaminaRecovery:0.8,Восстановление выносливости IV | Скорость восстановления выносливости +80% | StaminaRecovery:0.8
+9414,stamina recovery V | 100% increased stamina recovery rate | StaminaRecovery:1,Восстановление выносливости V | Скорость восстановления выносливости +100% | StaminaRecovery:1
+9420,marathon runner I | Reduce stamina cost by 10% while running | SprintCost:0.1,Марафонец I | Расход выносливости при беге -10% | SprintCost:0.1
+9421,marathon runner II | Reduce stamina cost by 20% while running | SprintCost:0.2,Марафонец II | Расход выносливости при беге -20% | SprintCost:0.2
+9422,marathon runner III | Reduce stamina cost by 30% while running | SprintCost:0.3,Марафонец III | Расход выносливости при беге -30% | SprintCost:0.3
+9423,marathon runner IIII | Reduce stamina cost by 40% while running | SprintCost:0.4,Марафонец IV | Расход выносливости при беге -40% | SprintCost:0.4
+9424,marathon runner V | Reduce stamina cost by 50% while running | SprintCost:0.5,Марафонец V | Расход выносливости при беге -50% | SprintCost:0.5
+9430,sprint speed I | 3% increased sprint speed | SprintSpeed:0.03,Скорость бега I | Скорость бега +3% | SprintSpeed:0.03
+9431,sprint speed II | 6% increased sprint speed | SprintSpeed:0.06,Скорость бега II | Скорость бега +6% | SprintSpeed:0.06
+9432,sprint speed III | 9% increased sprint speed | SprintSpeed:0.09,Скорость бега III | Скорость бега +9% | SprintSpeed:0.09
+9433,sprint speed IIII | 12% increased sprint speed | SprintSpeed:0.12,Скорость бега IV | Скорость бега +12% | SprintSpeed:0.12
+9440,rolling distance I | increase rolling distance by 35% | RollDistance:0.35&ExoBoost:0.15,Дистанция переката I | Дистанция переката +35% | RollDistance:0.35&ExoBoost:0.15
+9441,rolling distance II | increase rolling distance by 65% | RollDistance:0.65&ExoBoost:0.25,Дистанция переката II | Дистанция переката +65% | RollDistance:0.65&ExoBoost:0.25
+9442,rolling distance III | increase rolling distance by 100% | RollDistance:1&ExoBoost:0.4,Дистанция переката III | Дистанция переката +100% | RollDistance:1&ExoBoost:0.4
+9445,bullet time I | Enter a short bullet time (0.5 seconds) after rolling | RollingBulletTime:0.5,"Замедление времени I | После переката включается короткое замедление времени (0,5 с) | RollingBulletTime:0.5"
+9446,bullet time II | Enter a short bullet time (0.75 seconds) after rolling | RollingBulletTime:0.75,"Замедление времени II | После переката включается короткое замедление времени (0,75 с) | RollingBulletTime:0.75"
+9447,bullet time III | Enter a short bullet time (1 seconds) after rolling | RollingBulletTime:1,Замедление времени III | После переката включается короткое замедление времени (1 с) | RollingBulletTime:1
+9450,hp recovery I | Increase HP recovery speed by 20% | HPRecovery:0.2,Восстановление HP I | Скорость восстановления HP +20% | HPRecovery:0.2
+9451,hp recovery II | Increase HP recovery speed by 35% | HPRecovery:0.35,Восстановление HP II | Скорость восстановления HP +35% | HPRecovery:0.35
+9452,hp recovery III | Increase HP recovery speed by 50% | HPRecovery:0.5,Восстановление HP III | Скорость восстановления HP +50% | HPRecovery:0.5
+9453,hp recovery IIII | Increase HP recovery speed by 60% | HPRecovery:0.6,Восстановление HP IV | Скорость восстановления HP +60% | HPRecovery:0.6
+9454,hp recovery V | Increase HP recovery speed by 70% | HPRecovery:0.7,Восстановление HP V | Скорость восстановления HP +70% | HPRecovery:0.7
 9455,Rolling Sprint I | Gain a brief acceleration effect after rolling (2 seconds) | RollingSprintTime: 2,Рывок после переката I | После переката кратковременное ускорение (2 с) | RollingSprintTime: 2
 9456,Rolling Sprint II | Gain a brief acceleration effect after rolling (3.5 seconds) | RollingSprintTime: 3.5,"Рывок после переката II | После переката кратковременное ускорение (3,5 с) | RollingSprintTime: 3.5"
 9457,Rolling Sprint III | Gain a brief acceleration effect after rolling (5 seconds) | RollingSprintTime: 5,Рывок после переката III | После переката кратковременное ускорение (5 с) | RollingSprintTime: 5
-9460,Carry Capacity I | Increases the carry weight limit by 5 kg | WeightLimit:5,предел переносимого веса I | Предел переносимого веса +5 кг | WeightLimit:5
-9461,Carry Capacity II | Increases the carry weight limit by 10 kg | WeightLimit:10,предел переносимого веса II | Предел переносимого веса +10 кг | WeightLimit:10
-9462,Carry Capacity III | Increases the carry weight limit by 16 kg | WeightLimit:16,предел переносимого веса III | Предел переносимого веса +16 кг | WeightLimit:16
-9463,Carry Capacity IIII | Increases the carry weight limit by 22 kg | WeightLimit:22,предел переносимого веса IIII | Предел переносимого веса +22 кг | WeightLimit:22
-9464,Carry Capacity V | Increases the carry weight limit by 30 kg | WeightLimit:30,предел переносимого веса V | Предел переносимого веса +30 кг | WeightLimit:30
-9470,Tough Body I | Reduces the intensity of all negative states by 10% | DebuffResist:0.1,крепкое тело I | Сила всех негативных состояний -10% | DebuffResist:0.1
-9471,Tough Body II | Reduces the intensity of all negative states by 18% | DebuffResist:0.18,крепкое тело II | Сила всех негативных состояний -18% | DebuffResist:0.18
-9472,Tough Body III | Reduces the intensity of all negative states by 28% | DebuffResist:0.28,крепкое тело III | Сила всех негативных состояний -28% | DebuffResist:0.28
-9480,Light Step I | Reduces the range of your footstep noise by 20% | NoiseReduce:0.2,тихий шаг I | Дальность звука ваших шагов -20% | NoiseReduce:0.2
-9481,Light Step II | Reduces the range of your footstep noise by 35% | NoiseReduce:0.35,тихий шаг II | Дальность звука ваших шагов -35% | NoiseReduce:0.35
-9482,Light Step III | Reduces the range of your footstep noise by 50% | NoiseReduce:0.5,тихий шаг III | Дальность звука ваших шагов -50% | NoiseReduce:0.5
-9490,Max Health I | Increases maximum health by 5% | MaxHP:0.05,максимальное здоровье I | Максимальное здоровье +5% | MaxHP:0.05
-9491,Max Health II | Increases maximum health by 10% | MaxHP:0.1,максимальное здоровье II | Максимальное здоровье +10% | MaxHP:0.1
-9492,Max Health III | Increases maximum health by 16% | MaxHP:0.16,максимальное здоровье III | Максимальное здоровье +16% | MaxHP:0.16
-9493,Max Health IIII | Increases maximum health by 22% | MaxHP:0.22,максимальное здоровье IIII | Максимальное здоровье +22% | MaxHP:0.22
-9494,Max Health V | Increases maximum health by 30% | MaxHP:0.3,максимальное здоровье V | Максимальное здоровье +30% | MaxHP:0.3
-9500,Wilderness Metabolism I | Reduces hunger and thirst consumption by 12% | HungerRate:0.12&ThirstRate:0.12,метаболизм дикаря I | Расход голода и жажды -12% | HungerRate:0.12&ThirstRate:0.12
-9501,Wilderness Metabolism II | Reduces hunger and thirst consumption by 22% | HungerRate:0.22&ThirstRate:0.22,метаболизм дикаря II | Расход голода и жажды -22% | HungerRate:0.22&ThirstRate:0.22
-9502,Wilderness Metabolism III | Reduces hunger and thirst consumption by 32% | HungerRate:0.32&ThirstRate:0.32,метаболизм дикаря III | Расход голода и жажды -32% | HungerRate:0.32&ThirstRate:0.32
+9460,Carry Capacity I | Increases the carry weight limit by 5 kg | WeightLimit:5,Предел переносимого веса I | Предел переносимого веса +5 кг | WeightLimit:5
+9461,Carry Capacity II | Increases the carry weight limit by 10 kg | WeightLimit:10,Предел переносимого веса II | Предел переносимого веса +10 кг | WeightLimit:10
+9462,Carry Capacity III | Increases the carry weight limit by 16 kg | WeightLimit:16,Предел переносимого веса III | Предел переносимого веса +16 кг | WeightLimit:16
+9463,Carry Capacity IIII | Increases the carry weight limit by 22 kg | WeightLimit:22,Предел переносимого веса IV | Предел переносимого веса +22 кг | WeightLimit:22
+9464,Carry Capacity V | Increases the carry weight limit by 30 kg | WeightLimit:30,Предел переносимого веса V | Предел переносимого веса +30 кг | WeightLimit:30
+9470,Tough Body I | Reduces the intensity of all negative states by 10% | DebuffResist:0.1,Крепкое тело I | Сила всех негативных состояний -10% | DebuffResist:0.1
+9471,Tough Body II | Reduces the intensity of all negative states by 18% | DebuffResist:0.18,Крепкое тело II | Сила всех негативных состояний -18% | DebuffResist:0.18
+9472,Tough Body III | Reduces the intensity of all negative states by 28% | DebuffResist:0.28,Крепкое тело III | Сила всех негативных состояний -28% | DebuffResist:0.28
+9480,Light Step I | Reduces the range of your footstep noise by 20% | NoiseReduce:0.2,Тихий шаг I | Дальность звука ваших шагов -20% | NoiseReduce:0.2
+9481,Light Step II | Reduces the range of your footstep noise by 35% | NoiseReduce:0.35,Тихий шаг II | Дальность звука ваших шагов -35% | NoiseReduce:0.35
+9482,Light Step III | Reduces the range of your footstep noise by 50% | NoiseReduce:0.5,Тихий шаг III | Дальность звука ваших шагов -50% | NoiseReduce:0.5
+9490,Max Health I | Increases maximum health by 5% | MaxHP:0.05,Максимальное здоровье I | Максимальное здоровье +5% | MaxHP:0.05
+9491,Max Health II | Increases maximum health by 10% | MaxHP:0.1,Максимальное здоровье II | Максимальное здоровье +10% | MaxHP:0.1
+9492,Max Health III | Increases maximum health by 16% | MaxHP:0.16,Максимальное здоровье III | Максимальное здоровье +16% | MaxHP:0.16
+9493,Max Health IIII | Increases maximum health by 22% | MaxHP:0.22,Максимальное здоровье IV | Максимальное здоровье +22% | MaxHP:0.22
+9494,Max Health V | Increases maximum health by 30% | MaxHP:0.3,Максимальное здоровье V | Максимальное здоровье +30% | MaxHP:0.3
+9500,Wilderness Metabolism I | Reduces hunger and thirst consumption by 12% | HungerRate:0.12&ThirstRate:0.12,Метаболизм дикаря I | Расход голода и жажды -12% | HungerRate:0.12&ThirstRate:0.12
+9501,Wilderness Metabolism II | Reduces hunger and thirst consumption by 22% | HungerRate:0.22&ThirstRate:0.22,Метаболизм дикаря II | Расход голода и жажды -22% | HungerRate:0.22&ThirstRate:0.22
+9502,Wilderness Metabolism III | Reduces hunger and thirst consumption by 32% | HungerRate:0.32&ThirstRate:0.32,Метаболизм дикаря III | Расход голода и жажды -32% | HungerRate:0.32&ThirstRate:0.32
 9510,Wound Care I | Reduces the chance of bleeding when hit by 30% and damage taken by the struck limb by 20% | BleedResist:0.3&LimbDamageReduce:0.2,Обработка ран I | Снижает шанс кровотечения при попадании на 30% и урон по поражённой конечности на 20% | BleedResist:0.3&LimbDamageReduce:0.2
 9511,Wound Care II | Reduces the chance of bleeding when hit by 50% and damage taken by the struck limb by 30% | BleedResist:0.5&LimbDamageReduce:0.3,Обработка ран II | Снижает шанс кровотечения при попадании на 50% и урон по поражённой конечности на 30% | BleedResist:0.5&LimbDamageReduce:0.3
 9512,Wound Care III | Reduces the chance of bleeding when hit by 70% and damage taken by the struck limb by 50% | BleedResist:0.7&LimbDamageReduce:0.5,Обработка ран III | Снижает шанс кровотечения при попадании на 70% и урон по поражённой конечности на 50% | BleedResist:0.7&LimbDamageReduce:0.5
 9515,Limb Recovery I | Injured limbs recover 20% faster | LimbRecovery:0.2,Восстановление конечностей I | Повреждённые конечности восстанавливаются на 20% быстрее | LimbRecovery:0.2
 9516,Limb Recovery II | Injured limbs recover 30% faster | LimbRecovery:0.3,Восстановление конечностей II | Повреждённые конечности восстанавливаются на 30% быстрее | LimbRecovery:0.3
 9517,Limb Recovery III | Injured limbs recover 40% faster | LimbRecovery:0.4,Восстановление конечностей III | Повреждённые конечности восстанавливаются на 40% быстрее | LimbRecovery:0.4
-9518,Limb Recovery IIII | Injured limbs recover 50% faster | LimbRecovery:0.5,Восстановление конечностей IIII | Повреждённые конечности восстанавливаются на 50% быстрее | LimbRecovery:0.5
-9530,Cold Resistance I | Reduces body heat loss caused by the environment by 20% | ColdResist:0.2,устойчивость к холоду I | Потеря температуры тела из-за окружения -20% | ColdResist:0.2
-9531,Cold Resistance II | Reduces body heat loss caused by the environment by 35% | ColdResist:0.35,устойчивость к холоду II | Потеря температуры тела из-за окружения -35% | ColdResist:0.35
-9532,Cold Resistance III | Reduces body heat loss caused by the environment by 50% | ColdResist:0.5,устойчивость к холоду III | Потеря температуры тела из-за окружения -50% | ColdResist:0.5
-9600,"workbench | build workbenche to unlock more items to craft | | 26 | 59,62,1111,10,11,306,307,308,309,311,314,456,458,470,471,472,473,474,475,486,491,492,493,496","верстак | создайте верстак, чтобы открыть больше предметов для крафта | | 26 | 59,62,1111,10,11,306,307,308,309,311,314,456,458,470,471,472,473,474,475,486,491,492,493,496"
-9610,"ammo loader | build ammo loader | | 27 | 70,72,100","заряжатель патронов | построить заряжатель | | 27 | 70,72,100"
-9611,"small caliber ammo | manufacture small caliber ammunition | | | 101,103,107","патроны малого калибра | производство патронов малого калибра | | | 101,103,107"
-9612,"rifle caliber ammo | manufacture rifle caliber ammo | | | 102,104","винтовочные патроны | производство винтовочных патронов | | | 102,104"
-9613,"big caliber ammo | manufacture big caliber ammo, .300Magnum and .50BMG  | | | 105,106","патроны большого калибра | производство патронов крупного калибра, .300 Magnum и .50 BMG | | | 105,106"
+9518,Limb Recovery IIII | Injured limbs recover 50% faster | LimbRecovery:0.5,Восстановление конечностей IV | Повреждённые конечности восстанавливаются на 50% быстрее | LimbRecovery:0.5
+9530,Cold Resistance I | Reduces body heat loss caused by the environment by 20% | ColdResist:0.2,Устойчивость к холоду I | Потеря температуры тела из-за окружения -20% | ColdResist:0.2
+9531,Cold Resistance II | Reduces body heat loss caused by the environment by 35% | ColdResist:0.35,Устойчивость к холоду II | Потеря температуры тела из-за окружения -35% | ColdResist:0.35
+9532,Cold Resistance III | Reduces body heat loss caused by the environment by 50% | ColdResist:0.5,Устойчивость к холоду III | Потеря температуры тела из-за окружения -50% | ColdResist:0.5
+9600,"workbench | build workbenche to unlock more items to craft | | 26 | 59,62,1111,10,11,306,307,308,309,311,314,456,458,470,471,472,473,474,475,486,491,492,493,496","Верстак | создайте верстак, чтобы открыть больше предметов для крафта | | 26 | 59,62,1111,10,11,306,307,308,309,311,314,456,458,470,471,472,473,474,475,486,491,492,493,496"
+9610,"ammo loader | build ammo loader | | 27 | 70,72,100","Заряжатель патронов | построить заряжатель | | 27 | 70,72,100"
+9611,"small caliber ammo | manufacture small caliber ammunition | | | 101,103,107","Патроны малого калибра | производство патронов малого калибра | | | 101,103,107"
+9612,"rifle caliber ammo | manufacture rifle caliber ammo | | | 102,104","Винтовочные патроны | производство винтовочных патронов | | | 102,104"
+9613,"big caliber ammo | manufacture big caliber ammo, .300Magnum and .50BMG  | | | 105,106","Патроны большого калибра | производство патронов крупного калибра, .300 Magnum и .50 BMG | | | 105,106"
 9614,40mm grenade | manufacture 40mm grenade | | | 120,40-мм граната | производство 40-мм гранат | | | 120
-9620,"simple lathe | build lathe | | 70 |  29,52,54,61,67,1078","простой токарный станок | построить токарный станок | | 70 |  29,52,54,61,67,1078"
+9620,"simple lathe | build lathe | | 70 |  29,52,54,61,67,1078","Простой токарный станок | построить токарный станок | | 70 |  29,52,54,61,67,1078"
 19620,"simple lathe | build lathe | | 70 |  29,52,54,61,67","простой токарный станок | построить токарный станок | | 70 |  29,52,54,61,67"
-9630,chemical bench  | build chemical workbench | | | 7,химический верстак | построить химический верстак | | | 7
-9640,"medicine bench | build medicine bench | | | 250,251,252","медицинский верстак | построить медицинский верстак | | | 250,251,252"
-9650,refined lathe | build refined lathe that can produce more items | |  | ,улучшенный токарный станок | построить улучшенный токарный станок с большим набором изделий | |  | 
-9700,"stone furnace | build stone furnace. | | 115 | 8,9","каменная печь | построить каменную печь. | | 115 | 8,9"
+9630,chemical bench  | build chemical workbench | | | 7,Химический верстак | построить химический верстак | | | 7
+9640,"medicine bench | build medicine bench | | | 250,251,252","Медицинский верстак | построить медицинский верстак | | | 250,251,252"
+9650,refined lathe | build refined lathe that can produce more items | |  | ,Улучшенный токарный станок | построить улучшенный токарный станок с большим набором изделий | |  | 
+9700,"stone furnace | build stone furnace. | | 115 | 8,9","Каменная печь | построить каменную печь. | | 115 | 8,9"
 9710,"Electric Furnace | Build an electric furnace. Runs on grid power, no fuel needed, smelts 3x faster than the stone furnace. | | 137 | ","Электропечь | Постройте электропечь. Работает от электросети, не требует топлива и плавит в 3 раза быстрее каменной печи. | | 137 | "
-9720,lithium metal | Extract lithium metal to make batteries | |  | ,литий | добыча металлического лития для производства батарей | |  | 
-9730,water well | build water well | | 100  | ,колодец | построить колодец | | 100  | 
-9740,canning | canning food | |  | ,консервирование | консервация продуктов | |  | 
+9720,lithium metal | Extract lithium metal to make batteries | |  | ,Литий | добыча металлического лития для производства батарей | |  | 
+9730,water well | build water well | | 100  | ,Колодец | построить колодец | | 100  | 
+9740,canning | canning food | |  | ,Консервирование | консервация продуктов | |  | 
 9750,"Mold WorkStation | Using mold technology to craft more complex shapes for objects. | | 107 | 34,1100,1103,1106,1107,1109, 701, 711, 723, 740, 752, 760, 770, 828, 833","Литейный стол | Использование технологии литья для создания более сложных форм объектов. | | 107 | 34,1100,1103,1106,1107,1109, 701, 711, 723, 740, 752, 760, 770, 828, 833"
-9760,"animal traps | Make animal traps | | |930,931","ловушки | изготовление ловушек на животных | | |930,931"
-9800,computer science | Master fundamental computer technology. | |  | ,информатика | освоить основы компьютерных технологий. | |  | 
-9810,chip programming | Master the technology to program hardware. | |  | ,программирование чипов | освоить технологию программирования железа. | |  | 
+9760,"animal traps | Make animal traps | | |930,931","Ловушки | изготовление ловушек на животных | | |930,931"
+9800,computer science | Master fundamental computer technology. | |  | ,Информатика | освоить основы компьютерных технологий. | |  | 
+9810,chip programming | Master the technology to program hardware. | |  | ,Программирование чипов | освоить технологию программирования железа. | |  | 
 9820,"3D printing | Master 3D printing technology. | | 130 | 1710,1711,1712,1713,1714 ","3D-печать | освоить технологию 3D-печати. | | 130 | 1710,1711,1712,1713,1714 "
 9830,metal 3D printing | Master metal 3D printing technology. | |  | ,3D-печать по металлу | освоить технологию 3D-печати по металлу. | |  | 
 9715,"Solar Power | Build solar panels and an energy storage module. Generates power by day; surplus charges the storage which discharges when supply falls short. | | 131,135 | ","Солнечная энергия | Постройте солнечные панели и модуль накопления энергии. Вырабатывает энергию днём; излишки заряжают накопитель, который отдаёт энергию при нехватке. | | 131,135 | "
@@ -3600,8 +3600,8 @@ id,source,target
 1010630,Scavenger Cloth,Одежда собирателя
 1010640,Scavenger Leader Cloth,Одежда главаря собирателей
 1100000,Small piece of wood,Небольшой кусок дерева
-1100001,Uncut log,необработанное бревно
-1100002,Normal rock,обычный камень
+1100001,Uncut log,Необработанное бревно
+1100002,Normal rock,Обычный камень
 1100003,Ore that can be used to make iron,"Руда, из которой получают железо"
 1100004,Ore that can be used to make copper,"Руда, из которой получают медь"
 1100005,Potassium nitrate crystals. Flammable. It can be used to start fires and can also be used to make gunpowder.,Кристаллы нитрата калия. Горючи. Подходят для разведения огня и изготовления пороха.
@@ -3613,21 +3613,21 @@ id,source,target
 1100011,Copper tube,Медная трубка
 1100012,Iron wire,Железная проволока
 1100013,Copper wire. Good electrical conductivity.,Медная проволока. Хорошая электропроводность.
-1100014,Iron scrap,железный лом
-1100046,Copper scrap,медный лом
+1100014,Iron scrap,Железный лом
+1100046,Copper scrap,Медный лом
 1100015,Can be used to weave rope and cloth,Используется для плетения верёвки и ткани
 1100016,A rope woven from plant fibers.,Верёвка из растительных волокон.
-1100017,Bone,кость
+1100017,Bone,Кость
 1100018,Animal tendon. Very elastic.,Звериное сухожилие. Очень эластичное.
 1100019,"A small piece of bark, can be used to make a fire","Небольшой кусок коры, можно использовать для розжига"
 1100020,Small twigs. Can be obtained from bushes or trees.,Небольшие ветки. Можно добыть с кустов или деревьев.
 1100021,A tool that ignites by friction between bark and branches.,Инструмент для добычи огня трением коры и веток.
-1100022,Waste plastic,пластиковые отходы
-1100023,Plant fibre,растительные волокна
+1100022,Waste plastic,Пластиковые отходы
+1100023,Plant fibre,Растительные волокна
 1100024,Can be used as raw material.,Используется как сырьё.
 1100025,"Animal fur. Can be used to make clothing, sleeping bags, etc.","Звериный мех. Используется для пошива одежды, спальников и пр."
 1100026,Common crops. Often used to make clothes.,Обычная сельхозкультура. Часто идёт на пошив одежды.
-1100027,Nails that can be used to mount things,гвозди для скрепления чего-либо
+1100027,Nails that can be used to mount things,Гвозди для скрепления чего-либо
 1100028,Glass material. Can be used to make glassware,Стекло. Подходит для изготовления стеклянных изделий.
 1100029,CNC component. It can be used to make complex and high-precision objects.,Деталь ЧПУ. Применяется для изготовления сложных высокоточных изделий.
 1100030,"Fabric. Can be used to make bandages, backpacks and other items.","Ткань. Идёт на бинты, рюкзаки и прочее."
@@ -3687,7 +3687,7 @@ id,source,target
 1100095,A glowing bottle made from mutated plants.,Светящаяся бутылка из мутировавших растений.
 1100096,"Experimental ballistic computer. After equipped with CAS, it can analyze the target and provide aiming assistance for the user.",Экспериментальный баллистический компьютер. В режиме CAS анализирует цель и помогает целиться.
 1100097,A grapple that can be used to move quickly or grab objects.,Крюк-кошка для быстрых перемещений и захвата предметов.
-1100098,Note or formula,заметка или формула
+1100098,Note or formula,Заметка или формула
 1100099,The standard unit of transactions.,Стандартная единица для расчётов.
 1100100,Common shotgun ammunition,Стандартные патроны для дробовика.
 1100101,9x19mm ammunition for pistols and submachine guns,Патрон 9×19 мм для пистолетов и пистолетов-пулемётов.
@@ -3710,7 +3710,7 @@ id,source,target
 1100202,Blue berries. Looks edible.,Синие ягоды. На вид съедобные.
 1100203,Healing herb.,Лекарственная трава.
 1100204,Meat.,Мясо.
-1100205,Rotten meat,гнилое мясо
+1100205,Rotten meat,Гнилое мясо
 1100206,Replenish stamina and hydration.,Восстанавливает выносливость и гидратацию.
 1100207,Replenish stamina and hydration.,Восстанавливает выносливость и гидратацию.
 1100208,Radiant glowing fruit.,Сияющий плод.
@@ -3733,13 +3733,13 @@ id,source,target
 1100250,"<color=#ff5500>Mutation potion is only used to upgrade skills, please do not eat it.</color>\nPharmaceutical made from the extract of special mutants. It can increase strength, the side effects are unknown.","<color=#ff5500>Зелье мутации используется только для прокачки навыков, пожалуйста, не употребляйте его в пищу.</color>\nПрепарат, изготовленный из экстракта особых мутантов. Может увеличить силу, побочные эффекты неизвестны."
 1100251,"<color=#ff5500>Mutation potion is only used to upgrade skills, please do not eat it.</color>\nPharmaceutical made from the extract of special mutants. It can increase physical performance, the side effects are unknown.","<color=#ff5500>Зелье мутации используется только для прокачки навыков, пожалуйста, не употребляйте его в пищу.</color>\nПрепарат, изготовленный из экстракта особых мутантов. Может улучшить физические показатели, побочные эффекты неизвестны."
 1100252,"<color=#ff5500>Mutation potion is only used to upgrade skills, please do not eat it.</color>\nPharmaceutical made from the extract of special mutants. It can increase agility and reaction speed, the side effects are unknown.","<color=#ff5500>Зелье мутации используется только для прокачки навыков, пожалуйста, не употребляйте его в пищу.</color>\nПрепарат, изготовленный из экстракта особых мутантов. Может увеличить ловкость и скорость реакции, побочные эффекты неизвестны."
-1100260,Dead rat,мёртвая крыса
-1100261,Dead crow,мёртвая ворона
-1100262,Dead fish,мёртвая рыба
-1100263,Dead seagull,мёртвая чайка
-1100264,Dead rabbit,мёртвый кролик
+1100260,Dead rat,Мёртвая крыса
+1100261,Dead crow,Мёртвая ворона
+1100262,Dead fish,Мёртвая рыба
+1100263,Dead seagull,Мёртвая чайка
+1100264,Dead rabbit,Мёртвый кролик
 1100265,An edible crab leg.,Съедобная крабовая нога.
-1100266,Dead chicken,мёртвая курица
+1100266,Dead chicken,Мёртвая курица
 1100267,A fresh chicken egg. Can be roasted.,Свежее куриное яйцо. Можно поджарить.
 1100270,Restores a large amount of stamina.,Восстанавливает много выносливости.
 1100271,Restores a large amount of HP.,Восстанавливает много HP.
@@ -3754,8 +3754,8 @@ id,source,target
 1100283,"A common freshwater fish species, large in size, living in rivers and lakes.","Обычная пресноводная рыба крупного размера, обитает в реках и озёрах."
 1100284,"A valuable large marine fish species, large in size, often living in deep sea.","Ценная крупная морская рыба, часто обитает в глубоких водах."
 1100285,"Large fish species living in both freshwater and marine environments. It is considered one of the most challenging targets for anglers. During spawning, they exhibit the same upstream migration behavior as other salmonid fish.","Крупная рыба, обитающая как в пресной, так и в морской воде. Считается одной из самых сложных целей для рыбаков. В период нереста, как и другие лососёвые, идёт вверх по течению."
-1100300,Crowbar,лом
-1100301,Crowbar,лом
+1100300,Crowbar,Лом
+1100301,Crowbar,Лом
 1100302,Simple axe made of stone and wood.,Простой топор из камня и дерева.
 1100303,Simple hammer made of stone and wood.,Простой молот из камня и дерева.
 1100304,Simple pickaxe made of stone and wood.,Простая кирка из камня и дерева.
@@ -3848,9 +3848,9 @@ id,source,target
 1100475,A self-made .22lr rifle with a simple structure.,Самодельная винтовка под .22 LR простой конструкции.
 1100476,A self-made 5.56 pistol.,Самодельный пистолет под 5.56.
 1100477,A self-made 7.62 pistol.,Самодельный пистолет под 7.62.
-1100480,M230 heavy machine gun,тяжёлый пулемёт M230
-1100481,High-energy laser cannon,высокоэнергетическая лазерная пушка
-1100482,Burst laser cannon,импульсная лазерная пушка
+1100480,M230 heavy machine gun,Тяжёлый пулемёт M230
+1100481,High-energy laser cannon,Высокоэнергетическая лазерная пушка
+1100482,Burst laser cannon,Импульсная лазерная пушка
 1100485,"Developed and produced in 1968, \nthe individual soldier portable pump-action continuous-fire grenade launcher launches 40×46mm low-velocity grenade.","Разработан и выпущен в 1968 году,\nносимый солдатом помповый автоматический гранатомёт, ведущий огонь низкоскоростными гранатами 40×46 мм."
 1100486,Sturdy and durable double-barreled grenade launcher,Прочный и долговечный двуствольный гранатомёт
 1100487,"A lightweight, double-action operated, shoulder-fired grenade launcher produced by Milkom (Holdings) Limited of South Africa. \nIt primarily fires 40x46mm caliber low-velocity grenades.","Лёгкий, двойного действия, плечевой гранатомёт производства Milkom (Holdings) Limited из ЮАР.\nВ основном стреляет низкоскоростными гранатами калибра 40x46 мм."
@@ -3995,7 +3995,7 @@ id,source,target
 1101007,.45 ACP shell. Can be reloaded to make ammo,Гильза .45 ACP. Годится для повторного снаряжения патронов.
 1101010,Metal pellet,Металлическая дробь.
 1101020,40mm shell,Гильза 40 мм.
-1101021,25mm signal shell,гильза сигнальная 25 мм
+1101021,25mm signal shell,Гильза сигнальная 25 мм
 1101050,The mutated tissue cells of an infected person. It can be used as a culture medium for synthetic drugs. The side effects are unknown.,Мутировавшие клетки тканей заражённого. Подходят как питательная среда для синтеза препаратов. Побочные эффекты неизвестны.
 1101051,The mutated heart of an infected person. It can be used to craft the red dose.,Мутировавшее сердце заражённого. Используется для изготовления красной дозы.
 1101052,Plant-mutated tissue. Can be used to craft green dose.,Мутировавшая растительная ткань. Используется для изготовления зелёной дозы.
@@ -4171,8 +4171,8 @@ id,source,target
 1110070,Cloth.,Одежда.
 1110080,Well-known brand of casual wear. Has a certain thermal effect.,Повседневная одежда известного бренда. Имеет определённый утепляющий эффект.
 1110090,A brand-name down jacket. Very warm.,Фирменный пуховик. Очень тёплый.
-1110100,Full-body Kevlar suit with balanced protection.,Кевларовый костюм на всё тело со сбалансированной защитой.
-1110110,Military Kevlar vest with helmet. Can effectively block sharps and small caliber bullets.,Военный кевларовый жилет со шлемом. Эффективно защищает от режущего оружия и малокалиберных пуль.
+1110100,Full-body Kevlar suit with balanced protection.,"Закрывает всё тело, защита сбалансированная."
+1110110,Military Kevlar vest with helmet. Can effectively block sharps and small caliber bullets.,Армейский бронежилет. Надёжно защищает от колюще-режущего оружия и малокалиберных пуль.
 1110120,Level 1 armor. Can effectively resist physical attacks and some small-caliber weapons.,Броня 1 уровня. Эффективно противостоит физическим атакам и некоторому малокалиберному оружию.
 1110130,Ordinary casual clothes.,Обычная повседневная одежда.
 1110140,Police uniform.,Полицейская форма.
@@ -4233,7 +4233,7 @@ id,source,target
 5493,"Your save references <color=#ff6666>items from MODs that are not loaded</color>. Playing with missing MODs may cause:\n\n·  Items shown as gray \""Missing Mod Item\"" blocks or <color=#ff6666>disappearing</color> from inventory / shelves\n·  UI display errors\n·  Related items / features unavailable\n\n<color=#aaff22>Please enable all required MODs in the MOD manager before playing</color> to avoid issues with your experience or save.\n\n<color=#ffcc66>[ Delete ]</color> Remove these leftover items. <color=#ff6666>This cannot be undone</color> - resubscribing the MOD will not bring them back.\n<color=#ffcc66>[ Keep ]</color> Do nothing; the items come back once the MOD is enabled again.\n<color=#ffcc66>[ Mute ]</color> Keep them and stop showing this notice for this session (you can still clean up from the MOD manager).","Ваше сохранение ссылается на <color=#ff6666>предметы из модов, которые не загружены</color>. Игра с отсутствующими модами может вызвать:\n\n·  Предметы отображаются как серые блоки «Предмет отсутствующего мода» или <color=#ff6666>исчезают</color> из инвентаря / с полок\n·  Ошибки отображения интерфейса\n·  Недоступность связанных предметов / функций\n\n<color=#aaff22>Пожалуйста, включите все необходимые моды в менеджере модов перед игрой</color>, чтобы избежать проблем с игровым процессом или сохранением.\n\n<color=#ffcc66>[ Удалить ]</color> Стереть эти остаточные предметы. <color=#ff6666>Отменить нельзя</color> — повторная подписка на МОД их не вернёт.\n<color=#ffcc66>[ Оставить ]</color> Ничего не делать; предметы вернутся после включения МОДа.\n<color=#ffcc66>[ Скрыть ]</color> Оставить предметы и не показывать это уведомление в текущем сеансе (очистить можно в менеджере МОДов)."
 5495,Resolution,Разрешение
 5496,"Choose the game's rendering resolution. Lowering it improves frame rate on GPU-limited devices, at the cost of a blurrier image.",Выбор разрешения рендеринга игры. Его снижение повышает частоту кадров на устройствах со слабым GPU за счёт более размытого изображения.
-5497,Native,Родное
+5497,Native,Как у экрана
 5498,Lower the rendering resolution to improve frame rate on GPU-limited devices.,"Снижает разрешение рендеринга, чтобы повысить частоту кадров на устройствах со слабым GPU."
 5499,Render Scale,Масштаб рендеринга
 5500,"Renders the game at a lower internal scale, then upscales to fill the screen, to boost frame rate. Independent of and stackable with the Resolution setting; especially effective on GPU-limited devices, at the cost of a slightly blurrier image.","Рендерит игру во внутреннем меньшем масштабе, а затем увеличивает изображение до размеров экрана, повышая частоту кадров. Независим от настройки разрешения и сочетается с ней; особенно эффективен на устройствах со слабым GPU за счёт немного более размытого изображения."
@@ -4284,9 +4284,9 @@ id,source,target
 5265,Update sight occlusion every other frame to improve performance (recommended).,Обновлять перекрытие обзора через кадр для повышения производительности (рекомендуется).
 5266,Vertical Sync,Вертикальная синхронизация
 5267,"Synchronizes the frame rate with your monitor's refresh rate to remove screen tearing. While on, the frame rate follows the monitor's refresh rate, so the 'Unlimited' frame-rate cap only takes effect after turning this off.","Синхронизирует частоту кадров с частотой обновления монитора, устраняя разрывы изображения. Когда включена, частота кадров следует за частотой монитора, поэтому «Без ограничений» действует только после её отключения."
-5268,On,вкл.
+5268,On,Вкл.
 5269,Sync with the monitor's refresh rate to remove screen tearing (default).,"Синхронизирует с частотой обновления монитора, устраняя разрывы изображения (по умолчанию)."
-5270,Off,выкл.
+5270,Off,Выкл.
 5271,Turn off vertical sync; the frame rate is governed by the 'Frame Rate Cap' and screen tearing may occur.,"Отключает вертикальную синхронизацию; частота кадров определяется «Ограничением FPS», возможны разрывы изображения."
 5272,'Unlimited' frame rate selected. Turn off 'Vertical Sync' for it to take full effect.,"Выбрано «Без ограничений». Отключите «Вертикальную синхронизацию», чтобы это полностью заработало."
 5280,VOLUMETRIC FOG,ОБЪЁМНЫЙ ТУМАН
@@ -4744,10 +4744,10 @@ id,source,target
 5662,"Maximum shift: you see further ahead, but the view moves around more.","Максимальное смещение: видно дальше, но картинка сильнее ходит."
 901006,<color=#55ff33>Select liquid source</color>,<color=#55ff33>Выберите источник жидкости</color>
 901007,is worn out,полностью износился
-901008,Repair All Attachments,Починить все модули
+901008,Repair All Attachments,ПОЧИНИТЬ ВСЕ МОДУЛИ
 901009,missing repair material,не хватает материала для ремонта
 901010,Repair With Repair Kit,Ремонт ремкомплектом
-901011,Structure,Конструкция
+901011,Structure,СООРУЖЕНИЯ
 901012,blocks,блоков
 901013,Press interact key to build,Нажмите клавишу взаимодействия для строительства
 901014,Not enough materials,Недостаточно материалов
@@ -4862,7 +4862,7 @@ id,source,target
 901068,Missing audio file: {0},Аудиофайл отсутствует: {0}
 901069,That container is already gone,Этого контейнера больше нет
 901070,You can't do that in multiplayer,В сетевой игре это действие недоступно
-901071,Collect Casings,Собрать гильзы
+901071,Collect Casings,СОБРАТЬ ГИЛЬЗЫ
 901072,Volume,Громкость
 901073,Pitch,Тон
 901074,NORM,НОРМ
@@ -4882,7 +4882,7 @@ id,source,target
 901083,A small metal cube. The toughest building material. Drag to place. Every 12 blocks costs 1 iron plate.,"Небольшой металлический куб. Самый прочный строительный материал. Перетащите, чтобы поставить. Каждые 12 блоков стоят 1 железную пластину."
 5763,The host doesn't have this pattern. This spray is only visible to you.,У хоста нет этого узора. Это граффити видите только вы.
 5764,Other players don't have this pattern. This spray is only visible to you.,У других игроков нет этого узора. Это граффити видите только вы.
-5770,Load Ammo,Зарядить боеприпасы
+5770,Load Ammo,ЗАРЯДИТЬ
 5771,Unload Ammo,Извлечь боеприпасы
 5772,Insert Battery,Вставить батарею
 5773,Remove Battery,Извлечь батарею
@@ -5121,7 +5121,7 @@ id,source,target
 5832,No flashes and no thunder while it rains. Turn this off if you are sensitive to flashing light or find the lightning too frequent.,"Во время дождя не будет ни вспышек, ни грома. Отключите, если вы чувствительны к мерцающему свету или считаете, что молнии бьют слишком часто."
 5833,On,Вкл.
 5834,Bright flashes and thunder strike at random while it rains.,"Во время дождя в случайные моменты вспыхивают яркие молнии, сопровождаемые громом."
-5835,<color=#ffcc66>↺ Restore Default Settings</color>,<color=#ffcc66>↺ Восстановить настройки по умолчанию</color>
+5835,<color=#ffcc66>↺ Restore Default Settings</color>,<color=#ffcc66>↺ Сбросить настройки</color>
 5836,Restore all game settings to their default values?\nLanguage and key bindings are not affected. Changes take effect and are saved immediately.,Восстановить все настройки игры по умолчанию?\nЯзык и назначения клавиш не изменятся. Изменения вступят в силу и будут сохранены сразу.
 5837,Default settings restored,Настройки по умолчанию восстановлены
 5838,Online Wanderers,Онлайн-странники
@@ -5229,7 +5229,7 @@ id,source,target
 1002023,Lizard Fang,Клык ящерицы
 1102023,"A curved fang as long as a hand, hard enough to hold an edge. Material for the fang blade and dagger.","Изогнутый клык длиной с ладонь, достаточно твёрдый, чтобы держать заточку. Материал для клинка и кинжала."
 1002024,Lizard Fang Dagger,Кинжал из клыка ящерицы
-1102024,A dagger ground from a giant lizard's fang. Butchers corpses and can be equipped as an execution tool; wears far slower than a copper dagger.,"Кинжал, выточенный из клыка гигантской ящерицы. Годится для разделки трупов и надевается как орудие казни; изнашивается куда медленнее медного кинжала."
+1102024,A dagger ground from a giant lizard's fang. Butchers corpses and can be equipped as an execution tool; wears far slower than a copper dagger.,Кинжал из клыка гигантской ящерицы. Годится для разделки трупов и добивания врагов; изнашивается куда медленнее медного кинжала.
 1001930,Lizard Serum,Сыворотка ящерицы
 1101930,"A serum refined from a mutant lizard's gland. Drinking it instantly heals every body part and stops bleeding, grants 1 attribute point (up to 10 times per character, shared with the Enhancement Serum) and briefly boosts strength and movement speed.","Сыворотка, очищенная из железы мутировавшей ящерицы. Выпив её, мгновенно лечишь все части тела и останавливаешь кровотечение, получаешь 1 очко характеристик (до 10 раз на персонажа, лимит общий с Усиливающей сывороткой) и ненадолго повышаешь силу и скорость."
 1001931,Lizard Regenerative Tonic,Восстанавливающий тоник ящерицы
@@ -5353,7 +5353,7 @@ The voyage cannot be interrupted; you can sail back to the main island after arr
 901226,Armor,Броня
 901227,Detection range,Дальность обнаружения
 901228,"Mutant lizard slain, new recipes unlocked: ","Мутировавшая ящерица убита, открыты новые рецепты: "
-901229,HP regen,Восстановление здоровья
+901229,HP regen,ВОССТ. ЗДОРОВЬЯ
 901230,Head damage,Урон по голове
 901231,<color=#ff5500>No burnable fuel (charcoal won't burn). Add wood in Fuel Management first.</color>,<color=#ff5500>Нет топлива (древесный уголь не горит). Сначала положите древесину через «Управление топливом».</color>
 901232,Rescue failed: target state changed,Спасение не удалось: состояние цели изменилось
@@ -5373,7 +5373,7 @@ The voyage cannot be interrupted; you can sail back to the main island after arr
 901246,DAY,ДЕНЬ
 901247,DIFFICULTY,СЛОЖНОСТЬ
 901248,PLAYTIME,ВРЕМЯ ИГРЫ
-901249,LAST SAVE,ПОСЛЕДНЕЕ СОХРАНЕНИЕ
+901249,LAST SAVE,СОХРАНЕНО
 901250,NEW GAME,НОВАЯ ИГРА
 901251,WORLD GENERATION,ГЕНЕРАЦИЯ МИРА
 901252,SYSTEM INITIALIZING,ИНИЦИАЛИЗАЦИЯ СИСТЕМЫ
@@ -6090,7 +6090,7 @@ The substation at the first station of each section shows its state.","Пита�
 1100122,High-explosive round for the 84mm recoilless rifle. Impact-fuzed and far more powerful than a 40mm grenade.,"Осколочно-фугасный выстрел к 84-мм безоткатному орудию. Ударный взрыватель, намного мощнее 40-мм гранаты."
 1100483,"Shoulder-fired 84mm recoilless rifle. On firing, the venturi vents a blast of hot gas to the rear to cancel the recoil, so keep clear of the area behind the gunner. Loads a single round at a time and reloads slowly; the impact-fuzed round detonates on whatever it hits, or on the ground at the aim point.","84-мм безоткатное орудие для стрельбы с плеча. При выстреле сопло в казённой части выбрасывает назад струю горячих газов, гасящую отдачу, поэтому позади стрелка стоять нельзя. Заряжается одним выстрелом и перезаряжается медленно; снаряд с ударным взрывателем взрывается при попадании, а при промахе — на земле в точке прицеливания."
 1010910,Heavy Radiation Armor,Тяжёлая противорадиационная броня
-1110910,"Heavy radiation armor sealed in the vault of the reactor control room: a lead-lined sealed suit, a hard helmet with a smoked visor, a filtered blower pack with hoses, and plates on the chest and knees. The full set blocks about 75% of radiation and stops bullets and bites nearly as well as military body armor, but it is extremely heavy and slows you down a lot.","Тяжёлая противорадиационная броня из хранилища пульта управления реактором: герметичный костюм со свинцовой подкладкой, жёсткий шлем с тонированным визором, фильтровентиляционный ранец со шлангами и пластины на груди и коленях. Полный комплект задерживает около 75% радиации и защищает от пуль и укусов почти как военный бронежилет, но он очень тяжёлый и сильно замедляет."
+1110910,"Heavy radiation armor sealed in the vault of the reactor control room: a lead-lined sealed suit, a hard helmet with a smoked visor, a filtered blower pack with hoses, and plates on the chest and knees. The full set blocks about 75% of radiation and stops bullets and bites nearly as well as military body armor, but it is extremely heavy and slows you down a lot.","Из хранилища пульта управления реактором: герметичный костюм со свинцовой подкладкой, жёсткий шлем с тонированным визором, фильтровентиляционный ранец со шлангами и пластины на груди и коленях. Полный комплект задерживает около 75% радиации и защищает от пуль и укусов почти как военный бронежилет, но он очень тяжёлый и сильно замедляет."
 902610,Start backup cooling,Запустить резервное охлаждение
 902611,Backup cooling running,Резервное охлаждение работает
 902612,The backup cooling pumps are running and the core is cooling down. The radiation storm is shrinking and thinning.,"Резервные насосы охлаждения работают, активная зона остывает. Радиационная буря сжимается и слабеет."
@@ -6687,8 +6687,8 @@ Press [{0}] to switch it on and off.","Ночью почти ничего не �
 903953,{0} cells were skipped: {1},{0} клеток пропущено: {1}
 904030,ARMOR,ЗАЩИТА
 904031,CHEMISTRY,ХИМИЯ
-904032,CONSTRUCTION,СТРОИТЕЛЬСТВО
-904033,ELECTRICITY,ЭЛЕКТРИЧЕСТВО
+904032,CONSTRUCTION,КОНСТРУКЦИИ
+904033,ELECTRICITY,ЭЛЕКТРИКА
 904034,PRODUCTION,ПРОИЗВОДСТВО
 904035,WEAPONS,ОРУЖИЕ
 904036,Pause When Unfocused,Пауза при сворачивании
@@ -6732,7 +6732,7 @@ Press [{0}] to switch it on and off.","Ночью почти ничего не �
 904132,This is a quest item and cannot be destroyed.,"Это квестовый предмет, его нельзя уничтожить."
 904133,The lifter alarm drew in a Generator Zombie,Сигнал тревоги подъёмника привлёк зомби-генератора
 904134,Quest item,Квестовый предмет
-904135,ITEM WIKI,ВИКИ ПРЕДМЕТОВ
+904135,ITEM WIKI,ВИКИ
 904136,Look up how to obtain any item and what it is used for,"Узнайте, как получить любой предмет и для чего он нужен"
 904137,Search items...,Поиск предметов...
 904138,No matching items,Нет подходящих предметов
@@ -6853,7 +6853,7 @@ Press [{0}] to switch it on and off.","Ночью почти ничего не �
 1300023,prunella,Черноголовка
 1300024,fence,Забор
 1300025,simple workbench,Простой верстак
-1300026,workbench,Продвинутый верстак
+1300026,workbench,Верстак
 1300027,ammo reloader,Пресс для боеприпасов
 1300028,fence door,Калитка
 1300029,garbage can,Урна
@@ -6915,7 +6915,7 @@ Press [{0}] to switch it on and off.","Ночью почти ничего не �
 1300093,Road Sign,Дорожный указатель
 1300094,road telegraph pole ,Придорожный электрический столб 
 1300095,Traffic Light,Светофор
-1300096,Planting Pot,Горшок для посадки
+1300096,Planting Pot,Горшок для рассады
 1300100,water well,Колодец
 1300101,chemical bench,Химический верстак
 1300102,medicine bench,Медицинский верстак
@@ -6926,7 +6926,7 @@ Press [{0}] to switch it on and off.","Ночью почти ничего не �
 1300107,mold workStation,Формовочный верстак
 1300108,communication terminal,Терминал связи
 1300110,camp fire,Костёр
-1300111,cooking hob (placed on bonfire),Кастрюля (ставится на костёр)
+1300111,cooking hob (placed on bonfire),Кастрюля (на костре)
 1300115,stone furnace,Каменная печь
 1300116,storage box,Ящик для хранения
 1300120,stirling generator,Генератор Стирлинга
@@ -7166,3 +7166,20 @@ Press [{0}] to switch it on and off.","Ночью почти ничего не �
 1509,<color=#aaaaaa>Click</color> <b>×</b> <color=#aaaaaa>to clear a binding</color>,"<color=#aaaaaa>Нажмите</color> <b>×</b><color=#aaaaaa>, чтобы сбросить назначение</color>"
 1551,Chat,Чат
 1552,<color=#aaaaaa>Not affected by these bindings: throttle and brake while driving stay on the triggers; buttons used inside inventory and menu screens are fixed.</color>,<color=#aaaaaa>Эти настройки не затрагивают: газ и тормоз при вождении остаются на триггерах; кнопки на экранах инвентаря и меню фиксированы.</color>
+11066,Name cannot be empty,Имя не может быть пустым
+11067,Name can be at most {0} characters,Имя может содержать не более {0} символов
+11068,Set a custom name for this item,Задать предмету собственное имя
+11069,Double-click to rename,Двойной щелчок — переименовать
+904245,[Local],[Локальный]
+904246,This MOD exists both in your local Mods folder and in your Workshop subscriptions. The game loads the local copy. To use the Workshop version remove the local copy first.,"Этот МОД есть и в локальной папке Mods, и в подписках Мастерской. Игра загружает локальную копию. Чтобы использовать версию из Мастерской, сначала удалите локальную копию."
+904247,SUBSCRIBED ITEMS THE GAME DOES NOT LOAD ({0}),"ПОДПИСКИ, КОТОРЫЕ ИГРА НЕ ЗАГРУЖАЕТ ({0})"
+904248,Not a data MOD - the game does not load it,Это не МОД с данными — игра его не загружает
+904249,Upload cancelled: the MOD folder contains executable files. Remove them and try again.\n{0},Загрузка отменена: в папке МОДа есть исполняемые файлы. Удалите их и повторите попытку.\n{0}
+904250,Switch Target,Сменить цель
+904251,Unstuck,ВЫБРАТЬСЯ
+904252,Getting unstuck,Выбираемся…
+904253,You were moved to a nearby free spot.,Вы перемещены на ближайшее свободное место.
+904254,No free spot to stand on was found nearby.,Рядом нет свободного места.
+904255,This save is older than a teammate's death. Their body and belongings have been restored where they fell.,"Это сохранение сделано до гибели напарника. Его тело и вещи восстановлены там, где он погиб."
+1553,Rotate,Поворот
+1554,Collect All (Ground),Собрать всё (с земли)

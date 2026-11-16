@@ -2,7 +2,11 @@
 
 ## Установка
 
-1. Скачайте `ZEDZONE_RU_Translation_vX.Y.Z.zip` из [Releases](../../releases).
+1. Скачайте один из архивов из [Releases](../../releases):
+   - `ZEDZONE_RU_vX.Y.Z_translation.zip` — только перевод;
+   - `ZEDZONE_RU_vX.Y.Z_translation_UI.zip` — перевод и переработка интерфейса.
+
+   Архивы отличаются одной строкой в `BepInEx/config/community.zedzone.ru.cfg`: `[Interface] Rework = false / true`. Её можно поменять и после установки (игру нужно перезапустить).
 2. Steam → ZED ZONE → *Управление* → *Просмотреть локальные файлы*.
 3. Распакуйте архив **прямо в эту папку** (рядом с `ZEDZONE.exe`), заменяя файлы.
 4. Запустите игру. Первый запуск дольше обычного (1–3 минуты): BepInEx готовит файлы.

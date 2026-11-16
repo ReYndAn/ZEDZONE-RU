@@ -71,6 +71,13 @@ namespace ZedZoneRU
                     catch (Exception e) { Plugin.L.LogWarning($"Bad grow rule {r[1]}: {e.Message}"); }
                     continue;
                 }
+                // id "uxN" = like fx, but only with the interface rework ([Interface] Rework = true)
+                if (r[0].StartsWith("ux", StringComparison.Ordinal))
+                {
+                    try { UiRules.Add((new Regex(r[1], RegexOptions.Compiled | RegexOptions.Singleline), Unescape(r[2]))); added++; }
+                    catch (Exception e) { Plugin.L.LogWarning($"Bad regex {r[1]}: {e.Message}"); }
+                    continue;
+                }
                 // id "fxN" = layout fix applied to any text, Russian included (e.g. add a line break)
                 if (r[0].StartsWith("fx", StringComparison.Ordinal))
                 {
@@ -82,6 +89,14 @@ namespace ZedZoneRU
                 {
                     try { Patterns.Add((new Regex(r[1], RegexOptions.Compiled), Unescape(r[2]))); added++; }
                     catch (Exception e) { Plugin.L.LogWarning($"Bad regex {r[1]}: {e.Message}"); }
+                    continue;
+                }
+                // id "kN" = key name, exact match; the target may be Latin ("Escape" -> "Esc") or the same
+                // word ("Backspace"), which keeps a key name from being translated as a button ("Стереть")
+                if (r[0].Length > 1 && r[0][0] == 'k' && char.IsDigit(r[0][1]))
+                {
+                    var kk = Norm(src); var kv = tgt.Trim();
+                    if (kk.Length > 0 && kv.Length > 0 && !Map.ContainsKey(kk)) { Map[kk] = kv; added++; }
                     continue;
                 }
                 if (int.TryParse(r[0], out var id) && !byId.ContainsKey(id)) byId[id] = tgt;
@@ -113,6 +128,9 @@ namespace ZedZoneRU
 
         static readonly List<(Regex rx, string repl)> Patterns = new();
         static readonly List<(Regex rx, string repl)> Fixes = new();
+        static readonly List<(Regex rx, string repl)> UiRules = new();
+        // HUD clock "PM 11:53" -> "23:53"
+        static readonly Regex AmPm = new(@"^(\s*)(AM|PM) (\d{1,2}):(\d{2})(\s*)$", RegexOptions.Compiled);
         static readonly List<(Regex rx, float scale)> FontRules = new();
         static readonly List<(Regex rx, float pad)> GrowRules = new();
 
@@ -165,11 +183,26 @@ namespace ZedZoneRU
             var r = TranslateCore(s);
             foreach (var (rx, repl) in Fixes)
                 if (rx.IsMatch(r)) r = rx.Replace(r, repl);
-            try { r = StatsFormatter.Format(r); } catch { }
+            r = To24h(r);
+            if (Plugin.CfgRework.Value)
+            {
+                foreach (var (rx, repl) in UiRules)
+                    if (rx.IsMatch(r)) r = rx.Replace(r, repl);
+                try { r = StatsFormatter.Format(r); } catch { }
+            }
             if (Cache.Count > 20000) Cache.Clear();
             Cache[s] = r;
             if (r == s && Plugin.CfgDumpUntranslated.Value) DumpIfEnglish(s);
             return r;
+        }
+
+        static string To24h(string s)
+        {
+            var m = AmPm.Match(s);
+            if (!m.Success) return s;
+            int h = int.Parse(m.Groups[3].Value) % 12;
+            if (m.Groups[2].Value == "PM") h += 12;
+            return m.Groups[1].Value + h.ToString("00") + ":" + m.Groups[4].Value + m.Groups[5].Value;
         }
 
         static string TranslateCore(string s)
